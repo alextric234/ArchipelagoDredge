@@ -36,10 +36,10 @@ class DredgeWorld(World):
     web = DredgeWeb()
     options: DredgeOptions
     options_dataclass = DredgeOptions
-    #item_name_groups = item_name_groups
+    item_name_groups = item_name_groups
     item_name_to_id = item_name_to_id
     location_name_to_id = standard_location_name_to_id
-    #location_name_groups = location_name_groups
+    location_name_groups = location_name_groups
 
     def generate_early(self) -> None:
         self.player_location_table = standard_location_name_to_id.copy()
