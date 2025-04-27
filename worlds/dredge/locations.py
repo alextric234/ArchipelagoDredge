@@ -238,7 +238,12 @@ location_table: Dict[str, DredgeLocationData] ={
     "Viperfish": DredgeLocationData("viperfish", "Open Ocean", "Encyclopedia"),
     "Shattered Wreckfish": DredgeLocationData("wreckfish-ab-1", "Open Ocean", "Encyclopedia"),
     "Bony Wreckfish": DredgeLocationData("wreckfish-ab-2", "Open Ocean", "Encyclopedia"),
-    "Wreckfish": DredgeLocationData("wreckfish", "Open Ocean", "Encyclopedia")
+    "Wreckfish": DredgeLocationData("wreckfish", "Open Ocean", "Encyclopedia"),
+    "Debug1": DredgeLocationData("", "Open Ocean", "Testing"),
+    "Debug2": DredgeLocationData("", "Open Ocean", "Testing"),
+    "Debug3": DredgeLocationData("", "Open Ocean", "Testing"),
+    "Debug4": DredgeLocationData("", "Open Ocean", "Testing"),
+    "Debug5": DredgeLocationData("", "Open Ocean", "Testing")
 }
 
 standard_location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}
