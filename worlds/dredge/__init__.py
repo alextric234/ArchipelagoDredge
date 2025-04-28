@@ -3,7 +3,7 @@ from typing import List, Dict, Any
 from BaseClasses import Tutorial, Location, Item, ItemClassification, Region
 from worlds.AutoWorld import World, WebWorld
 from .items import item_name_to_id, item_name_groups, item_table
-from .locations import standard_location_name_to_id, location_name_groups, location_table
+from .locations import location_name_groups, location_table, location_name_to_id
 from .options import DredgeOptions
 from .regions import dredge_regions
 
@@ -38,11 +38,11 @@ class DredgeWorld(World):
     options_dataclass = DredgeOptions
     item_name_groups = item_name_groups
     item_name_to_id = item_name_to_id
-    location_name_to_id = standard_location_name_to_id
+    location_name_to_id = location_name_to_id
     location_name_groups = location_name_groups
 
     def generate_early(self) -> None:
-        self.player_location_table = standard_location_name_to_id.copy()
+        self.player_location_table = location_name_to_id.copy()
 
     def create_item(self, name: str, classification: ItemClassification = None) -> DredgeItem:
         item_data = item_table[name]
@@ -52,7 +52,12 @@ class DredgeWorld(World):
         dredge_items: List[DredgeItem] = []
 
         for item, data in item_table.items():
-            dredge_items.append(self.create_item(item, data.classification))
+            if data.expansion == "Base":
+                dredge_items.append(self.create_item(item, data.classification))
+            if self.options.include_pale_reach_dlc and data.expansion == "PaleReach":
+                dredge_items.append(self.create_item(item, data.classification))
+            if self.options.include_iron_rig_dlc and data.expansion == "IronRig":
+                dredge_items.append(self.create_item(item, data.classification))
 
         self.multiworld.itempool += dredge_items
 
@@ -66,6 +71,10 @@ class DredgeWorld(World):
             region.add_exits(exits)
 
         for location_name, location_id in self.player_location_table.items():
+            if location_table[location_name].expansion == "PaleReach" and not self.options.include_pale_reach_dlc:
+                continue
+            if location_table[location_name].expansion == "IronRig" and not self.options.include_iron_rig_dlc:
+                continue
             region = self.get_region(location_table[location_name].region)
             location = DredgeLocation(self.player, location_name, location_id, region)
             region.locations.append(location)
