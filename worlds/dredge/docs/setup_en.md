@@ -47,4 +47,4 @@ TBD
 
 ### In-Game Commands
 Connect to multiworld: `ap connect <hostname> <port> <slotname> <password(is optional)>`\
-Disconnect from mulitworld: `ap disconnect`
+Disconnect from multiworld: `ap disconnect`
