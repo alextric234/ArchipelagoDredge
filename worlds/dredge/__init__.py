@@ -79,19 +79,19 @@ class DredgeWorld(World):
             location = DredgeLocation(self.player, location_name, location_id, region)
             region.locations.append(location)
 
-            victory_region = self.get_region("The Depths")
-            victory_location = DredgeLocation(self.player, "The Depths", None, victory_region)
+            victory_region = self.get_region("Insanity")
+            victory_location = DredgeLocation(self.player, "The Collector", None, victory_region)
             victory_location.place_locked_item(DredgeItem("Victory", ItemClassification.progression, None, self.player))
             self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
             victory_region.locations.append(victory_location)
 
-    def fil_slot_data(self) -> Dict[str, Any]:
+    def fill_slot_data(self) -> Dict[str, Any]:
         slot_data: Dict[str, Any] = {
-            "goal": self.options.goal.value,
+            # "goal": self.options.goal.value,
             "include_iron_rig_dlc": self.options.include_iron_rig_dlc.value,
-            "require_iron_rig_ending": self.options.require_iron_rig_ending.value,
+            # "require_iron_rig_ending": self.options.require_iron_rig_ending.value,
             "include_pale_reach_dlc": self.options.include_pale_reach_dlc.value,
-            "require_pale_reach_ending": self.options.require_pale_reach_ending.value,
-            "enable_traps": self.options.enable_traps.value,
+            # "require_pale_reach_ending": self.options.require_pale_reach_ending.value,
+            # "enable_traps": self.options.enable_traps.value,
         }
         return slot_data
