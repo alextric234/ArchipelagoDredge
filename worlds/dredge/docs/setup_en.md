@@ -35,15 +35,16 @@ website to generate a YAML using a graphical interface.
 
 ## Joining an Archipelago Session
 ### Connecting to server
-TBD
+Once your save is loaded in DREDGE open the terminal (by pressing `~`)
+Type the command `ap connect <hostname> <port> <slotname> <password(is optional)>`
 
 ### Gameplay
 
-Dredge players send checks by completing quests, fishing new fish, purchasing from merchants, or dredging them up from
-loot spots
+Dredge players send checks by fishing new fish.
 
 ### Chat/Commands
 TBD
 
 ### In-Game Commands
-TBD
+Connect to multiworld: `ap connect <hostname> <port> <slotname> <password(is optional)>`\
+Disconnect from mulitworld: `ap disconnect`
