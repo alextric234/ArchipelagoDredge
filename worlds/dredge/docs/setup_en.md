@@ -12,7 +12,7 @@ Head on over to the Dredge Mod Manager page and follow the installation instruct
 
 You can install the Archipelago mod using `Dredge Mod Manager` in one of two ways.
 
-[Archipelago Mod Download Page](https://dredgemods.com/mods/)
+[Archipelago Mod Download Page](https://dredgemods.com/mods/archipelago_dredge/)
 
 You can use the Dredge Mod Manager website and click on the `Install via the Mod Manager` button.
 
