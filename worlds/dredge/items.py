@@ -8,6 +8,8 @@ class DredgeItemData(NamedTuple):
     classification: ItemClassification
     item_group: str
     expansion: str
+    can_catch: [] = []
+    size: int = 0
 
 item_base_id = 3459028911689314
 
@@ -246,6 +248,29 @@ item_table: Dict[str, DredgeItemData] = {
     "Jewel Encrusted Band": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
     "Shimmering Necklace": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
     "Antique Pocket Watch": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
+    "Simple Skimmer": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Shallow"], 2), #1x2
+    "Weighted Line": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Shallow"], 3), #2x2 (L)
+    "Hydraulic Rod": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Oceanic"], 4), #2x2
+    "Flexible Fishing Pole": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow"], 3), #1x3
+    "Heat Resistant Line": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Volcanic", "Shallow"], 3), #2x2 (L)
+    "Anti-Tangle Line": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Mangrove", "Coastal"], 3), #2x2 (L)
+    "Versatile Rod": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow", "Mangrove", "Volcanic"], 5), #2x3 (No Bottom Right)
+    "Harvesting Platform": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow", "Oceanic"], 6), #2x3
+    "Bottomless Lines": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal", "Hadal"], 4), #2x3 (180 L)
+    "Fathomless Winch": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal", "Hadal", "Oceanic"], 4), #2x2
+    "Sampling Device": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal"], 3), #1x3
+    "Barbed Ice Rod": DredgeItemData(ItemClassification.progression, "Rod", "PaleReach", ["Ice"], 4), #2x2
+    "Glacial Lance": DredgeItemData(ItemClassification.progression, "Rod", "PaleReach", ["Oceanic", "Ice"], 3), #1x3
+    "Infused Rod": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Coastal", "Shallow"], 3), #1x3
+    "Infused Winch": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Coastal", "Shallow", "Oceanic"], 4), #2x2
+    "Infused Hoist": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Oceanic", "Abyssal", "Hadal"], 4), #2x2
+    "Infused Coiling Rod": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Mangrove", "Coastal"], 3), #2x2 (L)
+    "Infused Fireproof Rod": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Volcanic", "Shallow"], 3), #2x2 (L)
+    "Sinew Spindle": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow"], 2), #1x2    
+    "Viscera Crane": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal", "Hadal"], 4), #2x3 (180 L)    
+    "Tendon Rod": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Oceanic", "Shallow", "Mangrove"], 5), #2x# (C)   
+    "Encrusted Talisman": DredgeItemData(ItemClassification.filler, "Rod", "Base", [], 4), #2x2
+    "Sign of Ruin": DredgeItemData(ItemClassification.progression, "Rod", "Base", [], 1), #1x1
 }
 
 def get_item_group(item_name: str) -> str:
