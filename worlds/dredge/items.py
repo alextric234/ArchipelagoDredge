@@ -246,6 +246,7 @@ item_table: Dict[str, DredgeItemData] = {
     "Jewel Encrusted Band": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
     "Shimmering Necklace": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
     "Antique Pocket Watch": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
+    "Hydraulic Rod": DredgeItemData(ItemClassification.progression, "Rod", "Base"),
 }
 
 def get_item_group(item_name: str) -> str:

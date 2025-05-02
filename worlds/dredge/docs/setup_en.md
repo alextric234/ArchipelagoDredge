@@ -40,7 +40,8 @@ Type the command `ap connect <hostname> <port> <slotname> <password(is optional)
 
 ### Gameplay
 
-Dredge players send checks by fishing new fish.
+Dredge players send checks by fishing new fish.\
+Game is completed upon turning all the relics into The Collector
 
 ### Chat/Commands
 TBD

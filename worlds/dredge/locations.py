@@ -243,11 +243,12 @@ location_table: Dict[str, DredgeLocationData] ={
     "Shattered Wreckfish": DredgeLocationData("Open Ocean", "Encyclopedia", "Base", LPT.DEFAULT),
     "Bony Wreckfish": DredgeLocationData("Open Ocean", "Encyclopedia", "Base", LPT.DEFAULT),
     "Wreckfish": DredgeLocationData("Open Ocean", "Encyclopedia", "Base", LPT.DEFAULT),
-    "Debug1": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
-    "Debug2": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
-    "Debug3": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
-    "Debug4": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
-    "Debug5": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED)
+    "Ornate Key": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
+    "Rusted Music Box": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
+    "Jewel Encrusted Band": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
+    "Shimmering Necklace": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
+    "Antique Pocket Watch": DredgeLocationData("Open Ocean", "Testing", "Base", LPT.EXCLUDED),
+    "Hydraulic Rod": DredgeLocationData("Open Ocean", "Research", "Base", LPT.EXCLUDED),
 }
 
 location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}

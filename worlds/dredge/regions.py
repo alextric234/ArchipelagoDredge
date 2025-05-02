@@ -1,6 +1,6 @@
 dredge_regions: dict[str, tuple[str]] = {
     "Menu": ("Open Ocean",),
-    "Open Ocean": ("Shop", "The Depths"),
+    "Open Ocean": ("Shop", "Insanity"),
     "Shop": tuple(),
-    "The Depths": tuple()
+    "Insanity": tuple()
 }
