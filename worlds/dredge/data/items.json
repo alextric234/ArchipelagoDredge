@@ -1,0 +1,1396 @@
+{
+    "Anchovy King": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Anchovy": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Bursting Anglerfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Anglerfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Brood Squid": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Snag Squid": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Arrow Squid": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Parhelion Jellyfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Aurora Jellyfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Savage Barracuda": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Concertina Barracuda": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Barracuda": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Voideye": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Barreleye": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Tusked Grouper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Voltaic Grouper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Black Grouper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Scouring Bass": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Black Sea Bass": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Razormouth Tuna": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Blackfin Tuna": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Decaying Blackmouth": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Blackmouth Salmon": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Cleft-mouth Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Blacktip Reef Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Blue Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Bloodskin Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Bronze Whaler": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Nightwing Catfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Catfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "All-Seeing Cod": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Fanged Cod": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Three-Headed Cod": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Cod": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Coelacanth": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sprouting Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Conger Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Consumed Grouper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Coral Grouper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Entangled Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Blue Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Cerebral Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Common Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Crown of Nadir": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Crown of Thorns": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Cortex Decorator": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Decorator Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Malignant Pincer": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Fiddler Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Mire Screecher": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Giant Mud Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Effigy Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Horseshoe Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Splintered Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Rock Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Umbral Puppet": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Spider Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Imperious Lobster": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Spiny Lobster": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sable Reacher": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Squat Lobster": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Grasping Snail": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Volcano Snail": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Infernal Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Cusk Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Withered Ray": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Devil Ray": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Bubbling Char": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Char": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Pale Grasper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Colossal Squid": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Grisly Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Goblin Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Fractalline Icefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Thawed Icefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Astral Icefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Icefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "King's Wreath": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "King Crab": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Feral Lizardfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Lizardfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Fallen Stars": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sea Stars": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sleeper Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Craterous Seer": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Stargazer": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Bulbous Toothfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Toothfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Hinged Wolffish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Wolffish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Bifurcated Gar": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Abyssal Gar": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Broken Arapaima": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Arapaima": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Boreal Shell": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Boreaspis": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Shaper's Prime": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Excoriated Fiend": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Dunkleosteus": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Sanguine Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Eagle Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Untouchable Wyrmfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Giant Dragonfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Brute's Crux": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Famine's End": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Drifting Chrysalis": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Kerygmachela": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Silvering Lancetfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Lancetfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Xeno Xeno": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Mahi Mahi": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Clutching Nautilus": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Nautilus": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Wretched Nipper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Nipponites": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Archon's Burden": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Crawling Instar": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Opabinia": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Plated Osteostracan": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Osteostracan": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Anvilfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Paddlefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Plated Barbjaw": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Sawfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Inverted Husk": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sea Cucumber": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Erupting Scorpion": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sea Scorpion": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Mimic Slug": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sea Slug": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sleeper's Torment": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "PaleReach"
+    },
+    "Vagrant Sollasina": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Sollasina": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Ivory Impaler": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Swordfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Cystic Trilobite": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Trilobite": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Stalking Spiderfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Tripod Spiderfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Axial Matron": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Tullimonstrum": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Unveiled Vetulicolia": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Vetulicolia": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Primordial Shadow": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Xiphactinus": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "IronRig"
+    },
+    "Cursed Fangtooth": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Fangtooth": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Radiant Squid": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Firefly Squid": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Twisted Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Frilled Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Clawfin Gar": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Grinning Gar": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Gar": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Rapt Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Ghost Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Ruptured Vessel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Giant Amphipod": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Medusa Octopus": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Glowing Octopus": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Goliath Tigerfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Barbed Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Host Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Grey Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Entwined Mullet": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Gleaming Mullet": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Grey Mullet": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Cyclopean Flounder": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Riddled Flounder": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Gulf Flounder": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Gulper Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Gazing Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Hammerhead Shark": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Twinned Eels": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Longfin Eel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Perished Loosejaw": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Loosejaw": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Grotesque Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Lumpy Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Many-Eyed Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Skeletal Moonfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Beaked Moonfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Moonfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Oarfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Gnashing Perch": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Oceanic Perch": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Defaced Skate": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Pale Skate": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Congealed Rattail": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Rattail": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Blood Snapper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Latching Snapper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Red Snapper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sallow Sailfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Hooked Sailfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sailfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Leeching Prawn": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Scarlet Prawn": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Ossified Searobin": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Armored Searobin": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Vortex Interloper": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sergeant Fish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Calcified Snailfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Seizing Snailfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Snailfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Serpentine Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Tattered Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Snake Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Shard Ray": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Stingray": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Gelatinous Stonefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Enthralled Stonefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Stonefish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Translucent Sturgeon": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Sturgeon": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Charred Sunfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Glaring Sunfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Ocean Sunfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Blistered Tarpon": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Tarpon": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Flayed Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Bearded Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Tiger Mackerel": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Decrepit Viperfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Collapsed Viperfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Viperfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Shattered Wreckfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Bony Wreckfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Wreckfish": {
+        "classification": "filler",
+        "item_group": "Fish",
+        "expansion": "Base"
+    },
+    "Ornate Key": {
+        "classification": "progression",
+        "item_group": "Relic",
+        "expansion": "Base"
+    },
+    "Rusted Music Box": {
+        "classification": "progression",
+        "item_group": "Relic",
+        "expansion": "Base"
+    },
+    "Jewel Encrusted Band": {
+        "classification": "progression",
+        "item_group": "Relic",
+        "expansion": "Base"
+    },
+    "Shimmering Necklace": {
+        "classification": "progression",
+        "item_group": "Relic",
+        "expansion": "Base"
+    },
+    "Antique Pocket Watch": {
+        "classification": "progression",
+        "item_group": "Relic",
+        "expansion": "Base"
+    },
+    "Simple Skimmer": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Shallow"
+        ],
+        "size": 2
+    },
+    "Weighted Line": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Shallow"
+        ],
+        "size": 3
+    },
+    "Hydraulic Rod": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Oceanic"
+        ],
+        "size": 4
+    },
+    "Flexible Fishing Pole": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Coastal",
+            "Shallow"
+        ],
+        "size": 3
+    },
+    "Heat Resistant Line": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Volcanic",
+            "Shallow"
+        ],
+        "size": 3
+    },
+    "Anti-Tangle Line": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Mangrove",
+            "Coastal"
+        ],
+        "size": 3
+    },
+    "Versatile Rod": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Coastal",
+            "Shallow",
+            "Mangrove",
+            "Volcanic"
+        ],
+        "size": 5
+    },
+    "Harvesting Platform": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Coastal",
+            "Shallow",
+            "Oceanic"
+        ],
+        "size": 6
+    },
+    "Bottomless Lines": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Abyssal",
+            "Hadal"
+        ],
+        "size": 4
+    },
+    "Fathomless Winch": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Abyssal",
+            "Hadal",
+            "Oceanic"
+        ],
+        "size": 4
+    },
+    "Sampling Device": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Abyssal"
+        ],
+        "size": 3
+    },
+    "Barbed Ice Rod": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "PaleReach",
+        "can_catch": [
+            "Ice"
+        ],
+        "size": 4
+    },
+    "Glacial Lance": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "PaleReach",
+        "can_catch": [
+            "Oceanic",
+            "Ice"
+        ],
+        "size": 3
+    },
+    "Infused Rod": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "IronRig",
+        "can_catch": [
+            "Coastal",
+            "Shallow"
+        ],
+        "size": 3
+    },
+    "Infused Winch": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "IronRig",
+        "can_catch": [
+            "Coastal",
+            "Shallow",
+            "Oceanic"
+        ],
+        "size": 4
+    },
+    "Infused Hoist": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "IronRig",
+        "can_catch": [
+            "Oceanic",
+            "Abyssal",
+            "Hadal"
+        ],
+        "size": 4
+    },
+    "Infused Coiling Rod": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "IronRig",
+        "can_catch": [
+            "Mangrove",
+            "Coastal"
+        ],
+        "size": 3
+    },
+    "Infused Fireproof Rod": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "IronRig",
+        "can_catch": [
+            "Volcanic",
+            "Shallow"
+        ],
+        "size": 3
+    },
+    "Sinew Spindle": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Coastal",
+            "Shallow"
+        ],
+        "size": 2
+    },
+    "Viscera Crane": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Abyssal",
+            "Hadal"
+        ],
+        "size": 4
+    },
+    "Tendon Rod": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "can_catch": [
+            "Oceanic",
+            "Shallow",
+            "Mangrove"
+        ],
+        "size": 5
+    },
+    "Encrusted Talisman": {
+        "classification": "filler",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "size": 4
+    },
+    "Sign of Ruin": {
+        "classification": "progression",
+        "item_group": "Rod",
+        "expansion": "Base",
+        "size": 1
+    }
+}

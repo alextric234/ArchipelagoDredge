@@ -1,283 +1,46 @@
-from itertools import groupby
-from typing import NamedTuple, Dict, Set
+import json
+from pathlib import Path
+from dataclasses import dataclass, field
+from collections import defaultdict
+from typing import Dict, Set, List
 
 from BaseClasses import ItemClassification
 
 
-class DredgeItemData(NamedTuple):
+@dataclass
+class DredgeItemData:
     classification: ItemClassification
     item_group: str
     expansion: str
-    can_catch: [] = []
+    can_catch: List[str] = field(default_factory=list)
     size: int = 0
 
 item_base_id = 3459028911689314
 
-item_table: Dict[str, DredgeItemData] = {
-    "Anchovy King": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Anchovy": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Bursting Anglerfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Anglerfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Brood Squid": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Snag Squid": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Arrow Squid": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Parhelion Jellyfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Aurora Jellyfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Savage Barracuda": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Concertina Barracuda": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Barracuda": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Voideye": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Barreleye": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Tusked Grouper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Voltaic Grouper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Black Grouper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Scouring Bass": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Black Sea Bass": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Razormouth Tuna": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Blackfin Tuna": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Decaying Blackmouth": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Blackmouth Salmon": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Cleft-mouth Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Blacktip Reef Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Blue Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Bloodskin Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Bronze Whaler": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Nightwing Catfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Catfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "All-Seeing Cod": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Fanged Cod": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Three-Headed Cod": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Cod": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Coelacanth": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sprouting Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Conger Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Consumed Grouper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Coral Grouper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Entangled Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Blue Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Cerebral Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Common Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Crown of Nadir": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Crown of Thorns": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Cortex Decorator": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Decorator Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Malignant Pincer": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Fiddler Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Mire Screecher": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Giant Mud Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Effigy Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Horseshoe Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Splintered Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Rock Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Umbral Puppet": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Spider Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Imperious Lobster": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Spiny Lobster": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sable Reacher": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Squat Lobster": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Grasping Snail": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Volcano Snail": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Infernal Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Cusk Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Withered Ray": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Devil Ray": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Bubbling Char": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Char": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Pale Grasper": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Colossal Squid": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Grisly Shark": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Goblin Shark": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Fractalline Icefish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Thawed Icefish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Astral Icefish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Icefish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "King's Wreath": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "King Crab": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Feral Lizardfish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Lizardfish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Fallen Stars": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sea Stars": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sleeper Shark": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Craterous Seer": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Stargazer": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Bulbous Toothfish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Toothfish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Hinged Wolffish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Wolffish": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Bifurcated Gar": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Abyssal Gar": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Broken Arapaima": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Arapaima": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Boreal Shell": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Boreaspis": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Shaper's Prime": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Excoriated Fiend": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Dunkleosteus": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Sanguine Shark": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Eagle Shark": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Untouchable Wyrmfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Giant Dragonfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Brute's Crux": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Famine's End": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Drifting Chrysalis": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Kerygmachela": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Silvering Lancetfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Lancetfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Xeno Xeno": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Mahi Mahi": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Clutching Nautilus": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Nautilus": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Wretched Nipper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Nipponites": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Archon's Burden": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Crawling Instar": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Opabinia": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Plated Osteostracan": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Osteostracan": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Anvilfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Paddlefish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Plated Barbjaw": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Sawfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Inverted Husk": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sea Cucumber": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Erupting Scorpion": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sea Scorpion": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Mimic Slug": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sea Slug": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sleeper's Torment": DredgeItemData(ItemClassification.filler, "Fish", "PaleReach"),
-    "Vagrant Sollasina": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Sollasina": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Ivory Impaler": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Swordfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Cystic Trilobite": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Trilobite": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Stalking Spiderfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Tripod Spiderfish": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Axial Matron": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Tullimonstrum": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Unveiled Vetulicolia": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Vetulicolia": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Primordial Shadow": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Xiphactinus": DredgeItemData(ItemClassification.filler, "Fish", "IronRig"),
-    "Cursed Fangtooth": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Fangtooth": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Radiant Squid": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Firefly Squid": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Twisted Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Frilled Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Clawfin Gar": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Grinning Gar": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Gar": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Rapt Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Ghost Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Ruptured Vessel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Giant Amphipod": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Medusa Octopus": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Glowing Octopus": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Goliath Tigerfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Barbed Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Host Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Grey Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Entwined Mullet": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Gleaming Mullet": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Grey Mullet": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Cyclopean Flounder": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Riddled Flounder": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Gulf Flounder": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Gulper Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Gazing Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Hammerhead Shark": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Twinned Eels": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Longfin Eel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Perished Loosejaw": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Loosejaw": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Grotesque Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Lumpy Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Many-Eyed Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Skeletal Moonfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Beaked Moonfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Moonfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Oarfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Gnashing Perch": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Oceanic Perch": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Defaced Skate": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Pale Skate": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Congealed Rattail": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Rattail": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Blood Snapper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Latching Snapper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Red Snapper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sallow Sailfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Hooked Sailfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sailfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Leeching Prawn": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Scarlet Prawn": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Ossified Searobin": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Armored Searobin": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Vortex Interloper": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sergeant Fish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Calcified Snailfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Seizing Snailfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Snailfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Serpentine Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Tattered Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Snake Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Shard Ray": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Stingray": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Gelatinous Stonefish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Enthralled Stonefish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Stonefish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Translucent Sturgeon": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Sturgeon": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Charred Sunfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Glaring Sunfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Ocean Sunfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Blistered Tarpon": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Tarpon": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Flayed Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Bearded Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Tiger Mackerel": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Decrepit Viperfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Collapsed Viperfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Viperfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Shattered Wreckfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Bony Wreckfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Wreckfish": DredgeItemData(ItemClassification.filler, "Fish", "Base"),
-    "Ornate Key": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
-    "Rusted Music Box": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
-    "Jewel Encrusted Band": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
-    "Shimmering Necklace": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
-    "Antique Pocket Watch": DredgeItemData(ItemClassification.progression, "Relic", "Base"),
-    "Simple Skimmer": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Shallow"], 2), #1x2
-    "Weighted Line": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Shallow"], 3), #2x2 (L)
-    "Hydraulic Rod": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Oceanic"], 4), #2x2
-    "Flexible Fishing Pole": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow"], 3), #1x3
-    "Heat Resistant Line": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Volcanic", "Shallow"], 3), #2x2 (L)
-    "Anti-Tangle Line": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Mangrove", "Coastal"], 3), #2x2 (L)
-    "Versatile Rod": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow", "Mangrove", "Volcanic"], 5), #2x3 (No Bottom Right)
-    "Harvesting Platform": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow", "Oceanic"], 6), #2x3
-    "Bottomless Lines": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal", "Hadal"], 4), #2x3 (180 L)
-    "Fathomless Winch": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal", "Hadal", "Oceanic"], 4), #2x2
-    "Sampling Device": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal"], 3), #1x3
-    "Barbed Ice Rod": DredgeItemData(ItemClassification.progression, "Rod", "PaleReach", ["Ice"], 4), #2x2
-    "Glacial Lance": DredgeItemData(ItemClassification.progression, "Rod", "PaleReach", ["Oceanic", "Ice"], 3), #1x3
-    "Infused Rod": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Coastal", "Shallow"], 3), #1x3
-    "Infused Winch": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Coastal", "Shallow", "Oceanic"], 4), #2x2
-    "Infused Hoist": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Oceanic", "Abyssal", "Hadal"], 4), #2x2
-    "Infused Coiling Rod": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Mangrove", "Coastal"], 3), #2x2 (L)
-    "Infused Fireproof Rod": DredgeItemData(ItemClassification.progression, "Rod", "IronRig", ["Volcanic", "Shallow"], 3), #2x2 (L)
-    "Sinew Spindle": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Coastal", "Shallow"], 2), #1x2    
-    "Viscera Crane": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Abyssal", "Hadal"], 4), #2x3 (180 L)    
-    "Tendon Rod": DredgeItemData(ItemClassification.progression, "Rod", "Base", ["Oceanic", "Shallow", "Mangrove"], 5), #2x# (C)   
-    "Encrusted Talisman": DredgeItemData(ItemClassification.filler, "Rod", "Base", [], 4), #2x2
-    "Sign of Ruin": DredgeItemData(ItemClassification.progression, "Rod", "Base", [], 1), #1x1
-}
+def load_item_table(json_path: str) -> Dict[str, DredgeItemData]:
+    raw = json.loads(Path(json_path).read_text())
+    return {
+        name: DredgeItemData(
+            classification=ItemClassification[entry["classification"]],
+            item_group=entry["item_group"],
+            expansion=entry["expansion"],
+            can_catch=entry.get("can_catch", []),
+            size=entry.get("size", 0),
+        )
+        for name, entry in raw.items()
+    }
+
+item_table: load_item_table("data/item_table_data.json")
 
 def get_item_group(item_name: str) -> str:
     return item_table[item_name].item_group
 
-item_name_to_id: Dict[str, int] = {name: item_base_id + index for index, name in enumerate(item_table)}
-
-item_name_groups: Dict[str, Set[str]] = {
-    group: set(item_names) for group, item_names in groupby(sorted(item_table, key=get_item_group), get_item_group) if group != ""
+item_name_to_id = {
+    name: item_base_id + i
+    for i, name in enumerate(item_table)
 }
+
+item_name_groups = defaultdict(set)
+for name, data in item_table.items():
+    if data.item_group:
+        item_name_groups[data.item_group].add(name)
