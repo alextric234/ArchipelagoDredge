@@ -1,8 +1,9 @@
 import json
+import pkgutil
 from pathlib import Path
 from dataclasses import dataclass, field
 from collections import defaultdict
-from typing import Dict, Set, List
+from typing import Dict, List
 
 from BaseClasses import ItemClassification
 
@@ -17,20 +18,20 @@ class DredgeItemData:
 
 item_base_id = 3459028911689314
 
-def load_item_table(json_path: str) -> Dict[str, DredgeItemData]:
-    raw = json.loads(Path(json_path).read_text())
-    return {
-        name: DredgeItemData(
-            classification=ItemClassification[entry["classification"]],
-            item_group=entry["item_group"],
-            expansion=entry["expansion"],
-            can_catch=entry.get("can_catch", []),
-            size=entry.get("size", 0),
-        )
-        for name, entry in raw.items()
-    }
+def load_data_file(*args) -> dict:
+    fname = "/".join(["data", *args])
+    return json.loads(pkgutil.get_data(__name__, fname).decode())
 
-item_table: load_item_table("data/item_table_data.json")
+item_table = {
+    name: DredgeItemData(
+        classification=ItemClassification[entry["classification"]],
+        item_group=entry["item_group"],
+        expansion=entry["expansion"],
+        can_catch=entry.get("can_catch", []),
+        size=entry.get("size", 0),
+    )
+    for name, entry in load_data_file("items.json").items()
+}
 
 def get_item_group(item_name: str) -> str:
     return item_table[item_name].item_group
