@@ -67,4 +67,5 @@ class DredgeOptions(PerGameCommonOptions):
     # require_iron_rig_ending: RequireIronRigEnding
     include_pale_reach_dlc: IncludePaleReachDLC
     # require_pale_reach_ending: RequirePaleReachEnding
+    require_engines: RequireEngines
     # enable_traps: EnableTraps
