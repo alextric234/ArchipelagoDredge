@@ -30,4 +30,4 @@ def has_relics(state: CollectionState, player: int) -> bool:
     and state.has("Rusted Music Box", player) \
     and state.has("Jewel Encrusted Band", player) \
     and state.has("Shimmering Necklace", player) \
-    and state.has("Antique Pocket Watch", player) \
+    and state.has("Antique Pocket Watch", player) 
