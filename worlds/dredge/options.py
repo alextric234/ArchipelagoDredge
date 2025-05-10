@@ -46,7 +46,7 @@ class IncludePaleReachDLC(Toggle):
 #     internal_name = "require_pale_reach_ending"
 #     display_name = "Require Pale Reach Ending"
 
-class RequireEngines(Toggle)
+class RequireEngines(Toggle):
     """
     Set logic to require engine upgrade to reach further archipelagos
     """
