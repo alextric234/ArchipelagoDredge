@@ -5,7 +5,7 @@ from worlds.AutoWorld import World, WebWorld
 from .items import item_name_to_id, item_name_groups, item_table
 from .locations import location_name_groups, location_table, location_name_to_id
 from .options import DredgeOptions
-#from .rules import set_location_rule
+# from .rules import set_location_rule
 from .regions import dredge_regions
 
 class DredgeWeb(WebWorld):
@@ -77,7 +77,7 @@ class DredgeWorld(World):
                 continue
             region = self.get_region(location_table[location_name].region)
             location = DredgeLocation(self.player, location_name, location_id, region)
-            #set_location_rules(location)
+            # set_location_rules(location)
             region.locations.append(location)
 
             victory_region = self.get_region("Insanity")

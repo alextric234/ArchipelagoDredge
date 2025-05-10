@@ -1,9 +1,8 @@
 import json
 import pkgutil
-from pathlib import Path
-from dataclasses import dataclass, field
 from collections import defaultdict
-from typing import Dict, List
+from dataclasses import dataclass, field
+from typing import List
 
 from BaseClasses import ItemClassification
 

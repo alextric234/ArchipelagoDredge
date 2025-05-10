@@ -1,7 +1,6 @@
 from typing import Dict, Set, NamedTuple
 
 
-
 class DredgeLocationData(NamedTuple):
     region: str
     location_group: str
@@ -9,10 +8,9 @@ class DredgeLocationData(NamedTuple):
     requirement: str = ""
 
 
-
 location_base_id = 3459028911689314
 
-location_table: Dict[str, DredgeLocationData] ={
+location_table: Dict[str, DredgeLocationData] = {
     "Fish - Abyssal Gar": DredgeLocationData("Gale Cliffs", "Encyclopedia", "IronRig", "Abyssal"),
     "Fish - All-Seeing Cod": DredgeLocationData("The Marrows", "Encyclopedia", "Base", "Coastal"),
     "Fish - Anchovy King": DredgeLocationData("Open Ocean", "Encyclopedia", "Base", "Coastal"),
@@ -265,10 +263,10 @@ location_table: Dict[str, DredgeLocationData] ={
     "Shop - Infused Hoist": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
     "Shop - Infused Coiling Rod": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
     "Shop - Infused Fireproof Rod": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
-    "World - Sinew Spindle": DredgeLocationData("Open Ocean", "World", "Base"),  
-    "World - Viscera Crane": DredgeLocationData("Open Ocean", "World", "Base"),    
-    "World - Tendon Rod": DredgeLocationData("Open Ocean", "World", "Base"),  
-    "World - Encrusted Talisman": DredgeLocationData("Open Ocean", "World", "Base")
+    "World - Sinew Spindle": DredgeLocationData("Open Ocean", "World", "Base"),
+    "World - Viscera Crane": DredgeLocationData("Open Ocean", "World", "Base"),
+    "World - Tendon Rod": DredgeLocationData("Open Ocean", "World", "Base"),
+    "World - Encrusted Talisman": DredgeLocationData("Open Ocean", "World", "Base"),
 }
 
 location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}
