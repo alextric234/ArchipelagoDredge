@@ -1,11 +1,14 @@
+import logging
+logger = logging.getLogger(__name__)
+
 from typing import List, Dict, Any
 
 from BaseClasses import Tutorial, Location, Item, ItemClassification, Region
 from worlds.AutoWorld import World, WebWorld
 from .items import item_name_to_id, item_name_groups, item_table
-from .locations import location_name_groups, location_table, location_name_to_id
+from .locations import location_name_groups, location_table, location_name_to_id, get_player_location_table
 from .options import DredgeOptions
-from .rules import set_location_rule
+from .rules import set_location_rules, set_region_rules
 from .regions import dredge_regions
 
 class DredgeWeb(WebWorld):
@@ -41,8 +44,10 @@ class DredgeWorld(World):
     location_name_to_id = location_name_to_id
     location_name_groups = location_name_groups
 
+    player_location_table: Dict[str, int]
+
     def generate_early(self) -> None:
-        self.player_location_table = location_name_to_id.copy()
+        self.player_location_table = get_player_location_table(self.options)
 
     def create_item(self, name: str, classification: ItemClassification = None) -> DredgeItem:
         item_data = item_table[name]
@@ -50,6 +55,7 @@ class DredgeWorld(World):
 
     def create_items(self) -> None:
         dredge_items: List[DredgeItem] = []
+        self.multiworld.push_precollected(self.create_item("Basic Fishing Pole"))
 
         for item, data in item_table.items():
             if data.expansion == "Base":
@@ -71,13 +77,8 @@ class DredgeWorld(World):
             region.add_exits(exits)
 
         for location_name, location_id in self.player_location_table.items():
-            if location_table[location_name].expansion == "PaleReach" and not self.options.include_pale_reach_dlc:
-                continue
-            if location_table[location_name].expansion == "IronRig" and not self.options.include_iron_rig_dlc:
-                continue
             region = self.get_region(location_table[location_name].region)
             location = DredgeLocation(self.player, location_name, location_id, region)
-            set_location_rule(location_name, self.world)
             region.locations.append(location)
 
             victory_region = self.get_region("Insanity")
@@ -87,6 +88,10 @@ class DredgeWorld(World):
                                                           None, self.player))
             self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
             victory_region.locations.append(victory_location)
+
+    def set_rules(self) -> None:
+        set_region_rules(self)
+        set_location_rules(self)
 
     def fill_slot_data(self) -> Dict[str, Any]:
         slot_data: Dict[str, Any] = {

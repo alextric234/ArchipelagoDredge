@@ -1,15 +1,18 @@
+
 from typing import TYPE_CHECKING
 
 from BaseClasses import CollectionState
 from worlds.generic.Rules import set_rule
-from .locations import location_table
+from .locations import location_table, DredgeLocationData
+from .items import item_table
 
 if TYPE_CHECKING:
-    from . import DredgeWorld, item_table
+    from . import DredgeWorld
 
 
 def set_region_rules(world: "DredgeWorld") -> None:
     player = world.player
+
     world.get_entrance("Open Ocean -> Gale Cliffs").access_rule = \
         lambda state: has_engines(1, state, player)
     world.get_entrance("Open Ocean -> Stellar Basin").access_rule = \
@@ -26,18 +29,26 @@ def set_region_rules(world: "DredgeWorld") -> None:
         lambda state: has_relics(state, player)
 
 
-def set_location_rule(location_name: str, world: "DredgeWorld") -> None:
+def set_location_rules(world: "DredgeWorld") -> None:
     player = world.player
-    print(f"Location name: {location_name}, keys: {list(location_table.keys())}")
-    location = location_table[location_name]
-    if location.requirement == "":
-        return
-    set_rule(world.get_location(location_name),
-             lambda state: can_catch(location.requirement, location.expansion == "IronRig", state, player))
+    for location_name, location_id in world.player_location_table.items():
+        location = location_table[location_name]
+
+        #set_rule(world.get_location(location_name), lambda state: True)
+
+        if location.requirement == "":
+            set_rule(world.get_location(location_name), lambda state: True)
+        else:
+            set_rule(
+                world.get_location(location_name),
+                lambda state, requirement=location.requirement, is_iron_rig=(location.expansion == "IronRig"):
+                    can_catch(requirement, is_iron_rig, state, player)
+            )
 
 
 def has_engines(number: int, state: CollectionState, player: int) -> bool:
-    return state.has("Progressive Engine", player, number)
+    ##return state.has("Progressive Engine", player, number)
+    return True
 
 
 def has_relics(state: CollectionState, player: int) -> bool:
@@ -50,8 +61,7 @@ def has_relics(state: CollectionState, player: int) -> bool:
 
 def can_catch(requirement: str, is_iron_rig: bool, state: CollectionState, player: int) -> bool:
     return state.has_any(get_rods_by_requirement(requirement), player) or (
-            is_iron_rig and state.has_any(get_rods_by_requirement(requirement, is_iron_rig), player)
-    )
+            is_iron_rig and state.has_any(get_rods_by_requirement(requirement, is_iron_rig), player))
 
 
 def get_rods_by_requirement(requirement: str, is_iron_rig: bool = False) -> list:

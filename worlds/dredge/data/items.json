@@ -1395,11 +1395,5 @@
     "item_group": "Rod",
     "expansion": "Base",
     "size": 4
-  },
-  "Sign of Ruin": {
-    "classification": "progression",
-    "item_group": "Rod",
-    "expansion": "Base",
-    "size": 1
   }
 }

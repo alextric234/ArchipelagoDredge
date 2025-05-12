@@ -1,5 +1,7 @@
 from typing import Dict, Set, NamedTuple
 
+from .options import DredgeOptions
+
 
 class DredgeLocationData(NamedTuple):
     region: str
@@ -267,9 +269,29 @@ location_table: Dict[str, DredgeLocationData] = {
     "World - Viscera Crane": DredgeLocationData("Open Ocean", "World", "Base"),
     "World - Tendon Rod": DredgeLocationData("Open Ocean", "World", "Base"),
     "World - Encrusted Talisman": DredgeLocationData("Open Ocean", "World", "Base"),
+    "World - Basic Fishing Pole": DredgeLocationData("Open Ocean", "World", "Base"),
 }
 
 location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}
+
+def get_player_location_table(options: DredgeOptions) -> Dict[str, int]:
+     all_locations: Dict[str, int] = {}
+     base_locations = {name: location_base_id + index for index, (name, location)
+                      in enumerate(location_table.items()) if location.expansion == "Base"}
+     iron_rig_locations = {name: location_base_id + index for index, (name, location)
+                      in enumerate(location_table.items()) if location.expansion == "IronRig"}
+     pale_reach_locations = {name: location_base_id + index for index, (name, location)
+                      in enumerate(location_table.items()) if location.expansion == "PaleReach"}
+
+     all_locations.update(base_locations)
+
+     if options.include_iron_rig_dlc:
+         all_locations.update(iron_rig_locations)
+     if options.include_pale_reach_dlc:
+         all_locations.update(pale_reach_locations)
+
+
+     return all_locations
 
 location_name_groups: Dict[str, Set[str]] = {}
 for loc_name, loc_data in location_table.items():
