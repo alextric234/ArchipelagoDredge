@@ -1481,5 +1481,84 @@
       "Crab"
     ],
     "size": 4
+  },
+  "Basic Trawl Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "Base",
+    "can_catch": [
+      "Coastal"
+    ],
+    "size": 4
+  },
+  "Improved Trawl Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "Base",
+    "can_catch": [
+      "Coastal"
+    ],
+    "size": 4
+  },
+  "Silt Filtering Trawl Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "Base",
+    "can_catch": [
+      "Shallow",
+      "Mangrove"
+    ],
+    "size": 4
+  },
+  "Tempered Mesh Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "Base",
+    "can_catch": [
+      "Coastal",
+      "Volcanic"
+    ],
+    "size": 4
+  },
+  "Large Trawl Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "Base",
+    "can_catch": [
+      "Coastal",
+      "Shallow"
+    ],
+    "size": 6
+  },
+  "Heavy Duty Trawl Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "Base",
+    "can_catch": [
+      "Coastal",
+      "Oceanic"
+    ],
+    "size": 6
+  },
+  "Brittle Trawl Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "PaleReach",
+    "can_catch": [
+      "Ice"
+    ],
+    "size": 4
+  },
+  "Radiant Trawl Net": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "Base",
+    "can_catch": [
+      "Ice",
+      "Coastal",
+      "Oceanic",
+      "Shallow"
+    ],
+    "size": 4
   }
 }

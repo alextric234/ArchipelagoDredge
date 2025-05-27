@@ -6,6 +6,7 @@ from BaseClasses import CollectionState, Location
 from worlds.generic.Rules import set_rule
 from .locations import location_table, DredgeLocationData
 from .items import item_table
+from .options import LogicalNets
 
 if TYPE_CHECKING:
     from . import DredgeWorld
@@ -78,20 +79,38 @@ def can_research(state: CollectionState, requirement: str, player: int) -> bool:
 def set_encyclopedia_rule(world_location: Location, location: DredgeLocationData, player: int) -> None:
     set_rule(
         world_location,
-        lambda state, requirement=location.requirement, is_iron_rig=(location.expansion == "IronRig"): can_catch(
-            requirement, is_iron_rig, state, player
-        ),
+        lambda state, is_iron_rig=(location.expansion == "IronRig"): can_catch(location, is_iron_rig, state, player),
     )
 
-def can_catch(requirement: str, is_iron_rig: bool, state: CollectionState, player: int) -> bool:
-    if requirement == "Crab":
-        return state.has_any(get_harvest_tool_by_requirement(requirement), player)
+def can_catch(location: DredgeLocationData, is_iron_rig: bool, state: CollectionState, player: int) -> bool:
+
+
+    if location.requirement == "Crab":
+        return state.has_any(get_harvest_tool_by_requirement(location.requirement, "Crab Pot"), player)
     else:
-        return state.has_any(get_harvest_tool_by_requirement(requirement), player) or (
-            is_iron_rig and state.has_any(get_harvest_tool_by_requirement(requirement, is_iron_rig), player))
+        return can_catch_fish(is_iron_rig, location, player, state)
 
 
-def get_harvest_tool_by_requirement(requirement: str, is_iron_rig: bool = False) -> list:
+def can_catch_fish(is_iron_rig, location, player, state) -> bool:
+    has_rod = False
+    has_net = False
+    if location.can_catch_rod:
+        has_rod = state.has_any(get_harvest_tool_by_requirement(location.requirement, "Rod"), player) or (
+                is_iron_rig and state.has_any(get_harvest_tool_by_requirement(location.requirement, "Rod", is_iron_rig),
+                                              player))
+    if location.can_catch_net:
+        if location.can_catch_rod and not LogicalNets:
+            has_net = False
+        else:
+            has_net = state.has_any(get_harvest_tool_by_requirement(location.requirement, "Net"), player) or (
+                    is_iron_rig and state.has_any(
+                get_harvest_tool_by_requirement(location.requirement, "Net", is_iron_rig), player))
+    return has_rod or has_net
+
+
+def get_harvest_tool_by_requirement(requirement: str, tool_type: str, is_iron_rig: bool = False) -> list:
     return [name for name, item in item_table.items()
-            if requirement in item.can_catch and (not is_iron_rig or item.expansion == "IronRig")
+            if requirement in item.can_catch
+            and item.item_group == tool_type
+            and (not is_iron_rig or item.expansion == "IronRig")
             ]

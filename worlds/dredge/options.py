@@ -53,6 +53,19 @@ class RequireEngines(Toggle):
     internal_name = "require_engines"
     display_name = "Require Engines"
 
+class LogicalNets(Toggle):
+    """
+    If enabled, logic may expect players to use nets as the only method of catching fish that are also catchable with a
+    rod. This includes passive net catches in specific regions.
+
+    If disabled, logic will only consider rod-based access for such fish, ensuring checks are reachable through active
+    fishing.
+
+    Recommended: disabled for players who prefer reliable, targeted fishing.
+    """
+    internal_name = "logical_nets"
+    display_name = "Logical Nets"
+
 # class EnableTraps(Toggle):
 #     """
 #     Allow traps to be added to the pool to replace filler items
@@ -68,4 +81,5 @@ class DredgeOptions(PerGameCommonOptions):
     include_pale_reach_dlc: IncludePaleReachDLC
     # require_pale_reach_ending: RequirePaleReachEnding
     require_engines: RequireEngines
+    logical_nets: LogicalNets
     # enable_traps: EnableTraps
