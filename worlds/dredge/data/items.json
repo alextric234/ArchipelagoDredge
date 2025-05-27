@@ -1144,6 +1144,11 @@
     "item_group": "Fish",
     "expansion": "Base"
   },
+  "Research Part": {
+    "classification": "progression_skip_balancing",
+    "item_group": "Research",
+    "expansion": "Base"
+  },
   "Ornate Key": {
     "classification": "progression",
     "item_group": "Relic",

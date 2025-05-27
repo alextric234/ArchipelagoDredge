@@ -1,4 +1,6 @@
 import logging
+import random
+
 logger = logging.getLogger(__name__)
 
 from typing import List, Dict, Any
@@ -57,13 +59,40 @@ class DredgeWorld(World):
         dredge_items: List[DredgeItem] = []
         self.multiworld.push_precollected(self.create_item("Basic Fishing Pole"))
 
+        progression_classes = {ItemClassification.progression, ItemClassification.progression_skip_balancing}
         for item, data in item_table.items():
+            if data.classification not in progression_classes:
+                continue
+
             if data.expansion == "Base":
                 dredge_items.append(self.create_item(item, data.classification))
-            if self.options.include_pale_reach_dlc and data.expansion == "PaleReach":
+            elif self.options.include_pale_reach_dlc and data.expansion == "PaleReach":
                 dredge_items.append(self.create_item(item, data.classification))
-            if self.options.include_iron_rig_dlc and data.expansion == "IronRig":
+            elif self.options.include_iron_rig_dlc and data.expansion == "IronRig":
                 dredge_items.append(self.create_item(item, data.classification))
+
+        for _ in range(30):
+            dredge_items.append(self.create_item("Research Part", ItemClassification.progression))
+
+        total_locations = len(self.player_location_table)
+        current_items = len(dredge_items)
+        filler_needed = total_locations - current_items
+
+        filler_pool = [
+            item
+            for item, data in item_table.items()
+            if data.classification == ItemClassification.filler
+            and (
+                data.expansion == "Base"
+                or (self.options.include_pale_reach_dlc and data.expansion == "PaleReach")
+                or (self.options.include_iron_rig_dlc and data.expansion == "IronRig")
+            )
+        ]
+
+        random_fillers = random.choices(filler_pool, k=filler_needed)
+
+        for item_name in random_fillers:
+            dredge_items.append(self.create_item(item_name, ItemClassification.filler))
 
         self.multiworld.itempool += dredge_items
 
