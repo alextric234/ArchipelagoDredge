@@ -129,6 +129,7 @@ class DredgeWorld(World):
             # "require_iron_rig_ending": self.options.require_iron_rig_ending.value,
             "include_pale_reach_dlc": self.options.include_pale_reach_dlc.value,
             # "require_pale_reach_ending": self.options.require_pale_reach_ending.value,
+            "require_engines": self.options.require_engines,
             # "enable_traps": self.options.enable_traps.value,
         }
         return slot_data

@@ -1,6 +1,5 @@
 from typing import Dict, Set, NamedTuple
 
-from BaseClasses import LocationProgressType
 from .options import DredgeOptions
 
 
@@ -9,7 +8,6 @@ class DredgeLocationData(NamedTuple):
     location_group: str
     expansion: str
     requirement: str = ""
-    progress_type: LocationProgressType = LocationProgressType.DEFAULT
 
 
 location_base_id = 3459028911689314
@@ -249,34 +247,24 @@ location_table: Dict[str, DredgeLocationData] = {
     "Relic - Jewel Encrusted Band": DredgeLocationData("Open Ocean", "Relic", "Base"),
     "Relic - Shimmering Necklace": DredgeLocationData("Open Ocean", "Relic", "Base"),
     "Relic - Antique Pocket Watch": DredgeLocationData("Open Ocean", "Relic", "Base"),
-    "Shop - Simple Skimmer": DredgeLocationData("Open Ocean", "Shop", "Base"),
-    "Shop - Weighted Line": DredgeLocationData("Open Ocean", "Shop", "Base"),
     "Research - Hydraulic Rod": DredgeLocationData("Open Ocean", "Research", "Base"),
     "Research - Flexible Fishing Pole": DredgeLocationData("Open Ocean", "Research", "Base"),
-    "Research - Heat Resistant Line": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Anti-Tangle Line": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Versatile Rod": DredgeLocationData("Open Ocean", "Research", "Base", "Mid"),
-    "Research - Harvesting Platform": DredgeLocationData("Open Ocean", "Research", "Base", "All"),
-    "Research - Bottomless Lines": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Fathomless Winch": DredgeLocationData("Open Ocean", "Research", "Base", "Mid"),
-    "Research - Improved Outboard Engine": DredgeLocationData("Open Ocean", "Research", "Base"),
-    "Research - Jet Drive Engine": DredgeLocationData("Open Ocean", "Research", "Base", "Mid"),
-    "Research - Refined Outboard Engine": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Twin Prop Engine": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Twin Jet Drive Engine": DredgeLocationData("Open Ocean", "Research", "Base", "Late"),
-    "Research - Engine Stack": DredgeLocationData("Open Ocean", "Research", "Base", "All"),
+    "Research - Heat Resistant Line": DredgeLocationData("Open Ocean", "Research", "Base"),
+    "Research - Anti-Tangle Line": DredgeLocationData("Open Ocean", "Research", "Base"),
+    "Research - Versatile Rod": DredgeLocationData("Open Ocean", "Research", "Base"),
+    "Research - Harvesting Platform": DredgeLocationData("Open Ocean", "Research", "Base"),
+    "Research - Bottomless Lines": DredgeLocationData("Open Ocean", "Research", "Base"),
+    "Research - Fathomless Winch": DredgeLocationData("Open Ocean", "Research", "Base"),
     "Research - Efficient Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base"),
     "Research - Hardy Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base"),
     "Research - Large Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base"),
-    "Research - Complex Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Massive Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Reinforced Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base", "Late"),
-    "Research - Improved Trawl Net": DredgeLocationData("Open Ocean", "Research", "Base"),
-    "Research - Silt Filtering Trawl Net": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Large Trawl Net": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Tempered Mesh Net": DredgeLocationData("Open Ocean", "Research", "Base", "Early"),
-    "Research - Heavy Duty Trawl Net": DredgeLocationData("Open Ocean", "Research", "Base", "Mid"),
+    "Research - Complex Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base"),
+    "Research - Massive Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base"),
+    "Research - Reinforced Crab Pot": DredgeLocationData("Open Ocean", "Research", "Base"),
     "Quest - Sampling Device": DredgeLocationData("Open Ocean", "Quest", "Base"),
+    "Shop - Basic Crab Pot": DredgeLocationData("Open Ocean", "Shop", "Base"),
+    "Shop - Simple Skimmer": DredgeLocationData("Open Ocean", "Shop", "Base"),
+    "Shop - Weighted Line": DredgeLocationData("Open Ocean", "Shop", "Base"),
     "Shop - Barbed Ice Rod": DredgeLocationData("Open Ocean", "Shop", "PaleReach"),
     "Shop - Glacial Lance": DredgeLocationData("Open Ocean", "Shop", "PaleReach"),
     "Shop - Infused Rod": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
@@ -284,11 +272,13 @@ location_table: Dict[str, DredgeLocationData] = {
     "Shop - Infused Hoist": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
     "Shop - Infused Coiling Rod": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
     "Shop - Infused Fireproof Rod": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
+    "Shop - Flotsam Trap": DredgeLocationData("Open Ocean", "Shop", "IronRig"),
     "World - Sinew Spindle": DredgeLocationData("Open Ocean", "World", "Base"),
     "World - Viscera Crane": DredgeLocationData("Open Ocean", "World", "Base"),
     "World - Tendon Rod": DredgeLocationData("Open Ocean", "World", "Base"),
     "World - Encrusted Talisman": DredgeLocationData("Open Ocean", "World", "Base"),
     "World - Basic Fishing Pole": DredgeLocationData("Open Ocean", "World", "Base"),
+    "World - Mouth of the Deep": DredgeLocationData("Open Ocean", "World", "Base"),
 }
 
 location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}

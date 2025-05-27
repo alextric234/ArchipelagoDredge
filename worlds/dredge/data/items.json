@@ -1400,5 +1400,86 @@
     "item_group": "Rod",
     "expansion": "Base",
     "size": 4
+  },
+  "Basic Crab Pot": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 2
+  },
+  "Efficient Crab Pot": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 2
+  },
+  "Hardy Crab Pot": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 3
+  },
+  "Large Crab Pot": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 3
+  },
+  "Complex Crab Pot": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 4
+  },
+  "Massive Crab Pot": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 4
+  },
+  "Reinforced Crab Pot": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 4
+  },
+  "Mouth of the Deep": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "Base",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 4
+  },
+  "Flotsam Trap": {
+    "classification": "progression",
+    "item_group": "Crab Pot",
+    "expansion": "IronRig",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 4
   }
 }
