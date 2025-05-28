@@ -1174,7 +1174,7 @@
     "item_group": "Relic",
     "expansion": "Base"
   },
-  "Basic Fishing Pole": {
+  "Starting Gear - Basic Fishing Pole": {
     "classification": "progression",
     "item_group": "Rod",
     "expansion": "Base",
@@ -1561,7 +1561,7 @@
     ],
     "size": 4
   },
-  "Peculiar Engine": {
+  "Starting Gear - Peculiar Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",

@@ -54,8 +54,8 @@ class DredgeWorld(World):
 
     def create_items(self) -> None:
         dredge_items: List[DredgeItem] = []
-        self.multiworld.push_precollected(self.create_item("Basic Fishing Pole"))
-        self.multiworld.push_precollected(self.create_item("Peculiar Engine"))
+        self.multiworld.push_precollected(self.create_item("Starting Gear - Basic Fishing Pole"))
+        self.multiworld.push_precollected(self.create_item("Starting Gear - Peculiar Engine"))
 
         progression_classes = {ItemClassification.progression, ItemClassification.progression_skip_balancing}
         for item, data in item_table.items():
