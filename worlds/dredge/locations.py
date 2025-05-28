@@ -312,10 +312,11 @@ def get_player_location_table(options: DredgeOptions) -> Dict[str, int]:
         all_locations.update(pale_reach_locations)
 
     # removing these checks while waiting for fix from mod
+    excluded_groups = {"Shop", "Quest", "World", "Relic"}
     all_locations = {
         name: id
         for name, id in all_locations.items()
-        if location_table[name].location_group != "Shop"
+        if location_table[name].location_group not in excluded_groups
     }
 
     return all_locations
