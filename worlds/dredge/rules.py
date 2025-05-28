@@ -2,8 +2,8 @@ from typing import TYPE_CHECKING
 
 from BaseClasses import CollectionState, Location
 from worlds.generic.Rules import set_rule
-from .locations import location_table, DredgeLocationData
 from .items import item_table
+from .locations import location_table, DredgeLocationData
 from .options import DredgeOptions
 
 if TYPE_CHECKING:

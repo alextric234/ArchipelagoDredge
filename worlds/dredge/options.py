@@ -27,7 +27,7 @@ class IncludeIronRigDLC(Toggle):
 
 # class RequireIronRigEnding(Toggle):
 #     """
-#     Require Iron Rig ending to have been achieved before game can be completed 
+#     Require Iron Rig ending to have been achieved before game can be completed
 #     """
 #     internal_name = "require_iron_rig_ending"
 #     display_name = "Require Iron Rig Ending"
@@ -72,6 +72,7 @@ class LogicalNets(Toggle):
 #     """
 #     internal_name = "enable_traps"
 #     display_name = "Enable Traps"
+
 
 @dataclass
 class DredgeOptions(PerGameCommonOptions):

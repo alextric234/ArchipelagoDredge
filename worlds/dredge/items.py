@@ -16,11 +16,14 @@ class DredgeItemData:
     size: int = 0
     item_value: int = 0
 
+
 item_base_id = 3459028911689314
+
 
 def load_data_file(*args) -> dict:
     fname = "/".join(["data", *args])
     return json.loads(pkgutil.get_data(__name__, fname).decode())
+
 
 item_table = {
     name: DredgeItemData(
@@ -34,13 +37,12 @@ item_table = {
     for name, entry in load_data_file("items.json").items()
 }
 
+
 def get_item_group(item_name: str) -> str:
     return item_table[item_name].item_group
 
-item_name_to_id = {
-    name: item_base_id + i
-    for i, name in enumerate(item_table)
-}
+
+item_name_to_id = {name: item_base_id + i for i, name in enumerate(item_table)}
 
 item_name_groups = defaultdict(set)
 for name, data in item_table.items():
