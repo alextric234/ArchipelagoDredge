@@ -1,6 +1,6 @@
 from typing import Dict, Set, NamedTuple
 
-from BaseClasses import LocationProgressType
+from BaseClasses import LocationProgressType as LPT
 from .options import DredgeOptions
 
 
@@ -11,7 +11,7 @@ class DredgeLocationData(NamedTuple):
     requirement: str = ""
     can_catch_rod: bool = True
     can_catch_net: bool = False
-    progress_type: LocationProgressType = LocationProgressType.DEFAULT
+    progress_type: LPT = LPT.DEFAULT
 
 
 location_base_id = 3459028911689314
@@ -296,23 +296,29 @@ location_table: Dict[str, DredgeLocationData] = {
 location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}
 
 def get_player_location_table(options: DredgeOptions) -> Dict[str, int]:
-     all_locations: Dict[str, int] = {}
-     base_locations = {name: location_base_id + index for index, (name, location)
+    all_locations: Dict[str, int] = {}
+    base_locations = {name: location_base_id + index for index, (name, location)
                       in enumerate(location_table.items()) if location.expansion == "Base"}
-     iron_rig_locations = {name: location_base_id + index for index, (name, location)
+    iron_rig_locations = {name: location_base_id + index for index, (name, location)
                       in enumerate(location_table.items()) if location.expansion == "IronRig"}
-     pale_reach_locations = {name: location_base_id + index for index, (name, location)
+    pale_reach_locations = {name: location_base_id + index for index, (name, location)
                       in enumerate(location_table.items()) if location.expansion == "PaleReach"}
 
-     all_locations.update(base_locations)
+    all_locations.update(base_locations)
 
-     if options.include_iron_rig_dlc:
-         all_locations.update(iron_rig_locations)
-     if options.include_pale_reach_dlc:
-         all_locations.update(pale_reach_locations)
+    if options.include_iron_rig_dlc:
+        all_locations.update(iron_rig_locations)
+    if options.include_pale_reach_dlc:
+        all_locations.update(pale_reach_locations)
 
+    # removing these checks while waiting for fix from mod
+    all_locations = {
+        name: id
+        for name, id in all_locations.items()
+        if location_table[name].location_group != "Shop" and location_table[name].requirement != "Crab"
+    }
 
-     return all_locations
+    return all_locations
 
 location_name_groups: Dict[str, Set[str]] = {}
 for loc_name, loc_data in location_table.items():
