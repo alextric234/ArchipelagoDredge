@@ -107,8 +107,14 @@ def can_catch_fish(is_iron_rig: bool, location: DredgeLocationData, player: int,
 
 
 def get_harvest_tool_by_requirement(requirement: str, tool_type: str, is_iron_rig: bool = False) -> list:
-    return [name for name, item in item_table.items()
-            if requirement in item.can_catch
-            and item.item_group == tool_type
-            and (not is_iron_rig or item.expansion == "IronRig")
-            ]
+    excluded_names = {"Tendon Rod", "Viscera Crane", "Bottomless Lines"}
+
+    return [
+        name
+        for name, item in item_table.items()
+        if requirement in item.can_catch
+        and item.item_group == tool_type
+        and (not is_iron_rig or item.expansion == "IronRig")
+        and item.size <= 4
+        and name not in excluded_names
+    ]
