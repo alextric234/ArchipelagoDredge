@@ -1565,60 +1565,70 @@
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 2,
+    "item_value": 0
   },
   "Arterial Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 1,
+    "item_value": 0
   },
   "Rusty Outboard Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 2,
+    "item_value": 0
   },
   "Improved Outboard Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 2,
+    "item_value": 1
   },
   "Refined Outboard Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 3,
+    "item_value": 1
   },
   "Twin Prop Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 4,
+    "item_value": 2
   },
   "Jet Drive Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 1,
+    "item_value": 3
   },
   "Twin Jet Drive Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 6,
+    "item_value": 0
   },
   "Engine Stack": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 6,
+    "item_value": 0
   },
   "Weak Valve Engine": {
     "classification": "progression",
     "item_group": "Engine",
     "expansion": "Base",
-    "size": 4
+    "size": 3,
+    "item_value": 1
   }
 }

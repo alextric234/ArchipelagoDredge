@@ -14,6 +14,7 @@ class DredgeItemData:
     expansion: str
     can_catch: List[str] = field(default_factory=list)
     size: int = 0
+    item_value: int = 0
 
 item_base_id = 3459028911689314
 
@@ -28,6 +29,7 @@ item_table = {
         expansion=entry["expansion"],
         can_catch=entry.get("can_catch", []),
         size=entry.get("size", 0),
+        item_value=entry.get("item_value", 0),
     )
     for name, entry in load_data_file("items.json").items()
 }

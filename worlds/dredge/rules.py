@@ -1,12 +1,10 @@
-import logging
-
 from typing import TYPE_CHECKING
 
 from BaseClasses import CollectionState, Location
 from worlds.generic.Rules import set_rule
 from .locations import location_table, DredgeLocationData
 from .items import item_table
-from .options import LogicalNets
+from .options import DredgeOptions
 
 if TYPE_CHECKING:
     from . import DredgeWorld
@@ -16,17 +14,17 @@ def set_region_rules(world: "DredgeWorld") -> None:
     player = world.player
 
     world.get_entrance("Open Ocean -> Gale Cliffs").access_rule = \
-        lambda state: has_engines(1, state, player)
+        lambda state: not world.options.require_engines or has_engines(1, state, player)
     world.get_entrance("Open Ocean -> Stellar Basin").access_rule = \
-        lambda state: has_engines(1, state, player)
+        lambda state: not world.options.require_engines or has_engines(1, state, player)
     world.get_entrance("Open Ocean -> Twisted Strand").access_rule = \
-        lambda state: has_engines(1, state, player)
+        lambda state: not world.options.require_engines or has_engines(1, state, player)
     world.get_entrance("Open Ocean -> Devil's Spine").access_rule = \
-        lambda state: has_engines(1, state, player)
+        lambda state: not world.options.require_engines or has_engines(1, state, player)
     world.get_entrance("Open Ocean -> The Iron Rig").access_rule = \
-        lambda state: has_engines(2, state, player)
+        lambda state: not world.options.require_engines or has_engines(2, state, player)
     world.get_entrance("Open Ocean -> The Pale Reach").access_rule = \
-        lambda state: has_engines(2, state, player)
+        lambda state: not world.options.require_engines or has_engines(2, state, player)
     world.get_entrance("Open Ocean -> Insanity").access_rule = \
         lambda state: has_relics(state, player)
 
@@ -38,7 +36,7 @@ def set_location_rules(world: "DredgeWorld") -> None:
         world_location = world.get_location(location_name)
         match location.location_group:
             case "Encyclopedia":
-                set_encyclopedia_rule(world_location, location, player)
+                set_encyclopedia_rule(world_location, location, player, world.options)
             case "Research":
                 set_research_rule(world_location, location, player)
             case "Relic" | "Shop" | "World" | "Quest":
@@ -47,9 +45,9 @@ def set_location_rules(world: "DredgeWorld") -> None:
                 set_rule(world.get_location(location_name), lambda state: True)
 
 
-def has_engines(number: int, state: CollectionState, player: int) -> bool:
-    ##return state.has("Progressive Engine", player, number)
-    return True
+def has_engines(distance: int, state: CollectionState, player: int) -> bool:
+    valid_engines = [name for name, item in item_table.items() if item.item_value >= distance]
+    return state.has_any(valid_engines, player)
 
 
 def has_relics(state: CollectionState, player: int) -> bool:
@@ -76,22 +74,22 @@ def can_research(state: CollectionState, requirement: str, player: int) -> bool:
         case _:
             return True
 
-def set_encyclopedia_rule(world_location: Location, location: DredgeLocationData, player: int) -> None:
+def set_encyclopedia_rule(world_location: Location, location: DredgeLocationData, player: int, options: DredgeOptions) -> None:
     set_rule(
         world_location,
-        lambda state, is_iron_rig=(location.expansion == "IronRig"): can_catch(location, is_iron_rig, state, player),
+        lambda state, is_iron_rig=(location.expansion == "IronRig"): can_catch(location, is_iron_rig, state, player, options),
     )
 
-def can_catch(location: DredgeLocationData, is_iron_rig: bool, state: CollectionState, player: int) -> bool:
+def can_catch(location: DredgeLocationData, is_iron_rig: bool, state: CollectionState, player: int, options: DredgeOptions) -> bool:
 
 
     if location.requirement == "Crab":
         return state.has_any(get_harvest_tool_by_requirement(location.requirement, "Crab Pot"), player)
     else:
-        return can_catch_fish(is_iron_rig, location, player, state)
+        return can_catch_fish(is_iron_rig, location, player, state, options)
 
 
-def can_catch_fish(is_iron_rig, location, player, state) -> bool:
+def can_catch_fish(is_iron_rig: bool, location: DredgeLocationData, player: int, state: CollectionState, options: DredgeOptions) -> bool:
     has_rod = False
     has_net = False
     if location.can_catch_rod:
@@ -99,7 +97,7 @@ def can_catch_fish(is_iron_rig, location, player, state) -> bool:
                 is_iron_rig and state.has_any(get_harvest_tool_by_requirement(location.requirement, "Rod", is_iron_rig),
                                               player))
     if location.can_catch_net:
-        if location.can_catch_rod and not LogicalNets:
+        if location.can_catch_rod and not options.logical_nets:
             has_net = False
         else:
             has_net = state.has_any(get_harvest_tool_by_requirement(location.requirement, "Net"), player) or (
