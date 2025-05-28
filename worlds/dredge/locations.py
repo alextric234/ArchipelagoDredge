@@ -315,7 +315,7 @@ def get_player_location_table(options: DredgeOptions) -> Dict[str, int]:
     all_locations = {
         name: id
         for name, id in all_locations.items()
-        if location_table[name].location_group != "Shop" and location_table[name].requirement != "Crab"
+        if location_table[name].location_group != "Shop"
     }
 
     return all_locations
