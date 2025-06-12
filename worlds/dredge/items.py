@@ -15,6 +15,7 @@ class DredgeItemData:
     can_catch: List[str] = field(default_factory=list)
     size: int = 0
     item_value: int = 0
+    max_quantity: int = 1
 
 
 item_base_id = 3459028911689314

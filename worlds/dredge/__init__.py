@@ -48,7 +48,7 @@ class DredgeWorld(World):
     def generate_early(self) -> None:
         self.player_location_table = get_player_location_table(self.options)
 
-    def create_item(self, name: str, classification: ItemClassification = None) -> DredgeItem:
+    def create_item(self, name: str) -> DredgeItem:
         item_data = item_table[name]
         return DredgeItem(name, item_data.classification, self.item_name_to_id[name], self.player)
 
@@ -62,15 +62,19 @@ class DredgeWorld(World):
             if data.classification not in progression_classes:
                 continue
 
-            if data.expansion == "Base":
-                dredge_items.append(self.create_item(item, data.classification))
-            elif self.options.include_pale_reach_dlc and data.expansion == "PaleReach":
-                dredge_items.append(self.create_item(item, data.classification))
-            elif self.options.include_iron_rig_dlc and data.expansion == "IronRig":
-                dredge_items.append(self.create_item(item, data.classification))
+            for index in range(data.classification):
+                if data.expansion == "Base":
+                    dredge_items.append(self.create_item(item))
+                elif self.options.include_pale_reach_dlc and data.expansion == "PaleReach":
+                    dredge_items.append(self.create_item(item))
+                elif self.options.include_iron_rig_dlc and data.expansion == "IronRig":
+                    dredge_items.append(self.create_item(item))
+
+        if self.options.include_iron_rig_dlc:
+            dredge_items.append(self.create_item("Progressive Hull"))
 
         for _ in range(30):
-            dredge_items.append(self.create_item("Research Part", ItemClassification.progression))
+            dredge_items.append(self.create_item("Research Part"))
 
         total_locations = len(self.player_location_table)
         current_items = len(dredge_items)
@@ -90,7 +94,7 @@ class DredgeWorld(World):
         random_fillers = random.choices(filler_pool, k=filler_needed)
 
         for item_name in random_fillers:
-            dredge_items.append(self.create_item(item_name, ItemClassification.filler))
+            dredge_items.append(self.create_item(item_name))
 
         self.multiworld.itempool += dredge_items
 

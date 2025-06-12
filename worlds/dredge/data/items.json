@@ -1630,5 +1630,11 @@
     "expansion": "Base",
     "size": 3,
     "item_value": 1
+  },
+  "Progressive Hull": {
+    "classification": "progression",
+    "item_group": "Boat Upgrade",
+    "expansion": "Base",
+    "max_quantity": 3
   }
 }
