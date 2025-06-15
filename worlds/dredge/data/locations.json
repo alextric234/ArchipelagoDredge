@@ -1,0 +1,2320 @@
+{
+  "Fish - Abyssal Gar": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - All-Seeing Cod": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Anchovy King": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": false,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Anchovy": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": false,
+    "can_catch_net": true
+  },
+  "Fish - Anglerfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Anvilfish": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Arapaima": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Archon's Burden": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Armored Searobin": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Arrow Squid": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Astral Icefish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Aurora Jellyfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": false,
+    "can_catch_net": true
+  },
+  "Fish - Axial Matron": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Barbed Eel": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Barracuda": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Barreleye": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Beaked Moonfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Bearded Mackerel": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Bifurcated Gar": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Black Grouper": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Black Sea Bass": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Blackfin Tuna": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Blackmouth Salmon": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Blacktip Reef Shark": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Blistered Tarpon": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Blood Snapper": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Bloodskin Shark": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Blue Crab": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Blue Mackerel": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Bony Wreckfish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Boreal Shell": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Boreaspis": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Broken Arapaima": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Bronze Whaler": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Brood Squid": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Brute's Crux": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Bubbling Char": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Bulbous Toothfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Bursting Anglerfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Calcified Snailfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Catfish": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Cerebral Crab": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Char": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Charred Sunfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Clawfin Gar": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Cleft-mouth Shark": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Clutching Nautilus": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Cod": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Coelacanth": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Collapsed Viperfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Colossal Squid": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": false,
+    "can_catch_net": true
+  },
+  "Fish - Common Crab": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Concertina Barracuda": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Congealed Rattail": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Conger Eel": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Consumed Grouper": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Coral Grouper": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Cortex Decorator": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Craterous Seer": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": false,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Crawling Instar": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Crown of Nadir": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Crown of Thorns": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Cursed Fangtooth": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Cusk Eel": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Cyclopean Flounder": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Cystic Trilobite": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Decaying Blackmouth": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Decorator Crab": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Decrepit Viperfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Defaced Skate": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Devil Ray": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Drifting Chrysalis": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Dunkleosteus": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Eagle Shark": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Effigy Crab": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Entangled Crab": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Enthralled Stonefish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Entwined Mullet": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Erupting Scorpion": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Excoriated Fiend": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Fallen Stars": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Famine's End": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Fanged Cod": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Fangtooth": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Feral Lizardfish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Fiddler Crab": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Firefly Squid": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Flayed Mackerel": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Fractalline Icefish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Frilled Shark": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Gar": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Gazing Shark": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Gelatinous Stonefish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Ghost Shark": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Giant Amphipod": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Giant Dragonfish": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Giant Mud Crab": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Glaring Sunfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Gleaming Mullet": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Glowing Octopus": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Gnashing Perch": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Goblin Shark": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Goliath Tigerfish": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Grasping Snail": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Grey Eel": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Grey Mullet": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Grinning Gar": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Grisly Shark": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Grotesque Mackerel": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Gulf Flounder": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Gulper Eel": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Hammerhead Shark": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Hinged Wolffish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Hooked Sailfish": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Horseshoe Crab": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Host Eel": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Icefish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Imperious Lobster": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Infernal Eel": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Inverted Husk": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Ivory Impaler": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Kerygmachela": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - King Crab": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - King's Wreath": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Lancetfish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Latching Snapper": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Leeching Prawn": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": false,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Lizardfish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Longfin Eel": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Loosejaw": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Lumpy Mackerel": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Mahi Mahi": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Malignant Pincer": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Many-Eyed Mackerel": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Medusa Octopus": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Mimic Slug": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Mire Screecher": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Moonfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Nautilus": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Nightwing Catfish": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Nipponites": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Oarfish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Ocean Sunfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Oceanic Perch": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Opabinia": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Ossified Searobin": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Osteostracan": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Paddlefish": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Pale Grasper": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": false,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Pale Skate": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Parhelion Jellyfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": false,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Perished Loosejaw": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Plated Barbjaw": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Plated Osteostracan": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Primordial Shadow": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Radiant Squid": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Rapt Shark": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Rattail": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Razormouth Tuna": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Red Snapper": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Riddled Flounder": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Rock Crab": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Ruptured Vessel": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Sable Reacher": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Sailfish": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Sallow Sailfish": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Sanguine Shark": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Savage Barracuda": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Sawfish": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Scarlet Prawn": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": false,
+    "can_catch_net": true
+  },
+  "Fish - Scouring Bass": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Sea Cucumber": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Sea Scorpion": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Sea Slug": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Sea Stars": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Seizing Snailfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Sergeant Fish": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Serpentine Mackerel": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Shaper's Prime": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Shard Ray": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Shattered Wreckfish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Silvering Lancetfish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Skeletal Moonfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Sleeper Shark": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Sleeper's Torment": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Snag Squid": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Snailfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Snake Mackerel": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Sollasina": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Spider Crab": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Spiny Lobster": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Splintered Crab": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Sprouting Eel": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Squat Lobster": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Stalking Spiderfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Stargazer": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": false,
+    "can_catch_net": true
+  },
+  "Fish - Stingray": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Stonefish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Sturgeon": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Swordfish": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Tarpon": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Tattered Mackerel": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Thawed Icefish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Three-Headed Cod": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Tiger Mackerel": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": true
+  },
+  "Fish - Toothfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Translucent Sturgeon": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Trilobite": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Tripod Spiderfish": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Tullimonstrum": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Coastal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Tusked Grouper": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Twinned Eels": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Twisted Shark": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Umbral Puppet": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Untouchable Wyrmfish": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Hadal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Unveiled Vetulicolia": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Vagrant Sollasina": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Vetulicolia": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Volcanic",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Viperfish": {
+    "region": "Open Ocean",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Voideye": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Abyssal",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Volcano Snail": {
+    "region": "Devil's Spine",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Voltaic Grouper": {
+    "region": "The Marrows",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Vortex Interloper": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Withered Ray": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": true,
+    "is_aberration": true
+  },
+  "Fish - Wolffish": {
+    "region": "The Pale Reach",
+    "location_group": "Encyclopedia",
+    "expansion": "PaleReach",
+    "requirement": "Ice",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Wreckfish": {
+    "region": "Gale Cliffs",
+    "location_group": "Encyclopedia",
+    "expansion": "Base",
+    "requirement": "Shallow",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Fish - Wretched Nipper": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Crab",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Xeno Xeno": {
+    "region": "Stellar Basin",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Oceanic",
+    "can_catch_rod": true,
+    "can_catch_net": false,
+    "is_aberration": true
+  },
+  "Fish - Xiphactinus": {
+    "region": "Twisted Strand",
+    "location_group": "Encyclopedia",
+    "expansion": "IronRig",
+    "requirement": "Mangrove",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Hydraulic Rod": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Flexible Fishing Pole": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Heat-Resistant Line": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Anti-Tangle Line": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Versatile Rod": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Mid",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Harvesting Platform": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "All",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Bottomless Lines": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Fathomless Winch": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Mid",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Improved Outboard Engine": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Jet Drive Engine": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Mid",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Refined Outboard Engine": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Twin Prop Engine": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Twin Jet Drive Engine": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Late",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Engine Stack": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "All",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Efficient Crab Pot": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Hardy Crab Pot": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Large Crab Pot": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Complex Crab Pot": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Massive Crab Pot": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Reinforced Crab Pot": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Late",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Improved Trawl Net": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Silt Filtering Trawl Net": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Large Trawl Net": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Tempered Mesh Net": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Early",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Research - Heavy-Duty Trawl Net": {
+    "region": "Open Ocean",
+    "location_group": "Research",
+    "expansion": "Base",
+    "requirement": "Mid",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Relic - Ornate Key": {
+    "region": "Open Ocean",
+    "location_group": "Relic",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Relic - Rusted Music Box": {
+    "region": "Open Ocean",
+    "location_group": "Relic",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Relic - Jewel Encrusted Band": {
+    "region": "Open Ocean",
+    "location_group": "Relic",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Relic - Shimmering Necklace": {
+    "region": "Open Ocean",
+    "location_group": "Relic",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Relic - Antique Pocket Watch": {
+    "region": "Open Ocean",
+    "location_group": "Relic",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Quest - Sampling Device": {
+    "region": "Open Ocean",
+    "location_group": "Quest",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Simple Skimmer": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Weighted Line": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Barbed Ice Rod": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "PaleReach",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Glacial Lance": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "PaleReach",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Infused Rod": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "IronRig",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Infused Winch": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "IronRig",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Infused Hoist": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "IronRig",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Infused Coiling Rod": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "IronRig",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "Shop - Infused Fireproof Rod": {
+    "region": "Open Ocean",
+    "location_group": "Shop",
+    "expansion": "IronRig",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "World - Sinew Spindle": {
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "World - Viscera Crane": {
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "World - Tendon Rod": {
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "World - Encrusted Talisman": {
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  },
+  "World - Basic Fishing Pole": {
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirement": "",
+    "can_catch_rod": true,
+    "can_catch_net": false
+  }
+}

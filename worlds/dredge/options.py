@@ -66,6 +66,13 @@ class LogicalNets(Toggle):
     internal_name = "logical_nets"
     display_name = "Logical Nets"
 
+class IncludeAberrations(Toggle):
+    """
+    If enabled, checks for fish aberrations may contain progression items.
+    """
+    internal_name = "include_aberrations"
+    display_name = "Include Aberrations"
+
 # class EnableTraps(Toggle):
 #     """
 #     Allow traps to be added to the pool to replace filler items
@@ -83,4 +90,5 @@ class DredgeOptions(PerGameCommonOptions):
     # require_pale_reach_ending: RequirePaleReachEnding
     require_engines: RequireEngines
     logical_nets: LogicalNets
+    include_aberrations: IncludeAberrations
     # enable_traps: EnableTraps
