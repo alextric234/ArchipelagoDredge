@@ -70,6 +70,8 @@ class DredgeWorld(World):
                 elif self.options.include_iron_rig_dlc and data.expansion == "IronRig":
                     dredge_items.append(self.create_item(item))
 
+        for _ in range(3)
+            dredge_items.append(self.create_item("Progressive Hull"))
         if self.options.include_iron_rig_dlc:
             dredge_items.append(self.create_item("Progressive Hull"))
 
