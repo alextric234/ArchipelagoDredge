@@ -70,12 +70,14 @@ class DredgeWorld(World):
                 elif self.options.include_iron_rig_dlc and data.expansion == "IronRig":
                     dredge_items.append(self.create_item(item))
 
-        for _ in range(3)
+        num_base_hull_upgrades = 2
+        for _ in range(num_base_hull_upgrades):
             dredge_items.append(self.create_item("Progressive Hull"))
         if self.options.include_iron_rig_dlc:
             dredge_items.append(self.create_item("Progressive Hull"))
 
-        for _ in range(30):
+        num_research_parts = 30
+        for _ in range(num_research_parts):
             dredge_items.append(self.create_item("Research Part"))
 
         total_locations = len(self.player_location_table)
