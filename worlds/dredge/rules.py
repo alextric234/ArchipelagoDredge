@@ -36,7 +36,7 @@ def set_location_rules(world: "DredgeWorld") -> None:
         world_location = world.get_location(location_name)
         match location.location_group:
             case "Encyclopedia":
-                set_encyclopedia_rule(world_location, location, player, world.options)
+                set_fish_rule(world_location, location, player, world.options)
             case "Research":
                 set_research_rule(world_location, location, player)
             case "Relic" | "Shop" | "World" | "Quest":
@@ -74,18 +74,20 @@ def can_research(state: CollectionState, requirement: str, player: int) -> bool:
         case _:
             return True
 
-def set_encyclopedia_rule(world_location: Location, location: DredgeLocationData, player: int, options: DredgeOptions) -> None:
+def set_fish_rule(world_location: Location, location: DredgeLocationData, player: int, options: DredgeOptions) -> None:
     set_rule(
         world_location,
         lambda state, is_iron_rig=(location.expansion == "IronRig"): can_catch(location, is_iron_rig, state, player, options),
     )
 
 def can_catch(location: DredgeLocationData, is_iron_rig: bool, state: CollectionState, player: int, options: DredgeOptions) -> bool:
-
-
     if location.requirement == "Crab":
         return state.has_any(get_harvest_tool_by_requirement(location.requirement, "Crab Pot"), player)
     else:
+        if is_iron_rig and location.iron_rig_phase > 2:
+            return can_catch_fish(is_iron_rig, location, player, state, options) \
+                and state.has("Siphon Trawler", player)
+
         return can_catch_fish(is_iron_rig, location, player, state, options)
 
 

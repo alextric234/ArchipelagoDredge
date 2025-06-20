@@ -5,7 +5,8 @@
     "expansion": "IronRig",
     "requirement": "Abyssal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 2
   },
   "Fish - All-Seeing Cod": {
     "region": "The Marrows",
@@ -48,7 +49,8 @@
     "requirement": "Coastal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 1
   },
   "Fish - Arapaima": {
     "region": "Twisted Strand",
@@ -56,7 +58,8 @@
     "expansion": "IronRig",
     "requirement": "Mangrove",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 4
   },
   "Fish - Archon's Burden": {
     "region": "Gale Cliffs",
@@ -107,7 +110,8 @@
     "requirement": "Coastal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 1
   },
   "Fish - Barbed Eel": {
     "region": "The Marrows",
@@ -159,7 +163,8 @@
     "requirement": "Abyssal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 2
   },
   "Fish - Black Grouper": {
     "region": "The Marrows",
@@ -260,7 +265,8 @@
     "requirement": "Mangrove",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Boreaspis": {
     "region": "Twisted Strand",
@@ -268,7 +274,8 @@
     "expansion": "IronRig",
     "requirement": "Mangrove",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 4
   },
   "Fish - Broken Arapaima": {
     "region": "Twisted Strand",
@@ -277,7 +284,8 @@
     "requirement": "Mangrove",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Bronze Whaler": {
     "region": "The Marrows",
@@ -400,7 +408,8 @@
     "requirement": "Oceanic",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 2
   },
   "Fish - Cod": {
     "region": "The Marrows",
@@ -511,7 +520,8 @@
     "requirement": "Shallow",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Crown of Nadir": {
     "region": "Stellar Basin",
@@ -563,7 +573,8 @@
     "requirement": "Crab",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 2
   },
   "Fish - Decaying Blackmouth": {
     "region": "Gale Cliffs",
@@ -615,7 +626,8 @@
     "requirement": "Hadal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 3
   },
   "Fish - Dunkleosteus": {
     "region": "Devil's Spine",
@@ -623,7 +635,8 @@
     "expansion": "IronRig",
     "requirement": "Volcanic",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 5
   },
   "Fish - Eagle Shark": {
     "region": "Stellar Basin",
@@ -631,7 +644,8 @@
     "expansion": "IronRig",
     "requirement": "Oceanic",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 3
   },
   "Fish - Effigy Crab": {
     "region": "Twisted Strand",
@@ -676,7 +690,8 @@
     "requirement": "Crab",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 5
   },
   "Fish - Excoriated Fiend": {
     "region": "Devil's Spine",
@@ -685,7 +700,8 @@
     "requirement": "Volcanic",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 5
   },
   "Fish - Fallen Stars": {
     "region": "The Pale Reach",
@@ -821,7 +837,8 @@
     "expansion": "Base",
     "requirement": "Hadal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 5
   },
   "Fish - Giant Mud Crab": {
     "region": "Twisted Strand",
@@ -1026,7 +1043,8 @@
     "requirement": "Crab",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 1
   },
   "Fish - Ivory Impaler": {
     "region": "The Marrows",
@@ -1035,7 +1053,8 @@
     "requirement": "Oceanic",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 1
   },
   "Fish - Kerygmachela": {
     "region": "Stellar Basin",
@@ -1043,7 +1062,8 @@
     "expansion": "IronRig",
     "requirement": "Hadal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 3
   },
   "Fish - King Crab": {
     "region": "The Pale Reach",
@@ -1068,7 +1088,8 @@
     "expansion": "IronRig",
     "requirement": "Coastal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 2
   },
   "Fish - Latching Snapper": {
     "region": "Stellar Basin",
@@ -1127,7 +1148,8 @@
     "expansion": "IronRig",
     "requirement": "Oceanic",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 3
   },
   "Fish - Malignant Pincer": {
     "region": "The Marrows",
@@ -1163,7 +1185,8 @@
     "requirement": "Crab",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 3
   },
   "Fish - Mire Screecher": {
     "region": "Twisted Strand",
@@ -1188,7 +1211,8 @@
     "expansion": "IronRig",
     "requirement": "Oceanic",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 2
   },
   "Fish - Nightwing Catfish": {
     "region": "Twisted Strand",
@@ -1205,7 +1229,8 @@
     "expansion": "IronRig",
     "requirement": "Crab",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 4
   },
   "Fish - Oarfish": {
     "region": "Gale Cliffs",
@@ -1237,7 +1262,8 @@
     "expansion": "IronRig",
     "requirement": "Shallow",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 4
   },
   "Fish - Ossified Searobin": {
     "region": "Devil's Spine",
@@ -1254,7 +1280,8 @@
     "expansion": "IronRig",
     "requirement": "Shallow",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 1
   },
   "Fish - Paddlefish": {
     "region": "The Marrows",
@@ -1262,7 +1289,8 @@
     "expansion": "IronRig",
     "requirement": "Coastal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 1
   },
   "Fish - Pale Grasper": {
     "region": "The Pale Reach",
@@ -1306,7 +1334,8 @@
     "requirement": "Shallow",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 5
   },
   "Fish - Plated Osteostracan": {
     "region": "The Marrows",
@@ -1315,7 +1344,8 @@
     "requirement": "Shallow",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 1
   },
   "Fish - Primordial Shadow": {
     "region": "Twisted Strand",
@@ -1324,7 +1354,8 @@
     "requirement": "Mangrove",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Radiant Squid": {
     "region": "Stellar Basin",
@@ -1428,7 +1459,8 @@
     "requirement": "Oceanic",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 3
   },
   "Fish - Savage Barracuda": {
     "region": "Stellar Basin",
@@ -1445,7 +1477,8 @@
     "expansion": "IronRig",
     "requirement": "Shallow",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 5
   },
   "Fish - Scarlet Prawn": {
     "region": "Open Ocean",
@@ -1470,7 +1503,8 @@
     "expansion": "IronRig",
     "requirement": "Crab",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 1
   },
   "Fish - Sea Scorpion": {
     "region": "Devil's Spine",
@@ -1478,7 +1512,8 @@
     "expansion": "IronRig",
     "requirement": "Crab",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 5
   },
   "Fish - Sea Slug": {
     "region": "Stellar Basin",
@@ -1486,7 +1521,8 @@
     "expansion": "IronRig",
     "requirement": "Crab",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 3
   },
   "Fish - Sea Stars": {
     "region": "The Pale Reach",
@@ -1556,7 +1592,8 @@
     "requirement": "Coastal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 2
   },
   "Fish - Skeletal Moonfish": {
     "region": "Open Ocean",
@@ -1615,7 +1652,8 @@
     "expansion": "IronRig",
     "requirement": "Shallow",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 2
   },
   "Fish - Spider Crab": {
     "region": "Devil's Spine",
@@ -1666,7 +1704,8 @@
     "requirement": "Abyssal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 3
   },
   "Fish - Stargazer": {
     "region": "The Pale Reach",
@@ -1706,7 +1745,8 @@
     "expansion": "IronRig",
     "requirement": "Oceanic",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 1
   },
   "Fish - Tarpon": {
     "region": "Twisted Strand",
@@ -1774,7 +1814,8 @@
     "expansion": "IronRig",
     "requirement": "Crab",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 2
   },
   "Fish - Tripod Spiderfish": {
     "region": "Stellar Basin",
@@ -1782,7 +1823,8 @@
     "expansion": "IronRig",
     "requirement": "Abyssal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 3
   },
   "Fish - Tullimonstrum": {
     "region": "The Marrows",
@@ -1790,7 +1832,8 @@
     "expansion": "IronRig",
     "requirement": "Coastal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 1
   },
   "Fish - Tusked Grouper": {
     "region": "The Marrows",
@@ -1835,7 +1878,8 @@
     "requirement": "Hadal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 5
   },
   "Fish - Unveiled Vetulicolia": {
     "region": "Devil's Spine",
@@ -1844,7 +1888,8 @@
     "requirement": "Volcanic",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 5
   },
   "Fish - Vagrant Sollasina": {
     "region": "Gale Cliffs",
@@ -1853,7 +1898,8 @@
     "requirement": "Shallow",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 2
   },
   "Fish - Vetulicolia": {
     "region": "Devil's Spine",
@@ -1861,7 +1907,8 @@
     "expansion": "IronRig",
     "requirement": "Volcanic",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 5
   },
   "Fish - Viperfish": {
     "region": "Open Ocean",
@@ -1938,7 +1985,8 @@
     "requirement": "Crab",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Xeno Xeno": {
     "region": "Stellar Basin",
@@ -1947,7 +1995,8 @@
     "requirement": "Oceanic",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 3
   },
   "Fish - Xiphactinus": {
     "region": "Twisted Strand",
@@ -1955,7 +2004,8 @@
     "expansion": "IronRig",
     "requirement": "Mangrove",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "iron_rig_phase": 4
   },
   "Research - Hydraulic Rod": {
     "region": "Open Ocean",

@@ -1561,6 +1561,12 @@
     ],
     "size": 4
   },
+  "Siphon Trawler": {
+    "classification": "progression",
+    "item_group": "Net",
+    "expansion": "IronRig",
+    "size": 4
+  },
   "Starting Gear - Peculiar Engine": {
     "classification": "progression",
     "item_group": "Engine",

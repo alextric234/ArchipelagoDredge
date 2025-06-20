@@ -17,6 +17,7 @@ class DredgeLocationData:
     can_catch_net: bool = False
     progress_type: LPT = LPT.DEFAULT
     is_aberration: bool = False
+    iron_rig_phase: int = 0
 
 
 location_base_id = 3459028911689314
@@ -35,6 +36,7 @@ location_table = {
         can_catch_net=entry.get("can_catch_net", False),
         progress_type=entry.get("progress_type", LPT.EXCLUDED),
         is_aberration=entry.get("is_aberration", False),
+        iron_rig_phase=entry.get("iron_rig_phase", 0),
     )
     for name, entry in load_data_file("locations.json").items()
 }
