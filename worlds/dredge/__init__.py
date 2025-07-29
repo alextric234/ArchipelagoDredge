@@ -116,13 +116,13 @@ class DredgeWorld(World):
             location = DredgeLocation(self.player, location_name, location_id, region)
             region.locations.append(location)
 
-            victory_region = self.get_region("Insanity")
-            victory_location = DredgeLocation(self.player, "The Collector", None, victory_region)
-            victory_location.place_locked_item(DredgeItem("Victory",
-                                                          ItemClassification.progression,
-                                                          None, self.player))
-            self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
-            victory_region.locations.append(victory_location)
+        victory_region = self.get_region("Insanity")
+        victory_location = DredgeLocation(self.player, "The Collector", None, victory_region)
+        victory_location.place_locked_item(DredgeItem("Victory",
+                                                      ItemClassification.progression,
+                                                      None, self.player))
+        self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
+        victory_region.locations.append(victory_location)
 
     def set_rules(self) -> None:
         set_region_rules(self)
