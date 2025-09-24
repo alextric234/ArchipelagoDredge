@@ -16,6 +16,7 @@ Search for and install "Archipelago Dredge"
 
 ## Running the Modded Game
 
+At present checks can only be sent with DREDGE set to the English language
 Click on the `Play` button in the bottom left in `Dredge Mod Manager` to start the game with the Archipelago mod installed.
 
 ## Configuring your YAML File
