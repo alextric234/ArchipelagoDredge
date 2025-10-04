@@ -34,7 +34,7 @@ location_table = {
         requirement=entry.get("requirement", ""),
         can_catch_rod=entry.get("can_catch_rod", True),
         can_catch_net=entry.get("can_catch_net", False),
-        progress_type=entry.get("progress_type", LPT.EXCLUDED),
+        progress_type=entry.get("progress_type", LPT.DEFAULT),
         is_aberration=entry.get("is_aberration", False),
         iron_rig_phase=entry.get("iron_rig_phase", 0),
     )
@@ -43,19 +43,14 @@ location_table = {
 
 location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}
 
-def get_player_location_table(options: DredgeOptions) -> Dict[str, int]:
-    if not options.include_aberrations:
-        for loc in location_table.values():
-            if loc.is_aberration:
-                loc.progress_type = LPT.EXCLUDED
-
-    all_locations: Dict[str, int] = {}
-    base_locations = {name: location_base_id + index for index, (name, location)
-                      in enumerate(location_table.items()) if location.expansion == "Base"}
-    iron_rig_locations = {name: location_base_id + index for index, (name, location)
-                      in enumerate(location_table.items()) if location.expansion == "IronRig"}
-    pale_reach_locations = {name: location_base_id + index for index, (name, location)
-                      in enumerate(location_table.items()) if location.expansion == "PaleReach"}
+def get_player_location_table(options: DredgeOptions) -> Dict[str, bool]:
+    all_locations: Dict[str, bool] = {}
+    base_locations = {name: location.is_aberration for (name, location)
+                      in location_table.items() if location.expansion == "Base"}
+    iron_rig_locations = {name: location.is_aberration for (name, location)
+                      in location_table.items() if location.expansion == "IronRig"}
+    pale_reach_locations = {name: location.is_aberration for (name, location)
+                      in location_table.items() if location.expansion == "PaleReach"}
 
     all_locations.update(base_locations)
 

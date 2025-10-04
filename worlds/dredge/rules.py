@@ -31,7 +31,7 @@ def set_region_rules(world: "DredgeWorld") -> None:
 
 def set_location_rules(world: "DredgeWorld") -> None:
     player = world.player
-    for location_name, location_id in world.player_location_table.items():
+    for location_name, location_id in world.player_locations.items():
         location = location_table[location_name]
         world_location = world.get_location(location_name)
         match location.location_group:

@@ -43,10 +43,10 @@ class DredgeWorld(World):
     location_name_to_id = location_name_to_id
     location_name_groups = location_name_groups
 
-    player_location_table: Dict[str, int]
+    player_locations: Dict[str, bool]
 
     def generate_early(self) -> None:
-        self.player_location_table = get_player_location_table(self.options)
+        self.player_locations = get_player_location_table(self.options)
 
     def create_item(self, name: str) -> DredgeItem:
         item_data = item_table[name]
@@ -80,7 +80,7 @@ class DredgeWorld(World):
         for _ in range(num_research_parts):
             dredge_items.append(self.create_item("Research Part"))
 
-        total_locations = len(self.player_location_table)
+        total_locations = len(self.player_locations)
         current_items = len(dredge_items)
         filler_needed = total_locations - current_items
 
@@ -112,8 +112,12 @@ class DredgeWorld(World):
             region.add_exits(exits)
 
         for location_name, location_id in self.player_location_table.items():
+        for location_name, is_abberation in self.player_locations.items():
             region = self.get_region(location_table[location_name].region)
+            location_id = location_name_to_id[location_name]
             location = DredgeLocation(self.player, location_name, location_id, region)
+            if is_abberation and not self.options.include_aberrations:
+                location.progress_type = LocationProgressType.EXCLUDED
             region.locations.append(location)
 
             victory_region = self.get_region("Insanity")
