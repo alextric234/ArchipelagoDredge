@@ -2,7 +2,7 @@ import random
 
 from typing import List, Dict, Any
 
-from BaseClasses import Tutorial, Location, Item, ItemClassification, Region
+from BaseClasses import Tutorial, Location, Item, ItemClassification, Region, LocationProgressType
 from worlds.AutoWorld import World, WebWorld
 from .items import item_name_to_id, item_name_groups, item_table
 from .locations import location_name_groups, location_table, location_name_to_id, get_player_location_table
@@ -111,7 +111,6 @@ class DredgeWorld(World):
             region = self.get_region(region_name)
             region.add_exits(exits)
 
-        for location_name, location_id in self.player_location_table.items():
         for location_name, is_abberation in self.player_locations.items():
             region = self.get_region(location_table[location_name].region)
             location_id = location_name_to_id[location_name]
@@ -120,13 +119,13 @@ class DredgeWorld(World):
                 location.progress_type = LocationProgressType.EXCLUDED
             region.locations.append(location)
 
-            victory_region = self.get_region("Insanity")
-            victory_location = DredgeLocation(self.player, "The Collector", None, victory_region)
-            victory_location.place_locked_item(DredgeItem("Victory",
-                                                          ItemClassification.progression,
-                                                          None, self.player))
-            self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
-            victory_region.locations.append(victory_location)
+        victory_region = self.get_region("Insanity")
+        victory_location = DredgeLocation(self.player, "The Collector", None, victory_region)
+        victory_location.place_locked_item(DredgeItem("Victory",
+                                                      ItemClassification.progression,
+                                                      None, self.player))
+        self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
+        victory_region.locations.append(victory_location)
 
     def set_rules(self) -> None:
         set_region_rules(self)
