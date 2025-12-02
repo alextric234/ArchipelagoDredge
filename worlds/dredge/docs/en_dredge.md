@@ -17,26 +17,27 @@ The goal collect all 5 relics and deliver them to The Collector
 ## What is a "check" in Dredge?
 
 Currently:
-First time catching a fish
-Unlocking researches
+- First time catching a fish
+- Unlocking researches
 
 Planned:
-Random loot dredging
-Purchase from merchants
-Quest completion
+- Random loot dredging
+- Purchase from merchants
+- Quest completion
 
 ## What "items" can you unlock in Dredge?
 
 Currently:
-Fish Encyclopedia entries
-Fillers of random fish 
-The Relics
-Boat Equipment (rods, nets, engines, etc)
-Boat Upgrades (spaces in the hull)
-Boat Hull Upgrades
+- Fish Encyclopedia entries
+- Fillers of random fish 
+- The Relics
+- Boat Equipment (rods, nets, engines, etc)
+- Boat Upgrades (spaces in the hull)
+- Boat Hull Upgrades
 
+  
 Planned:
-Book Upgrades
-Quest Items
+- Book Upgrades
+- Quest Items
 
 Your main progression will be quest items and boat equipment/upgrades. 
