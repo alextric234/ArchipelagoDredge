@@ -18,6 +18,7 @@ The goal collect all 5 relics and deliver them to The Collector
 
 Currently:
 First time catching a fish
+Unlocking researches
 
 Planned:
 Random loot dredging
@@ -30,11 +31,12 @@ Currently:
 Fish Encyclopedia entries
 Fillers of random fish 
 The Relics
-
-Planned:
 Boat Equipment (rods, nets, engines, etc)
 Boat Upgrades (spaces in the hull)
 Boat Hull Upgrades
+
+Planned:
+Book Upgrades
 Quest Items
 
 Your main progression will be quest items and boat equipment/upgrades. 
