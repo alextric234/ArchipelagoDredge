@@ -427,7 +427,8 @@
     "expansion": "Base",
     "requirement": "Abyssal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "is_behind_debris": true
   },
   "Fish - Collapsed Viperfish": {
     "region": "Open Ocean",
@@ -900,7 +901,8 @@
     "expansion": "Base",
     "requirement": "Mangrove",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "is_behind_debris": true
   },
   "Fish - Grasping Snail": {
     "region": "Devil's Spine",

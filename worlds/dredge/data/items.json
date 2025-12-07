@@ -1642,5 +1642,11 @@
     "item_group": "Boat Upgrade",
     "expansion": "Base",
     "max_quantity": 3
+  },
+  "Packed Explosives": {
+    "classification": "progression",
+    "item_group": "Consumable",
+    "expansion": "Base",
+    "size": 2
   }
 }

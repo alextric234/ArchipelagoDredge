@@ -18,6 +18,7 @@ class DredgeLocationData:
     progress_type: LPT = LPT.DEFAULT
     is_aberration: bool = False
     iron_rig_phase: int = 0
+    is_behind_debris: bool = False
 
 
 location_base_id = 3459028911689314
