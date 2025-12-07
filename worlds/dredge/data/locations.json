@@ -64,11 +64,12 @@
   "Fish - Archon's Burden": {
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
-    "expansion": "Base",
+    "expansion": "IronRig",
     "requirement": "Abyssal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Armored Searobin": {
     "region": "Devil's Spine",
@@ -307,11 +308,12 @@
   "Fish - Brute's Crux": {
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
-    "expansion": "Base",
+    "expansion": "IronRig",
     "requirement": "Mangrove",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Bubbling Char": {
     "region": "The Pale Reach",
@@ -715,11 +717,12 @@
   "Fish - Famine's End": {
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
-    "expansion": "Base",
+    "expansion": "IronRig",
     "requirement": "Hadal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Fanged Cod": {
     "region": "The Marrows",
@@ -1561,11 +1564,12 @@
   "Fish - Shaper's Prime": {
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
-    "expansion": "Base",
+    "expansion": "IronRig",
     "requirement": "Abyssal",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Shard Ray": {
     "region": "The Marrows",
@@ -1615,11 +1619,12 @@
   "Fish - Sleeper's Torment": {
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
-    "expansion": "PaleReach",
+    "expansion": "Both",
     "requirement": "Ice",
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true
+    "is_aberration": true,
+    "iron_rig_phase": 4
   },
   "Fish - Snag Squid": {
     "region": "The Marrows",

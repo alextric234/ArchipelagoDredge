@@ -51,6 +51,8 @@ def get_player_location_table(options: DredgeOptions) -> Dict[str, bool]:
                       in location_table.items() if location.expansion == "IronRig"}
     pale_reach_locations = {name: location.is_aberration for (name, location)
                       in location_table.items() if location.expansion == "PaleReach"}
+    both_dlc_locations = {name: location.is_aberration for (name, location)
+                      in location_table.items() if location.expansion == "Both"}
 
     all_locations.update(base_locations)
 
@@ -58,6 +60,8 @@ def get_player_location_table(options: DredgeOptions) -> Dict[str, bool]:
         all_locations.update(iron_rig_locations)
     if options.include_pale_reach_dlc:
         all_locations.update(pale_reach_locations)
+    if options.include_pale_reach_dlc and options.include_iron_rig_dlc:
+        all_locations.update(both_dlc_locations)
 
     # removing these checks while waiting for fix from mod
     excluded_groups = {"Shop", "Quest", "World", "Relic"}
