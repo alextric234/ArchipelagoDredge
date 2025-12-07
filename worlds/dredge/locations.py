@@ -17,6 +17,7 @@ class DredgeLocationData:
     can_catch_net: bool = False
     progress_type: LPT = LPT.DEFAULT
     is_aberration: bool = False
+    is_exotic: bool = False
     iron_rig_phase: int = 0
     is_behind_debris: bool = False
 

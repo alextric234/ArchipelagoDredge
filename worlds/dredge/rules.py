@@ -98,6 +98,9 @@ def can_catch_fish(is_iron_rig: bool, location: DredgeLocationData, player: int,
     has_rod = False
     has_net = False
     if location.can_catch_rod:
+        if location.is_exotic and not state.has("Exotic Bait", player):
+                return False
+
         has_rod = state.has_any(get_harvest_tool_by_requirement(location.requirement, "Rod"), player) or (
                 is_iron_rig and state.has_any(get_harvest_tool_by_requirement(location.requirement, "Rod", is_iron_rig),
                                               player))

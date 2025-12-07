@@ -1648,5 +1648,32 @@
     "item_group": "Consumable",
     "expansion": "Base",
     "size": 2
+  },
+  "Mixed Bait": {
+    "classification": "filler",
+    "item_group": "Consumable",
+    "expansion": "Base",
+    "size": 2
+  },
+  "Aberrated Bait": {
+    "classification": "filler",
+    "item_group": "Consumable",
+    "expansion": "IronRig",
+    "size": 2
+  },
+  "Insta-Crab Bait": {
+    "classification": "filler",
+    "item_group": "Consumable",
+    "expansion": "IronRig",
+    "can_catch": [
+      "Crab"
+    ],
+    "size": 2
+  },
+  "Exotic Bait": {
+    "classification": "filler",
+    "item_group": "Consumable",
+    "expansion": "IronRig",
+    "size": 2
   }
 }

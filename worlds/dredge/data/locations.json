@@ -69,6 +69,7 @@
     "can_catch_rod": true,
     "can_catch_net": false,
     "is_aberration": true,
+    "is_exotic": true,
     "iron_rig_phase": 4
   },
   "Fish - Armored Searobin": {
@@ -313,6 +314,8 @@
     "can_catch_rod": true,
     "can_catch_net": false,
     "is_aberration": true,
+    "is_exotic": true,
+    "is_behind_debris": true,
     "iron_rig_phase": 4
   },
   "Fish - Bubbling Char": {
@@ -428,6 +431,7 @@
     "requirement": "Abyssal",
     "can_catch_rod": true,
     "can_catch_net": false,
+    "is_exotic": true,
     "is_behind_debris": true
   },
   "Fish - Collapsed Viperfish": {
@@ -723,6 +727,7 @@
     "can_catch_rod": true,
     "can_catch_net": false,
     "is_aberration": true,
+    "is_exotic": true,
     "iron_rig_phase": 4
   },
   "Fish - Fanged Cod": {
@@ -902,6 +907,7 @@
     "requirement": "Mangrove",
     "can_catch_rod": true,
     "can_catch_net": false,
+    "is_exotic": true,
     "is_behind_debris": true
   },
   "Fish - Grasping Snail": {
@@ -970,7 +976,8 @@
     "expansion": "Base",
     "requirement": "Hadal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "is_exotic": true
   },
   "Fish - Hammerhead Shark": {
     "region": "Stellar Basin",
@@ -1243,7 +1250,8 @@
     "expansion": "Base",
     "requirement": "Abyssal",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "is_exotic": true
   },
   "Fish - Ocean Sunfish": {
     "region": "Open Ocean",
@@ -1571,6 +1579,8 @@
     "can_catch_rod": true,
     "can_catch_net": false,
     "is_aberration": true,
+    "is_exotic": true,
+    "is_behind_debris": true,
     "iron_rig_phase": 4
   },
   "Fish - Shard Ray": {
@@ -1616,7 +1626,8 @@
     "expansion": "PaleReach",
     "requirement": "Ice",
     "can_catch_rod": true,
-    "can_catch_net": false
+    "can_catch_net": false,
+    "is_exotic": true
   },
   "Fish - Sleeper's Torment": {
     "region": "The Pale Reach",
@@ -1626,6 +1637,7 @@
     "can_catch_rod": true,
     "can_catch_net": false,
     "is_aberration": true,
+    "is_exotic": true,
     "iron_rig_phase": 4
   },
   "Fish - Snag Squid": {
