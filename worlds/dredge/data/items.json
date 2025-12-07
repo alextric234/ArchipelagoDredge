@@ -1671,9 +1671,74 @@
     "size": 2
   },
   "Exotic Bait": {
-    "classification": "filler",
+    "classification": "progression",
     "item_group": "Consumable",
     "expansion": "IronRig",
     "size": 2
+  },
+  "Sustainable Fishing": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Getting Over It With Mind and Body": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "The Relaxed Mind": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Pushing The Limit: Engines": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Correct Engine Operation": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Advanced Fishing": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Rods, Reels and Rigs": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Nautical Engineering": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "The Engineer's Companion": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "A Plan For The Future": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Art of the Silver Tongue": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Haggling and Bartering: A Guide": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "Base"
+  },
+  "Book of Astral Symbols": {
+    "classification": "filler",
+    "item_group": "Books",
+    "expansion": "PaleReach"
   }
 }

@@ -59,7 +59,7 @@ class DredgeWorld(World):
 
         progression_classes = {ItemClassification.progression, ItemClassification.progression_skip_balancing}
         for item, data in item_table.items():
-            if data.classification not in progression_classes:
+            if data.classification not in progression_classes and data.item_group != "Books":
                 continue
 
             for index in range(data.classification):
@@ -87,7 +87,7 @@ class DredgeWorld(World):
         filler_pool = [
             item
             for item, data in item_table.items()
-            if data.classification == ItemClassification.filler
+            if data.classification == ItemClassification.filler and data.item_group != "Books"
             and (
                 data.expansion == "Base"
                 or (self.options.include_pale_reach_dlc and data.expansion == "PaleReach")
