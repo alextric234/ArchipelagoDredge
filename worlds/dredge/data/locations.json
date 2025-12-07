@@ -316,7 +316,7 @@
   "Fish - Bubbling Char": {
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
-    "expansion": "Base",
+    "expansion": "PaleReach",
     "requirement": "Coastal",
     "can_catch_rod": true,
     "can_catch_net": false,
