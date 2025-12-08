@@ -16,7 +16,5 @@ dredge_regions: dict[str, tuple[str]] = {
     "Devil's Spine": tuple(),
     "The Pale Reach": tuple(),
     "The Iron Rig": tuple(),
-    "Research": tuple(),
-    "Shop": tuple(),
     "Insanity": tuple(),
 }
