@@ -80,12 +80,11 @@ class DredgeWorld(World):
         for _ in range(num_research_parts):
             dredge_items.append(self.create_item("Research Part"))
 
-        total_locations = len(self.player_locations)
-
         for item, data in item_table.items():
             if data.classification == ItemClassification.useful:
                 dredge_items.append(self.create_item(item))
 
+        total_locations = len(self.player_locations)
         current_items = len(dredge_items)
         filler_needed = total_locations - current_items
 

@@ -1,6 +1,6 @@
 dredge_regions: dict[str, tuple[str]] = {
     "Menu": ("The Marrows",),
-    "The Marrows": ("Open Ocean",),
+    "The Marrows": ("Open Ocean","Research"),
     "Open Ocean": (
         "Gale Cliffs",
         "Stellar Basin",
@@ -10,6 +10,7 @@ dredge_regions: dict[str, tuple[str]] = {
         "The Pale Reach",
         "Insanity",
     ),
+    "Research": tuple(),
     "Gale Cliffs": tuple(),
     "Stellar Basin": tuple(),
     "Twisted Strand": tuple(),
