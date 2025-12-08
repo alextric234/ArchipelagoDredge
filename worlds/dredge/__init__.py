@@ -99,10 +99,26 @@ class DredgeWorld(World):
             )
         ]
 
-        random_fillers = random.choices(filler_pool, k=filler_needed)
+        if not self.options.include_aberrations:
+            num_aberration_locations = sum(
+                1 for is_aberration in self.player_locations.values()
+                if is_aberration
+            )
+            aberration_fillers = random.choices(filler_pool, k=num_aberration_locations)
+            for item_name in aberration_fillers:
+                dredge_items.append(self.create_item(item_name))
 
-        for item_name in random_fillers:
-            dredge_items.append(self.create_item(item_name))
+
+        total_locations = len(self.player_locations)
+        current_items = len(dredge_items)
+
+        if current_items < total_locations:
+            filler_needed = total_locations - current_items
+
+            random_fillers = random.choices(filler_pool, k=filler_needed)
+
+            for item_name in random_fillers:
+                dredge_items.append(self.create_item(item_name))
 
         self.multiworld.itempool += dredge_items
 
