@@ -1677,67 +1677,67 @@
     "size": 2
   },
   "Sustainable Fishing": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Getting Over It With Mind and Body": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "The Relaxed Mind": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Pushing The Limit: Engines": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Correct Engine Operation": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Advanced Fishing": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Rods, Reels and Rigs": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Nautical Engineering": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "The Engineer's Companion": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "A Plan For The Future": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Art of the Silver Tongue": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Haggling and Bartering: A Guide": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "Base"
   },
   "Book of Astral Symbols": {
-    "classification": "filler",
+    "classification": "useful",
     "item_group": "Books",
     "expansion": "PaleReach"
   }
