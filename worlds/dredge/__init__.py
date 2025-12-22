@@ -6,11 +6,11 @@ from BaseClasses import Tutorial, Location, Item, ItemClassification, Region, Lo
 from worlds.AutoWorld import World, WebWorld
 from .items import item_name_to_id, item_name_groups, item_table
 from .locations import location_name_groups, location_table, location_name_to_id, get_player_location_table
-from .options import DredgeOptions
+from .options import DREDGEOptions
 from .rules import set_location_rules, set_region_rules
 from .regions import dredge_regions
 
-class DredgeWeb(WebWorld):
+class DREDGEWeb(WebWorld):
     tutorials = [Tutorial(
         tutorial_name="Multiworld Setup Guide",
         description="A guide to setting up DREDGE for Archipelago multiworld games.",
@@ -22,22 +22,22 @@ class DredgeWeb(WebWorld):
     theme = "ocean"
     game = "DREDGE"
 
-class DredgeItem(Item):
+class DREDGEItem(Item):
     game: str = "DREDGE"
 
-class DredgeLocation(Location):
+class DREDGELocation(Location):
     game: str = "DREDGE"
 
-class DredgeWorld(World):
+class DREDGEWorld(World):
     """
     Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago
     and discover why some things are best left forgotten.
     """
 
     game = "DREDGE"
-    web = DredgeWeb()
-    options: DredgeOptions
-    options_dataclass = DredgeOptions
+    web = DREDGEWeb()
+    options: DREDGEOptions
+    options_dataclass = DREDGEOptions
     item_name_groups = item_name_groups
     item_name_to_id = item_name_to_id
     location_name_to_id = location_name_to_id
@@ -48,12 +48,12 @@ class DredgeWorld(World):
     def generate_early(self) -> None:
         self.player_locations = get_player_location_table(self.options)
 
-    def create_item(self, name: str) -> DredgeItem:
+    def create_item(self, name: str) -> DREDGEItem:
         item_data = item_table[name]
-        return DredgeItem(name, item_data.classification, self.item_name_to_id[name], self.player)
+        return DREDGEItem(name, item_data.classification, self.item_name_to_id[name], self.player)
 
     def create_items(self) -> None:
-        dredge_items: List[DredgeItem] = []
+        dredge_items: List[DREDGEItem] = []
         self.multiworld.push_precollected(self.create_item("Starting Gear - Basic Fishing Pole"))
         self.multiworld.push_precollected(self.create_item("Starting Gear - Peculiar Engine"))
 
@@ -134,14 +134,14 @@ class DredgeWorld(World):
         for location_name, is_abberation in self.player_locations.items():
             region = self.get_region(location_table[location_name].region)
             location_id = location_name_to_id[location_name]
-            location = DredgeLocation(self.player, location_name, location_id, region)
+            location = DREDGELocation(self.player, location_name, location_id, region)
             if is_abberation and not self.options.include_aberrations:
                 location.progress_type = LocationProgressType.EXCLUDED
             region.locations.append(location)
 
         victory_region = self.get_region("Insanity")
-        victory_location = DredgeLocation(self.player, "The Collector", None, victory_region)
-        victory_location.place_locked_item(DredgeItem("Victory",
+        victory_location = DREDGELocation(self.player, "The Collector", None, victory_region)
+        victory_location.place_locked_item(DREDGEItem("Victory",
                                                       ItemClassification.progression,
                                                       None, self.player))
         self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)

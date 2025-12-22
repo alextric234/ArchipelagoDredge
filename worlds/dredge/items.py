@@ -8,7 +8,7 @@ from BaseClasses import ItemClassification
 
 
 @dataclass
-class DredgeItemData:
+class DREDGEItemData:
     base_id_offset: int
     classification: ItemClassification
     item_group: str
@@ -28,7 +28,7 @@ def load_data_file(*args) -> dict:
 
 
 item_table = {
-    name: DredgeItemData(
+    name: DREDGEItemData(
         base_id_offset=entry["base_id_offset"],
         classification=ItemClassification[entry["classification"]],
         item_group=entry["item_group"],

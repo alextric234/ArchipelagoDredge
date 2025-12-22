@@ -82,7 +82,7 @@ class IncludeAberrations(Toggle):
 
 
 @dataclass
-class DredgeOptions(PerGameCommonOptions):
+class DREDGEOptions(PerGameCommonOptions):
     # goal: Goal
     include_iron_rig_dlc: IncludeIronRigDLC
     # require_iron_rig_ending: RequireIronRigEnding

@@ -5,10 +5,10 @@ from typing import Dict, Set
 
 from BaseClasses import LocationProgressType as LPT
 from dataclasses import dataclass
-from .options import DredgeOptions
+from .options import DREDGEOptions
 
 @dataclass
-class DredgeLocationData:
+class DREDGELocationData:
     base_id_offset: int
     region: str
     location_group: str
@@ -30,7 +30,7 @@ def load_data_file(*args) -> dict:
     return json.loads(pkgutil.get_data(__name__, fname).decode())
 
 location_table = {
-    name: DredgeLocationData(
+    name: DREDGELocationData(
         base_id_offset=entry["base_id_offset"],
         region=entry["region"],
         location_group=entry["location_group"],
@@ -47,7 +47,7 @@ location_table = {
 
 location_name_to_id: Dict[str, int] = {name: location_base_id + data.base_id_offset for name, data in location_table}
 
-def get_player_location_table(options: DredgeOptions) -> Dict[str, bool]:
+def get_player_location_table(options: DREDGEOptions) -> Dict[str, bool]:
     all_locations: Dict[str, bool] = {}
     base_locations = {name: location.is_aberration for (name, location)
                       in location_table.items() if location.expansion == "Base"}
