@@ -9,6 +9,7 @@ from BaseClasses import ItemClassification
 
 @dataclass
 class DredgeItemData:
+    base_id_offset: int
     classification: ItemClassification
     item_group: str
     expansion: str
@@ -28,6 +29,7 @@ def load_data_file(*args) -> dict:
 
 item_table = {
     name: DredgeItemData(
+        base_id_offset=entry["base_id_offset"],
         classification=ItemClassification[entry["classification"]],
         item_group=entry["item_group"],
         expansion=entry["expansion"],
@@ -43,7 +45,7 @@ def get_item_group(item_name: str) -> str:
     return item_table[item_name].item_group
 
 
-item_name_to_id = {name: item_base_id + i for i, name in enumerate(item_table)}
+item_name_to_id = {name: item_base_id + data.base_id_offset for name, data in item_table}
 
 item_name_groups = defaultdict(set)
 for name, data in item_table.items():

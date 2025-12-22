@@ -1,5 +1,6 @@
 {
   "Fish - Abyssal Gar": {
+    "base_id_offset": 0,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -9,6 +10,7 @@
     "iron_rig_phase": 2
   },
   "Fish - All-Seeing Cod": {
+    "base_id_offset": 1,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -18,6 +20,7 @@
     "is_aberration": true
   },
   "Fish - Anchovy King": {
+    "base_id_offset": 2,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -27,6 +30,7 @@
     "is_aberration": true
   },
   "Fish - Anchovy": {
+    "base_id_offset": 3,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -35,6 +39,7 @@
     "can_catch_net": true
   },
   "Fish - Anglerfish": {
+    "base_id_offset": 4,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -43,6 +48,7 @@
     "can_catch_net": false
   },
   "Fish - Anvilfish": {
+    "base_id_offset": 5,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -53,6 +59,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Arapaima": {
+    "base_id_offset": 6,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -62,6 +69,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Archon's Burden": {
+    "base_id_offset": 7,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -73,6 +81,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Armored Searobin": {
+    "base_id_offset": 8,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -81,6 +90,7 @@
     "can_catch_net": true
   },
   "Fish - Arrow Squid": {
+    "base_id_offset": 9,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -89,6 +99,7 @@
     "can_catch_net": true
   },
   "Fish - Astral Icefish": {
+    "base_id_offset": 10,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -98,6 +109,7 @@
     "is_aberration": true
   },
   "Fish - Aurora Jellyfish": {
+    "base_id_offset": 11,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -106,6 +118,7 @@
     "can_catch_net": true
   },
   "Fish - Axial Matron": {
+    "base_id_offset": 12,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -116,6 +129,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Barbed Eel": {
+    "base_id_offset": 13,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -125,6 +139,7 @@
     "is_aberration": true
   },
   "Fish - Barracuda": {
+    "base_id_offset": 14,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -133,6 +148,7 @@
     "can_catch_net": false
   },
   "Fish - Barreleye": {
+    "base_id_offset": 15,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -141,6 +157,7 @@
     "can_catch_net": false
   },
   "Fish - Beaked Moonfish": {
+    "base_id_offset": 16,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -150,6 +167,7 @@
     "is_aberration": true
   },
   "Fish - Bearded Mackerel": {
+    "base_id_offset": 17,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -159,6 +177,7 @@
     "is_aberration": true
   },
   "Fish - Bifurcated Gar": {
+    "base_id_offset": 18,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -169,6 +188,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Black Grouper": {
+    "base_id_offset": 19,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -177,6 +197,7 @@
     "can_catch_net": true
   },
   "Fish - Black Sea Bass": {
+    "base_id_offset": 20,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -185,6 +206,7 @@
     "can_catch_net": true
   },
   "Fish - Blackfin Tuna": {
+    "base_id_offset": 21,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -193,6 +215,7 @@
     "can_catch_net": true
   },
   "Fish - Blackmouth Salmon": {
+    "base_id_offset": 22,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -201,6 +224,7 @@
     "can_catch_net": true
   },
   "Fish - Blacktip Reef Shark": {
+    "base_id_offset": 23,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -209,6 +233,7 @@
     "can_catch_net": true
   },
   "Fish - Blistered Tarpon": {
+    "base_id_offset": 24,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -218,6 +243,7 @@
     "is_aberration": true
   },
   "Fish - Blood Snapper": {
+    "base_id_offset": 25,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -227,6 +253,7 @@
     "is_aberration": true
   },
   "Fish - Bloodskin Shark": {
+    "base_id_offset": 26,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -236,6 +263,7 @@
     "is_aberration": true
   },
   "Fish - Blue Crab": {
+    "base_id_offset": 27,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -244,6 +272,7 @@
     "can_catch_net": false
   },
   "Fish - Blue Mackerel": {
+    "base_id_offset": 28,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -252,6 +281,7 @@
     "can_catch_net": true
   },
   "Fish - Bony Wreckfish": {
+    "base_id_offset": 29,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -261,6 +291,7 @@
     "is_aberration": true
   },
   "Fish - Boreal Shell": {
+    "base_id_offset": 30,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -271,6 +302,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Boreaspis": {
+    "base_id_offset": 31,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -280,6 +312,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Broken Arapaima": {
+    "base_id_offset": 32,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -290,6 +323,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Bronze Whaler": {
+    "base_id_offset": 33,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -298,6 +332,7 @@
     "can_catch_net": true
   },
   "Fish - Brood Squid": {
+    "base_id_offset": 34,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -307,6 +342,7 @@
     "is_aberration": true
   },
   "Fish - Brute's Crux": {
+    "base_id_offset": 35,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -319,6 +355,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Bubbling Char": {
+    "base_id_offset": 36,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -328,6 +365,7 @@
     "is_aberration": true
   },
   "Fish - Bulbous Toothfish": {
+    "base_id_offset": 37,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -337,6 +375,7 @@
     "is_aberration": true
   },
   "Fish - Bursting Anglerfish": {
+    "base_id_offset": 38,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -346,6 +385,7 @@
     "is_aberration": true
   },
   "Fish - Calcified Snailfish": {
+    "base_id_offset": 39,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -355,6 +395,7 @@
     "is_aberration": true
   },
   "Fish - Catfish": {
+    "base_id_offset": 40,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -363,6 +404,7 @@
     "can_catch_net": true
   },
   "Fish - Cerebral Crab": {
+    "base_id_offset": 41,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -372,6 +414,7 @@
     "is_aberration": true
   },
   "Fish - Char": {
+    "base_id_offset": 42,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -380,6 +423,7 @@
     "can_catch_net": false
   },
   "Fish - Charred Sunfish": {
+    "base_id_offset": 43,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -389,6 +433,7 @@
     "is_aberration": true
   },
   "Fish - Clawfin Gar": {
+    "base_id_offset": 44,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -398,6 +443,7 @@
     "is_aberration": true
   },
   "Fish - Cleft-mouth Shark": {
+    "base_id_offset": 45,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -407,6 +453,7 @@
     "is_aberration": true
   },
   "Fish - Clutching Nautilus": {
+    "base_id_offset": 46,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -417,6 +464,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Cod": {
+    "base_id_offset": 47,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -425,6 +473,7 @@
     "can_catch_net": true
   },
   "Fish - Coelacanth": {
+    "base_id_offset": 48,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -435,6 +484,7 @@
     "is_behind_debris": true
   },
   "Fish - Collapsed Viperfish": {
+    "base_id_offset": 49,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -444,6 +494,7 @@
     "is_aberration": true
   },
   "Fish - Colossal Squid": {
+    "base_id_offset": 50,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -452,6 +503,7 @@
     "can_catch_net": true
   },
   "Fish - Common Crab": {
+    "base_id_offset": 51,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -460,6 +512,7 @@
     "can_catch_net": false
   },
   "Fish - Concertina Barracuda": {
+    "base_id_offset": 52,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -469,6 +522,7 @@
     "is_aberration": true
   },
   "Fish - Congealed Rattail": {
+    "base_id_offset": 53,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -478,6 +532,7 @@
     "is_aberration": true
   },
   "Fish - Conger Eel": {
+    "base_id_offset": 54,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -486,6 +541,7 @@
     "can_catch_net": false
   },
   "Fish - Consumed Grouper": {
+    "base_id_offset": 55,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -495,6 +551,7 @@
     "is_aberration": true
   },
   "Fish - Coral Grouper": {
+    "base_id_offset": 56,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -503,6 +560,7 @@
     "can_catch_net": false
   },
   "Fish - Cortex Decorator": {
+    "base_id_offset": 57,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -512,6 +570,7 @@
     "is_aberration": true
   },
   "Fish - Craterous Seer": {
+    "base_id_offset": 58,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -521,6 +580,7 @@
     "is_aberration": true
   },
   "Fish - Crawling Instar": {
+    "base_id_offset": 59,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -531,6 +591,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Crown of Nadir": {
+    "base_id_offset": 60,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -540,6 +601,7 @@
     "is_aberration": true
   },
   "Fish - Crown of Thorns": {
+    "base_id_offset": 61,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -548,6 +610,7 @@
     "can_catch_net": false
   },
   "Fish - Cursed Fangtooth": {
+    "base_id_offset": 62,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -557,6 +620,7 @@
     "is_aberration": true
   },
   "Fish - Cusk Eel": {
+    "base_id_offset": 63,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -565,6 +629,7 @@
     "can_catch_net": true
   },
   "Fish - Cyclopean Flounder": {
+    "base_id_offset": 64,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -574,6 +639,7 @@
     "is_aberration": true
   },
   "Fish - Cystic Trilobite": {
+    "base_id_offset": 65,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -584,6 +650,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Decaying Blackmouth": {
+    "base_id_offset": 66,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -593,6 +660,7 @@
     "is_aberration": true
   },
   "Fish - Decorator Crab": {
+    "base_id_offset": 67,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -601,6 +669,7 @@
     "can_catch_net": false
   },
   "Fish - Decrepit Viperfish": {
+    "base_id_offset": 68,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -610,6 +679,7 @@
     "is_aberration": true
   },
   "Fish - Defaced Skate": {
+    "base_id_offset": 69,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -619,6 +689,7 @@
     "is_aberration": true
   },
   "Fish - Devil Ray": {
+    "base_id_offset": 70,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -627,6 +698,7 @@
     "can_catch_net": true
   },
   "Fish - Drifting Chrysalis": {
+    "base_id_offset": 71,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -637,6 +709,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Dunkleosteus": {
+    "base_id_offset": 72,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -646,6 +719,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Eagle Shark": {
+    "base_id_offset": 73,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -655,6 +729,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Effigy Crab": {
+    "base_id_offset": 74,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -664,6 +739,7 @@
     "is_aberration": true
   },
   "Fish - Entangled Crab": {
+    "base_id_offset": 75,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -673,6 +749,7 @@
     "is_aberration": true
   },
   "Fish - Enthralled Stonefish": {
+    "base_id_offset": 76,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -682,6 +759,7 @@
     "is_aberration": true
   },
   "Fish - Entwined Mullet": {
+    "base_id_offset": 77,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -691,6 +769,7 @@
     "is_aberration": true
   },
   "Fish - Erupting Scorpion": {
+    "base_id_offset": 78,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -701,6 +780,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Excoriated Fiend": {
+    "base_id_offset": 79,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -711,6 +791,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Fallen Stars": {
+    "base_id_offset": 80,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -720,6 +801,7 @@
     "is_aberration": true
   },
   "Fish - Famine's End": {
+    "base_id_offset": 81,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -731,6 +813,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Fanged Cod": {
+    "base_id_offset": 82,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -740,6 +823,7 @@
     "is_aberration": true
   },
   "Fish - Fangtooth": {
+    "base_id_offset": 83,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -748,6 +832,7 @@
     "can_catch_net": false
   },
   "Fish - Feral Lizardfish": {
+    "base_id_offset": 84,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -757,6 +842,7 @@
     "is_aberration": true
   },
   "Fish - Fiddler Crab": {
+    "base_id_offset": 85,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -765,6 +851,7 @@
     "can_catch_net": false
   },
   "Fish - Firefly Squid": {
+    "base_id_offset": 86,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -773,6 +860,7 @@
     "can_catch_net": true
   },
   "Fish - Flayed Mackerel": {
+    "base_id_offset": 87,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -782,6 +870,7 @@
     "is_aberration": true
   },
   "Fish - Fractalline Icefish": {
+    "base_id_offset": 88,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -791,6 +880,7 @@
     "is_aberration": true
   },
   "Fish - Frilled Shark": {
+    "base_id_offset": 89,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -799,6 +889,7 @@
     "can_catch_net": false
   },
   "Fish - Gar": {
+    "base_id_offset": 90,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -807,6 +898,7 @@
     "can_catch_net": true
   },
   "Fish - Gazing Shark": {
+    "base_id_offset": 91,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -816,6 +908,7 @@
     "is_aberration": true
   },
   "Fish - Gelatinous Stonefish": {
+    "base_id_offset": 92,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -825,6 +918,7 @@
     "is_aberration": true
   },
   "Fish - Ghost Shark": {
+    "base_id_offset": 93,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -833,6 +927,7 @@
     "can_catch_net": false
   },
   "Fish - Giant Amphipod": {
+    "base_id_offset": 94,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -841,6 +936,7 @@
     "can_catch_net": false
   },
   "Fish - Giant Dragonfish": {
+    "base_id_offset": 95,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -850,6 +946,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Giant Mud Crab": {
+    "base_id_offset": 96,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -858,6 +955,7 @@
     "can_catch_net": false
   },
   "Fish - Glaring Sunfish": {
+    "base_id_offset": 97,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -867,6 +965,7 @@
     "is_aberration": true
   },
   "Fish - Gleaming Mullet": {
+    "base_id_offset": 98,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -876,6 +975,7 @@
     "is_aberration": true
   },
   "Fish - Glowing Octopus": {
+    "base_id_offset": 99,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -884,6 +984,7 @@
     "can_catch_net": false
   },
   "Fish - Gnashing Perch": {
+    "base_id_offset": 100,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -893,6 +994,7 @@
     "is_aberration": true
   },
   "Fish - Goblin Shark": {
+    "base_id_offset": 101,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -901,6 +1003,7 @@
     "can_catch_net": false
   },
   "Fish - Goliath Tigerfish": {
+    "base_id_offset": 102,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -911,6 +1014,7 @@
     "is_behind_debris": true
   },
   "Fish - Grasping Snail": {
+    "base_id_offset": 103,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -920,6 +1024,7 @@
     "is_aberration": true
   },
   "Fish - Grey Eel": {
+    "base_id_offset": 104,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -928,6 +1033,7 @@
     "can_catch_net": true
   },
   "Fish - Grey Mullet": {
+    "base_id_offset": 105,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -936,6 +1042,7 @@
     "can_catch_net": true
   },
   "Fish - Grinning Gar": {
+    "base_id_offset": 106,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -945,6 +1052,7 @@
     "is_aberration": true
   },
   "Fish - Grisly Shark": {
+    "base_id_offset": 107,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -954,6 +1062,7 @@
     "is_aberration": true
   },
   "Fish - Grotesque Mackerel": {
+    "base_id_offset": 108,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -963,6 +1072,7 @@
     "is_aberration": true
   },
   "Fish - Gulf Flounder": {
+    "base_id_offset": 109,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -971,6 +1081,7 @@
     "can_catch_net": true
   },
   "Fish - Gulper Eel": {
+    "base_id_offset": 110,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -980,6 +1091,7 @@
     "is_exotic": true
   },
   "Fish - Hammerhead Shark": {
+    "base_id_offset": 111,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -988,6 +1100,7 @@
     "can_catch_net": false
   },
   "Fish - Hinged Wolffish": {
+    "base_id_offset": 112,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -997,6 +1110,7 @@
     "is_aberration": true
   },
   "Fish - Hooked Sailfish": {
+    "base_id_offset": 113,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1006,6 +1120,7 @@
     "is_aberration": true
   },
   "Fish - Horseshoe Crab": {
+    "base_id_offset": 114,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1014,6 +1129,7 @@
     "can_catch_net": false
   },
   "Fish - Host Eel": {
+    "base_id_offset": 115,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1023,6 +1139,7 @@
     "is_aberration": true
   },
   "Fish - Icefish": {
+    "base_id_offset": 116,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1031,6 +1148,7 @@
     "can_catch_net": true
   },
   "Fish - Imperious Lobster": {
+    "base_id_offset": 117,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1040,6 +1158,7 @@
     "is_aberration": true
   },
   "Fish - Infernal Eel": {
+    "base_id_offset": 118,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1049,6 +1168,7 @@
     "is_aberration": true
   },
   "Fish - Inverted Husk": {
+    "base_id_offset": 119,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1059,6 +1179,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Ivory Impaler": {
+    "base_id_offset": 120,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1069,6 +1190,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Kerygmachela": {
+    "base_id_offset": 121,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1078,6 +1200,7 @@
     "iron_rig_phase": 3
   },
   "Fish - King Crab": {
+    "base_id_offset": 122,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1086,6 +1209,7 @@
     "can_catch_net": false
   },
   "Fish - King's Wreath": {
+    "base_id_offset": 123,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1095,6 +1219,7 @@
     "is_aberration": true
   },
   "Fish - Lancetfish": {
+    "base_id_offset": 124,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1104,6 +1229,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Latching Snapper": {
+    "base_id_offset": 125,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1113,6 +1239,7 @@
     "is_aberration": true
   },
   "Fish - Leeching Prawn": {
+    "base_id_offset": 126,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1122,6 +1249,7 @@
     "is_aberration": true
   },
   "Fish - Lizardfish": {
+    "base_id_offset": 127,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1130,6 +1258,7 @@
     "can_catch_net": true
   },
   "Fish - Longfin Eel": {
+    "base_id_offset": 128,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1138,6 +1267,7 @@
     "can_catch_net": false
   },
   "Fish - Loosejaw": {
+    "base_id_offset": 129,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1146,6 +1276,7 @@
     "can_catch_net": false
   },
   "Fish - Lumpy Mackerel": {
+    "base_id_offset": 130,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1155,6 +1286,7 @@
     "is_aberration": true
   },
   "Fish - Mahi Mahi": {
+    "base_id_offset": 131,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1164,6 +1296,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Malignant Pincer": {
+    "base_id_offset": 132,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1173,6 +1306,7 @@
     "is_aberration": true
   },
   "Fish - Many-Eyed Mackerel": {
+    "base_id_offset": 133,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1182,6 +1316,7 @@
     "is_aberration": true
   },
   "Fish - Medusa Octopus": {
+    "base_id_offset": 134,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1191,6 +1326,7 @@
     "is_aberration": true
   },
   "Fish - Mimic Slug": {
+    "base_id_offset": 135,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1201,6 +1337,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Mire Screecher": {
+    "base_id_offset": 136,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1210,6 +1347,7 @@
     "is_aberration": true
   },
   "Fish - Moonfish": {
+    "base_id_offset": 137,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1218,6 +1356,7 @@
     "can_catch_net": false
   },
   "Fish - Nautilus": {
+    "base_id_offset": 138,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1227,6 +1366,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Nightwing Catfish": {
+    "base_id_offset": 139,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1236,6 +1376,7 @@
     "is_aberration": true
   },
   "Fish - Nipponites": {
+    "base_id_offset": 140,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1245,6 +1386,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Oarfish": {
+    "base_id_offset": 141,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1254,6 +1396,7 @@
     "is_exotic": true
   },
   "Fish - Ocean Sunfish": {
+    "base_id_offset": 142,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1262,6 +1405,7 @@
     "can_catch_net": false
   },
   "Fish - Oceanic Perch": {
+    "base_id_offset": 143,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1270,6 +1414,7 @@
     "can_catch_net": false
   },
   "Fish - Opabinia": {
+    "base_id_offset": 144,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1279,6 +1424,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Ossified Searobin": {
+    "base_id_offset": 145,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1288,6 +1434,7 @@
     "is_aberration": true
   },
   "Fish - Osteostracan": {
+    "base_id_offset": 146,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1297,6 +1444,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Paddlefish": {
+    "base_id_offset": 147,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1306,6 +1454,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Pale Grasper": {
+    "base_id_offset": 148,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1315,6 +1464,7 @@
     "is_aberration": true
   },
   "Fish - Pale Skate": {
+    "base_id_offset": 149,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1323,6 +1473,7 @@
     "can_catch_net": true
   },
   "Fish - Parhelion Jellyfish": {
+    "base_id_offset": 150,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1332,6 +1483,7 @@
     "is_aberration": true
   },
   "Fish - Perished Loosejaw": {
+    "base_id_offset": 151,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1341,6 +1493,7 @@
     "is_aberration": true
   },
   "Fish - Plated Barbjaw": {
+    "base_id_offset": 152,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1351,6 +1504,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Plated Osteostracan": {
+    "base_id_offset": 153,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1361,6 +1515,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Primordial Shadow": {
+    "base_id_offset": 154,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1371,6 +1526,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Radiant Squid": {
+    "base_id_offset": 155,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1380,6 +1536,7 @@
     "is_aberration": true
   },
   "Fish - Rapt Shark": {
+    "base_id_offset": 156,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1389,6 +1546,7 @@
     "is_aberration": true
   },
   "Fish - Rattail": {
+    "base_id_offset": 157,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1397,6 +1555,7 @@
     "can_catch_net": false
   },
   "Fish - Razormouth Tuna": {
+    "base_id_offset": 158,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1406,6 +1565,7 @@
     "is_aberration": true
   },
   "Fish - Red Snapper": {
+    "base_id_offset": 159,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1414,6 +1574,7 @@
     "can_catch_net": true
   },
   "Fish - Riddled Flounder": {
+    "base_id_offset": 160,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1423,6 +1584,7 @@
     "is_aberration": true
   },
   "Fish - Rock Crab": {
+    "base_id_offset": 161,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1431,6 +1593,7 @@
     "can_catch_net": false
   },
   "Fish - Ruptured Vessel": {
+    "base_id_offset": 162,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1440,6 +1603,7 @@
     "is_aberration": true
   },
   "Fish - Sable Reacher": {
+    "base_id_offset": 163,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1449,6 +1613,7 @@
     "is_aberration": true
   },
   "Fish - Sailfish": {
+    "base_id_offset": 164,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1457,6 +1622,7 @@
     "can_catch_net": true
   },
   "Fish - Sallow Sailfish": {
+    "base_id_offset": 165,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1466,6 +1632,7 @@
     "is_aberration": true
   },
   "Fish - Sanguine Shark": {
+    "base_id_offset": 166,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1476,6 +1643,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Savage Barracuda": {
+    "base_id_offset": 167,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1485,6 +1653,7 @@
     "is_aberration": true
   },
   "Fish - Sawfish": {
+    "base_id_offset": 168,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1494,6 +1663,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Scarlet Prawn": {
+    "base_id_offset": 169,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1502,6 +1672,7 @@
     "can_catch_net": true
   },
   "Fish - Scouring Bass": {
+    "base_id_offset": 170,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1511,6 +1682,7 @@
     "is_aberration": true
   },
   "Fish - Sea Cucumber": {
+    "base_id_offset": 171,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1520,6 +1692,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Sea Scorpion": {
+    "base_id_offset": 172,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1529,6 +1702,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Sea Slug": {
+    "base_id_offset": 173,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1538,6 +1712,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Sea Stars": {
+    "base_id_offset": 174,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1546,6 +1721,7 @@
     "can_catch_net": false
   },
   "Fish - Seizing Snailfish": {
+    "base_id_offset": 175,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1555,6 +1731,7 @@
     "is_aberration": true
   },
   "Fish - Sergeant Fish": {
+    "base_id_offset": 176,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1563,6 +1740,7 @@
     "can_catch_net": true
   },
   "Fish - Serpentine Mackerel": {
+    "base_id_offset": 177,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1572,6 +1750,7 @@
     "is_aberration": true
   },
   "Fish - Shaper's Prime": {
+    "base_id_offset": 178,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1584,6 +1763,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Shard Ray": {
+    "base_id_offset": 179,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1593,6 +1773,7 @@
     "is_aberration": true
   },
   "Fish - Shattered Wreckfish": {
+    "base_id_offset": 180,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1602,6 +1783,7 @@
     "is_aberration": true
   },
   "Fish - Silvering Lancetfish": {
+    "base_id_offset": 181,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1612,6 +1794,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Skeletal Moonfish": {
+    "base_id_offset": 182,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1621,6 +1804,7 @@
     "is_aberration": true
   },
   "Fish - Sleeper Shark": {
+    "base_id_offset": 183,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1630,6 +1814,7 @@
     "is_exotic": true
   },
   "Fish - Sleeper's Torment": {
+    "base_id_offset": 184,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "Both",
@@ -1641,6 +1826,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Snag Squid": {
+    "base_id_offset": 185,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1650,6 +1836,7 @@
     "is_aberration": true
   },
   "Fish - Snailfish": {
+    "base_id_offset": 186,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1658,6 +1845,7 @@
     "can_catch_net": false
   },
   "Fish - Snake Mackerel": {
+    "base_id_offset": 187,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1666,6 +1854,7 @@
     "can_catch_net": true
   },
   "Fish - Sollasina": {
+    "base_id_offset": 188,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1675,6 +1864,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Spider Crab": {
+    "base_id_offset": 189,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1683,6 +1873,7 @@
     "can_catch_net": false
   },
   "Fish - Spiny Lobster": {
+    "base_id_offset": 190,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1691,6 +1882,7 @@
     "can_catch_net": false
   },
   "Fish - Splintered Crab": {
+    "base_id_offset": 191,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1700,6 +1892,7 @@
     "is_aberration": true
   },
   "Fish - Sprouting Eel": {
+    "base_id_offset": 192,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1709,6 +1902,7 @@
     "is_aberration": true
   },
   "Fish - Squat Lobster": {
+    "base_id_offset": 193,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1717,6 +1911,7 @@
     "can_catch_net": false
   },
   "Fish - Stalking Spiderfish": {
+    "base_id_offset": 194,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1727,6 +1922,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Stargazer": {
+    "base_id_offset": 195,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1735,6 +1931,7 @@
     "can_catch_net": true
   },
   "Fish - Stingray": {
+    "base_id_offset": 196,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1743,6 +1940,7 @@
     "can_catch_net": false
   },
   "Fish - Stonefish": {
+    "base_id_offset": 197,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1751,6 +1949,7 @@
     "can_catch_net": true
   },
   "Fish - Sturgeon": {
+    "base_id_offset": 198,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1759,6 +1958,7 @@
     "can_catch_net": true
   },
   "Fish - Swordfish": {
+    "base_id_offset": 199,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1768,6 +1968,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Tarpon": {
+    "base_id_offset": 200,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1776,6 +1977,7 @@
     "can_catch_net": true
   },
   "Fish - Tattered Mackerel": {
+    "base_id_offset": 201,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1785,6 +1987,7 @@
     "is_aberration": true
   },
   "Fish - Thawed Icefish": {
+    "base_id_offset": 202,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1794,6 +1997,7 @@
     "is_aberration": true
   },
   "Fish - Three-Headed Cod": {
+    "base_id_offset": 203,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1803,6 +2007,7 @@
     "is_aberration": true
   },
   "Fish - Tiger Mackerel": {
+    "base_id_offset": 204,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1811,6 +2016,7 @@
     "can_catch_net": true
   },
   "Fish - Toothfish": {
+    "base_id_offset": 205,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1819,6 +2025,7 @@
     "can_catch_net": false
   },
   "Fish - Translucent Sturgeon": {
+    "base_id_offset": 206,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1828,6 +2035,7 @@
     "is_aberration": true
   },
   "Fish - Trilobite": {
+    "base_id_offset": 207,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1837,6 +2045,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Tripod Spiderfish": {
+    "base_id_offset": 208,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1846,6 +2055,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Tullimonstrum": {
+    "base_id_offset": 209,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1855,6 +2065,7 @@
     "iron_rig_phase": 1
   },
   "Fish - Tusked Grouper": {
+    "base_id_offset": 210,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1864,6 +2075,7 @@
     "is_aberration": true
   },
   "Fish - Twinned Eels": {
+    "base_id_offset": 211,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1873,6 +2085,7 @@
     "is_aberration": true
   },
   "Fish - Twisted Shark": {
+    "base_id_offset": 212,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1882,6 +2095,7 @@
     "is_aberration": true
   },
   "Fish - Umbral Puppet": {
+    "base_id_offset": 213,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1891,6 +2105,7 @@
     "is_aberration": true
   },
   "Fish - Untouchable Wyrmfish": {
+    "base_id_offset": 214,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1901,6 +2116,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Unveiled Vetulicolia": {
+    "base_id_offset": 215,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1911,6 +2127,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Vagrant Sollasina": {
+    "base_id_offset": 216,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1921,6 +2138,7 @@
     "iron_rig_phase": 2
   },
   "Fish - Vetulicolia": {
+    "base_id_offset": 217,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -1930,6 +2148,7 @@
     "iron_rig_phase": 5
   },
   "Fish - Viperfish": {
+    "base_id_offset": 218,
     "region": "Open Ocean",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1938,6 +2157,7 @@
     "can_catch_net": false
   },
   "Fish - Voideye": {
+    "base_id_offset": 219,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1947,6 +2167,7 @@
     "is_aberration": true
   },
   "Fish - Volcano Snail": {
+    "base_id_offset": 220,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1955,6 +2176,7 @@
     "can_catch_net": false
   },
   "Fish - Voltaic Grouper": {
+    "base_id_offset": 221,
     "region": "The Marrows",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1964,6 +2186,7 @@
     "is_aberration": true
   },
   "Fish - Vortex Interloper": {
+    "base_id_offset": 222,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1973,6 +2196,7 @@
     "is_aberration": true
   },
   "Fish - Withered Ray": {
+    "base_id_offset": 223,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1982,6 +2206,7 @@
     "is_aberration": true
   },
   "Fish - Wolffish": {
+    "base_id_offset": 224,
     "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
@@ -1990,6 +2215,7 @@
     "can_catch_net": false
   },
   "Fish - Wreckfish": {
+    "base_id_offset": 225,
     "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
@@ -1998,6 +2224,7 @@
     "can_catch_net": false
   },
   "Fish - Wretched Nipper": {
+    "base_id_offset": 226,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -2008,6 +2235,7 @@
     "iron_rig_phase": 4
   },
   "Fish - Xeno Xeno": {
+    "base_id_offset": 227,
     "region": "Stellar Basin",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -2018,6 +2246,7 @@
     "iron_rig_phase": 3
   },
   "Fish - Xiphactinus": {
+    "base_id_offset": 228,
     "region": "Twisted Strand",
     "location_group": "Encyclopedia",
     "expansion": "IronRig",
@@ -2027,6 +2256,7 @@
     "iron_rig_phase": 4
   },
   "Research - Hydraulic Rod": {
+    "base_id_offset": 229,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2035,6 +2265,7 @@
     "can_catch_net": false
   },
   "Research - Flexible Fishing Pole": {
+    "base_id_offset": 230,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2043,6 +2274,7 @@
     "can_catch_net": false
   },
   "Research - Heat-Resistant Line": {
+    "base_id_offset": 231,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2051,6 +2283,7 @@
     "can_catch_net": false
   },
   "Research - Anti-Tangle Line": {
+    "base_id_offset": 232,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2059,6 +2292,7 @@
     "can_catch_net": false
   },
   "Research - Versatile Rod": {
+    "base_id_offset": 233,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2067,6 +2301,7 @@
     "can_catch_net": false
   },
   "Research - Harvesting Platform": {
+    "base_id_offset": 234,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2075,6 +2310,7 @@
     "can_catch_net": false
   },
   "Research - Bottomless Lines": {
+    "base_id_offset": 235,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2083,6 +2319,7 @@
     "can_catch_net": false
   },
   "Research - Fathomless Winch": {
+    "base_id_offset": 236,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2091,6 +2328,7 @@
     "can_catch_net": false
   },
   "Research - Improved Outboard Engine": {
+    "base_id_offset": 237,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2099,6 +2337,7 @@
     "can_catch_net": false
   },
   "Research - Jet Drive Engine": {
+    "base_id_offset": 238,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2107,6 +2346,7 @@
     "can_catch_net": false
   },
   "Research - Refined Outboard Engine": {
+    "base_id_offset": 239,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2115,6 +2355,7 @@
     "can_catch_net": false
   },
   "Research - Twin Prop Engine": {
+    "base_id_offset": 240,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2123,6 +2364,7 @@
     "can_catch_net": false
   },
   "Research - Twin Jet Drive Engine": {
+    "base_id_offset": 241,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2131,6 +2373,7 @@
     "can_catch_net": false
   },
   "Research - Engine Stack": {
+    "base_id_offset": 242,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2139,6 +2382,7 @@
     "can_catch_net": false
   },
   "Research - Efficient Crab Pot": {
+    "base_id_offset": 243,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2147,6 +2391,7 @@
     "can_catch_net": false
   },
   "Research - Hardy Crab Pot": {
+    "base_id_offset": 244,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2155,6 +2400,7 @@
     "can_catch_net": false
   },
   "Research - Large Crab Pot": {
+    "base_id_offset": 245,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2163,6 +2409,7 @@
     "can_catch_net": false
   },
   "Research - Complex Crab Pot": {
+    "base_id_offset": 246,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2171,6 +2418,7 @@
     "can_catch_net": false
   },
   "Research - Massive Crab Pot": {
+    "base_id_offset": 247,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2179,6 +2427,7 @@
     "can_catch_net": false
   },
   "Research - Reinforced Crab Pot": {
+    "base_id_offset": 248,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2187,6 +2436,7 @@
     "can_catch_net": false
   },
   "Research - Improved Trawl Net": {
+    "base_id_offset": 249,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2195,6 +2445,7 @@
     "can_catch_net": false
   },
   "Research - Silt Filtering Trawl Net": {
+    "base_id_offset": 250,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2203,6 +2454,7 @@
     "can_catch_net": false
   },
   "Research - Large Trawl Net": {
+    "base_id_offset": 251,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2211,6 +2463,7 @@
     "can_catch_net": false
   },
   "Research - Tempered Mesh Net": {
+    "base_id_offset": 252,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2219,6 +2472,7 @@
     "can_catch_net": false
   },
   "Research - Heavy-Duty Trawl Net": {
+    "base_id_offset": 253,
     "region": "Open Ocean",
     "location_group": "Research",
     "expansion": "Base",
@@ -2227,6 +2481,7 @@
     "can_catch_net": false
   },
   "Relic - Ornate Key": {
+    "base_id_offset": 254,
     "region": "Open Ocean",
     "location_group": "Relic",
     "expansion": "Base",
@@ -2235,6 +2490,7 @@
     "can_catch_net": false
   },
   "Relic - Rusted Music Box": {
+    "base_id_offset": 255,
     "region": "Open Ocean",
     "location_group": "Relic",
     "expansion": "Base",
@@ -2243,6 +2499,7 @@
     "can_catch_net": false
   },
   "Relic - Jewel Encrusted Band": {
+    "base_id_offset": 256,
     "region": "Open Ocean",
     "location_group": "Relic",
     "expansion": "Base",
@@ -2251,6 +2508,7 @@
     "can_catch_net": false
   },
   "Relic - Shimmering Necklace": {
+    "base_id_offset": 257,
     "region": "Open Ocean",
     "location_group": "Relic",
     "expansion": "Base",
@@ -2259,6 +2517,7 @@
     "can_catch_net": false
   },
   "Relic - Antique Pocket Watch": {
+    "base_id_offset": 258,
     "region": "Open Ocean",
     "location_group": "Relic",
     "expansion": "Base",
@@ -2267,6 +2526,7 @@
     "can_catch_net": false
   },
   "Quest - Sampling Device": {
+    "base_id_offset": 259,
     "region": "Open Ocean",
     "location_group": "Quest",
     "expansion": "Base",
@@ -2275,6 +2535,7 @@
     "can_catch_net": false
   },
   "Shop - Simple Skimmer": {
+    "base_id_offset": 260,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "Base",
@@ -2283,6 +2544,7 @@
     "can_catch_net": false
   },
   "Shop - Weighted Line": {
+    "base_id_offset": 261,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "Base",
@@ -2291,6 +2553,7 @@
     "can_catch_net": false
   },
   "Shop - Barbed Ice Rod": {
+    "base_id_offset": 262,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "PaleReach",
@@ -2299,6 +2562,7 @@
     "can_catch_net": false
   },
   "Shop - Glacial Lance": {
+    "base_id_offset": 263,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "PaleReach",
@@ -2307,6 +2571,7 @@
     "can_catch_net": false
   },
   "Shop - Infused Rod": {
+    "base_id_offset": 264,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "IronRig",
@@ -2315,6 +2580,7 @@
     "can_catch_net": false
   },
   "Shop - Infused Winch": {
+    "base_id_offset": 265,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "IronRig",
@@ -2323,6 +2589,7 @@
     "can_catch_net": false
   },
   "Shop - Infused Hoist": {
+    "base_id_offset": 266,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "IronRig",
@@ -2331,6 +2598,7 @@
     "can_catch_net": false
   },
   "Shop - Infused Coiling Rod": {
+    "base_id_offset": 267,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "IronRig",
@@ -2339,6 +2607,7 @@
     "can_catch_net": false
   },
   "Shop - Infused Fireproof Rod": {
+    "base_id_offset": 268,
     "region": "Open Ocean",
     "location_group": "Shop",
     "expansion": "IronRig",
@@ -2347,6 +2616,7 @@
     "can_catch_net": false
   },
   "World - Sinew Spindle": {
+    "base_id_offset": 269,
     "region": "Open Ocean",
     "location_group": "World",
     "expansion": "Base",
@@ -2355,6 +2625,7 @@
     "can_catch_net": false
   },
   "World - Viscera Crane": {
+    "base_id_offset": 270,
     "region": "Open Ocean",
     "location_group": "World",
     "expansion": "Base",
@@ -2363,6 +2634,7 @@
     "can_catch_net": false
   },
   "World - Tendon Rod": {
+    "base_id_offset": 271,
     "region": "Open Ocean",
     "location_group": "World",
     "expansion": "Base",
@@ -2371,6 +2643,7 @@
     "can_catch_net": false
   },
   "World - Encrusted Talisman": {
+    "base_id_offset": 272,
     "region": "Open Ocean",
     "location_group": "World",
     "expansion": "Base",
@@ -2379,6 +2652,7 @@
     "can_catch_net": false
   },
   "World - Basic Fishing Pole": {
+    "base_id_offset": 273,
     "region": "Open Ocean",
     "location_group": "World",
     "expansion": "Base",

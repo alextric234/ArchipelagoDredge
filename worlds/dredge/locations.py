@@ -9,6 +9,7 @@ from .options import DredgeOptions
 
 @dataclass
 class DredgeLocationData:
+    base_id_offset: int
     region: str
     location_group: str
     expansion: str
@@ -30,6 +31,7 @@ def load_data_file(*args) -> dict:
 
 location_table = {
     name: DredgeLocationData(
+        base_id_offset=entry["base_id_offset"],
         region=entry["region"],
         location_group=entry["location_group"],
         expansion=entry["expansion"],
@@ -43,7 +45,7 @@ location_table = {
     for name, entry in load_data_file("locations.json").items()
 }
 
-location_name_to_id: Dict[str, int] = {name: location_base_id + index for index, name in enumerate(location_table)}
+location_name_to_id: Dict[str, int] = {name: location_base_id + data.base_id_offset for name, data in location_table}
 
 def get_player_location_table(options: DredgeOptions) -> Dict[str, bool]:
     all_locations: Dict[str, bool] = {}
