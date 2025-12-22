@@ -1,11 +1,22 @@
 import json
 import pkgutil
 
-from typing import Dict, Set
+from typing import Dict, Set, TYPE_CHECKING
 
+from BaseClasses import Location
 from BaseClasses import LocationProgressType as LPT
+
 from dataclasses import dataclass
+
 from .options import DREDGEOptions
+
+from . import items
+
+if TYPE_CHECKING:
+    from .world import DREDGEWorld
+
+class DREDGELocation(Location):
+    game: str = "DREDGE"
 
 @dataclass
 class DREDGELocationData:
@@ -45,7 +56,7 @@ location_table = {
     for name, entry in load_data_file("locations.json").items()
 }
 
-location_name_to_id: Dict[str, int] = {name: location_base_id + data.base_id_offset for name, data in location_table}
+LOCATION_NAME_TO_ID: Dict[str, int] = {name: location_base_id + data.base_id_offset for name, data in location_table}
 
 def get_player_location_table(options: DREDGEOptions) -> Dict[str, bool]:
     all_locations: Dict[str, bool] = {}
@@ -77,9 +88,26 @@ def get_player_location_table(options: DREDGEOptions) -> Dict[str, bool]:
 
     return all_locations
 
-location_name_groups: Dict[str, Set[str]] = {}
+LOCATION_NAME_GROUPS: Dict[str, Set[str]] = {}
 for loc_name, loc_data in location_table.items():
     loc_group_name = loc_name.split(" - ", 1)[0]
-    location_name_groups.setdefault(loc_group_name, set()).add(loc_name)
+    LOCATION_NAME_GROUPS.setdefault(loc_group_name, set()).add(loc_name)
     if loc_data.location_group:
-        location_name_groups.setdefault(loc_data.location_group, set()).add(loc_name)
+        LOCATION_NAME_GROUPS.setdefault(loc_data.location_group, set()).add(loc_name)
+
+def create_all_locations(world: DREDGEWorld) -> None:
+    create_locations(world)
+    create_victory_event_location(world)
+
+def create_locations(world: DREDGEWorld) -> None:
+    for location_name, is_aberration in get_player_location_table(world.options).items():
+        region = world.get_region(location_table[location_name].region)
+        location_id = LOCATION_NAME_TO_ID[location_name]
+        location = DREDGELocation(world.player, location_name, location_id, region)
+        if is_aberration and not world.options.include_aberrations:
+            location.progress_type = LPT.EXCLUDED
+        region.locations.append(location)
+
+def create_victory_event_location(world: DREDGEWorld) -> None:
+    victory_region = world.get_region("Insanity")
+    victory_region.add_event("The Collector", "Victory", location_type=DREDGELocation, item_type=items.DREDGEItem)

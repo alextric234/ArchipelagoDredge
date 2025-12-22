@@ -9,6 +9,10 @@ from .options import DREDGEOptions
 if TYPE_CHECKING:
     from . import DREDGEWorld
 
+def set_all_rules(world: DREDGEWorld) -> None:
+    set_region_rules(world)
+    set_location_rules(world)
+    set_completion_condition(world)
 
 def set_region_rules(world: "DREDGEWorld") -> None:
     player = world.player
@@ -126,3 +130,6 @@ def get_harvest_tool_by_requirement(requirement: str, tool_type: str, is_iron_ri
         and item.size <= 4
         and name not in excluded_names
     ]
+
+def set_completion_condition(world: DREDGEWorld) -> None:
+    world.multiworld.completion_condition[world.player] = lambda state: state.has("Victory", world.player)

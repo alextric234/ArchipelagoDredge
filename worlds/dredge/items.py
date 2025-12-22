@@ -2,10 +2,15 @@ import json
 import pkgutil
 from collections import defaultdict
 from dataclasses import dataclass, field
-from typing import List
+from typing import List, TYPE_CHECKING
 
-from BaseClasses import ItemClassification
+from BaseClasses import Item, ItemClassification
 
+if TYPE_CHECKING:
+    from .world import DREDGEWorld
+
+class DREDGEItem(Item):
+    game: str = "DREDGE"
 
 @dataclass
 class DREDGEItemData:
@@ -45,9 +50,75 @@ def get_item_group(item_name: str) -> str:
     return item_table[item_name].item_group
 
 
-item_name_to_id = {name: item_base_id + data.base_id_offset for name, data in item_table}
+ITEM_NAME_TO_ID = {name: item_base_id + data.base_id_offset for name, data in item_table}
 
-item_name_groups = defaultdict(set)
+ITEM_NAME_GROUPS = defaultdict(set)
 for name, data in item_table.items():
     if data.item_group:
-        item_name_groups[data.item_group].add(name)
+        ITEM_NAME_GROUPS[data.item_group].add(name)
+
+def get_random_filler_item_name(world: DREDGEWorld) -> str:
+    filler_pool = [
+        item
+        for item, data in item_table.items()
+        if data.classification == ItemClassification.filler
+           and (
+                   data.expansion == "Base"
+                   or (world.options.include_pale_reach_dlc and data.expansion == "PaleReach")
+                   or (world.options.include_iron_rig_dlc and data.expansion == "IronRig")
+           )
+    ]
+
+    random_filler_item = world.random.choice(filler_pool)
+
+    return random_filler_item
+
+def create_all_items(world: DREDGEWorld) -> None:
+    item_pool = list[Item] = []
+
+    progression_classes = {ItemClassification.progression, ItemClassification.progression_skip_balancing}
+    for item, data in item_table.items():
+        if data.classification not in progression_classes:
+            continue
+
+        for index in range(data.classification):
+            if data.expansion == "Base":
+                item_pool.append(world.create_item(item))
+            elif world.options.include_pale_reach_dlc and data.expansion == "PaleReach":
+                item_pool.append(world.create_item(item))
+            elif world.options.include_iron_rig_dlc and data.expansion == "IronRig":
+                item_pool.append(world.create_item(item))
+
+    num_base_hull_upgrades = 2
+    for _ in range(num_base_hull_upgrades):
+        item_pool.append(world.create_item("Progressive Hull"))
+    if world.options.include_iron_rig_dlc:
+        item_pool.append(world.create_item("Progressive Hull"))
+
+    num_research_parts = 30
+    for _ in range(num_research_parts):
+        item_pool.append(world.create_item("Research Part"))
+
+    for item, data in item_table.items():
+        if data.classification == ItemClassification.useful:
+            item_pool.append(world.create_item(item))
+
+    number_of_items = len(item_pool)
+    number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
+    needed_number_of_filler_items = number_of_unfilled_locations - number_of_items
+
+    if not world.options.include_aberrations:
+        number_of_aberration_locations = sum(
+            1 for is_aberration in world.player_locations.values()
+            if is_aberration
+        )
+        for _ in range(number_of_aberration_locations):
+            item_pool.append(world.create_item(get_random_filler_item_name(world)))
+
+    number_of_items = len(item_pool)
+    if number_of_items < needed_number_of_filler_items:
+        filler_needed = needed_number_of_filler_items - number_of_items
+        for _ in range(filler_needed):
+            item_pool.append(world.create_item(get_random_filler_item_name(world)))
+
+    world.multiworld.itempool += item_pool

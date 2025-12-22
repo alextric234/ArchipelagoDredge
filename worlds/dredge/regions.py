@@ -1,27 +1,3 @@
-dredge_regions: dict[str, tuple[str]] = {
-    "Menu": ("The Marrows",),
-    "The Marrows": ("Open Ocean","Research"),
-    "Open Ocean": (
-        "Gale Cliffs",
-        "Stellar Basin",
-        "Twisted Strand",
-        "Devil's Spine",
-        "The Iron Rig",
-        "The Pale Reach",
-        "Insanity",
-    ),
-    "Research": tuple(),
-    "Gale Cliffs": tuple(),
-    "Stellar Basin": tuple(),
-    "Twisted Strand": tuple(),
-    "Devil's Spine": tuple(),
-    "The Pale Reach": tuple(),
-    "The Iron Rig": tuple(),
-    "Insanity": tuple(),
-}
-
-
-
 from typing import TYPE_CHECKING
 
 from BaseClasses import Entrance, Region
