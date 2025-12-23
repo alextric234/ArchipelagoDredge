@@ -22,7 +22,6 @@ class IncludeIronRigDLC(Toggle):
     """
     Include the Iron Rig DLC (Iron Rig DLC required for this)
     """
-    internal_name = "include_iron_rig_dlc"
     display_name = "Include Iron Rig DLC"
 
 # class RequireIronRigEnding(Toggle):
@@ -36,7 +35,6 @@ class IncludePaleReachDLC(Toggle):
     """
     Include the Pale Reach DLC (Pale Reach DLC required for this)
     """
-    internal_name = "include_pale_reach_dlc"
     display_name = "Include Pale Reach DLC"
 
 # class RequirePaleReachEnding(Toggle):
@@ -50,7 +48,6 @@ class RequireEngines(Toggle):
     """
     Set logic to require engine upgrade to reach further archipelagos
     """
-    internal_name = "require_engines"
     display_name = "Require Engines"
 
 class LogicalNets(Toggle):
@@ -63,14 +60,12 @@ class LogicalNets(Toggle):
 
     Recommended: disabled for players who prefer reliable, targeted fishing.
     """
-    internal_name = "logical_nets"
     display_name = "Logical Nets"
 
 class IncludeAberrations(Toggle):
     """
     If enabled, checks for fish aberrations may contain progression items.
     """
-    internal_name = "include_aberrations"
     display_name = "Include Aberrations"
 
 # class EnableTraps(Toggle):

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import pkgutil
 from collections import defaultdict
@@ -50,7 +52,7 @@ def get_item_group(item_name: str) -> str:
     return item_table[item_name].item_group
 
 
-ITEM_NAME_TO_ID = {name: item_base_id + data.base_id_offset for name, data in item_table}
+ITEM_NAME_TO_ID = {name: item_base_id + data.base_id_offset for name, data in item_table.items()}
 
 ITEM_NAME_GROUPS = defaultdict(set)
 for name, data in item_table.items():
@@ -74,7 +76,7 @@ def get_random_filler_item_name(world: DREDGEWorld) -> str:
     return random_filler_item
 
 def create_all_items(world: DREDGEWorld) -> None:
-    item_pool = list[Item] = []
+    item_pool: list[Item] = []
 
     progression_classes = {ItemClassification.progression, ItemClassification.progression_skip_balancing}
     for item, data in item_table.items():
@@ -107,18 +109,10 @@ def create_all_items(world: DREDGEWorld) -> None:
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
     needed_number_of_filler_items = number_of_unfilled_locations - number_of_items
 
-    if not world.options.include_aberrations:
-        number_of_aberration_locations = sum(
-            1 for is_aberration in world.player_locations.values()
-            if is_aberration
-        )
-        for _ in range(number_of_aberration_locations):
+    if needed_number_of_filler_items > 0:
+        for _ in range(needed_number_of_filler_items):
             item_pool.append(world.create_item(get_random_filler_item_name(world)))
 
     number_of_items = len(item_pool)
-    if number_of_items < needed_number_of_filler_items:
-        filler_needed = needed_number_of_filler_items - number_of_items
-        for _ in range(filler_needed):
-            item_pool.append(world.create_item(get_random_filler_item_name(world)))
 
     world.multiworld.itempool += item_pool

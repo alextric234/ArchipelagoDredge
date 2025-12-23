@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import pkgutil
 
@@ -56,7 +58,7 @@ location_table = {
     for name, entry in load_data_file("locations.json").items()
 }
 
-LOCATION_NAME_TO_ID: Dict[str, int] = {name: location_base_id + data.base_id_offset for name, data in location_table}
+LOCATION_NAME_TO_ID: Dict[str, int] = {name: location_base_id + data.base_id_offset for name, data in location_table.items()}
 
 def get_player_location_table(options: DREDGEOptions) -> Dict[str, bool]:
     all_locations: Dict[str, bool] = {}

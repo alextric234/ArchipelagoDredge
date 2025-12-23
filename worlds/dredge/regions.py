@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import TYPE_CHECKING
 
 from BaseClasses import Entrance, Region
@@ -58,6 +60,6 @@ def connect_regions(world: DREDGEWorld) -> None:
     open_ocean.connect(stellar_basin, "Open Ocean to Stellar Basin")
     open_ocean.connect(twisted_strand, "Open Ocean to Twisted Strand")
     open_ocean.connect(devils_spine, "Open Ocean to Devil's Spine")
-    open_ocean.connect(the_pale_reach, "Open Ocean to Pale Reach")
-    open_ocean.connect(the_iron_rig, "Open Ocean to Iron Rig")
+    open_ocean.connect(the_pale_reach, "Open Ocean to The Pale Reach")
+    open_ocean.connect(the_iron_rig, "Open Ocean to The Iron Rig")
     open_ocean.connect(insanity, "Open Ocean to Insanity")

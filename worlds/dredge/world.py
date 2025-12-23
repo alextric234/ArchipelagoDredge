@@ -1,7 +1,7 @@
 from worlds.AutoWorld import World
 
 from . import items, locations, regions, rules, web_world
-from . import options as DREDGEOptions
+from .options import DREDGEOptions
 
 class DREDGEWorld(World):
     """
@@ -25,7 +25,7 @@ class DREDGEWorld(World):
     def set_rules(self) -> None:
         rules.set_all_rules(self)
 
-    def create_item_classes(self) -> None:
+    def create_items(self) -> None:
         items.create_all_items(self)
 
     def create_item(self, name: str) -> items.DREDGEItem:

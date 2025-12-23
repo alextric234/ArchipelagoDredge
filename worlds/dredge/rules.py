@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import TYPE_CHECKING
 
 from BaseClasses import CollectionState, Location
@@ -35,9 +37,10 @@ def set_region_rules(world: "DREDGEWorld") -> None:
 
 def set_location_rules(world: "DREDGEWorld") -> None:
     player = world.player
-    for location_name, location_id in world.player_locations.items():
-        location = location_table[location_name]
-        world_location = world.get_location(location_name)
+    for world_location in world.get_locations():
+        if world_location.name == "The Collector":
+            continue
+        location = location_table[world_location.name]
         match location.location_group:
             case "Encyclopedia":
                 set_fish_rule(world_location, location, player, world.options)
@@ -46,7 +49,7 @@ def set_location_rules(world: "DREDGEWorld") -> None:
             case "Relic" | "Shop" | "World" | "Quest":
                 world_location.item_rule = lambda item: not item.advancement
             case _:
-                set_rule(world.get_location(location_name), lambda state: True)
+                set_rule(world_location, lambda state: True)
 
 
 def has_engines(distance: int, state: CollectionState, player: int) -> bool:
