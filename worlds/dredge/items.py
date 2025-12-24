@@ -113,6 +113,4 @@ def create_all_items(world: DREDGEWorld) -> None:
         for _ in range(needed_number_of_filler_items):
             item_pool.append(world.create_item(get_random_filler_item_name(world)))
 
-    number_of_items = len(item_pool)
-
     world.multiworld.itempool += item_pool

@@ -81,7 +81,7 @@ def get_player_location_table(options: DREDGEOptions) -> Dict[str, bool]:
         all_locations.update(both_dlc_locations)
 
     # removing these checks while waiting for fix from mod
-    excluded_groups = {"Shop", "Quest", "World", "Relic"}
+    excluded_groups = {"Shop", "Pursuit", "World", "Relic"}
     all_locations = {
         name: id
         for name, id in all_locations.items()

@@ -2045,5 +2045,119 @@
     "classification": "useful",
     "item_group": "Books",
     "expansion": "PaleReach"
+  },
+  "Lumber": {
+    "base_id_offset": 305,
+    "classification": "filler",
+    "item_group": "Material",
+    "expansion": "Base"
+  },
+  "Cloth": {
+    "base_id_offset": 306,
+    "classification": "filler",
+    "item_group": "Material",
+    "expansion": "Base"
+  },
+  "Scrap": {
+    "base_id_offset": 307,
+    "classification": "filler",
+    "item_group": "Material",
+    "expansion": "Base"
+  },
+  "Metal": {
+    "base_id_offset": 308,
+    "classification": "filler",
+    "item_group": "Material",
+    "expansion": "Base"
+  },
+  "Crate": {
+    "base_id_offset": 309,
+    "classification": "filler",
+    "item_group": "Material",
+    "expansion": "Base"
+  },
+  "Doubloons": {
+    "base_id_offset": 310,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Bag of Doubloons": {
+    "base_id_offset": 311,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Iron Chain": {
+    "base_id_offset": 312,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Silver Plate": {
+    "base_id_offset": 313,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Broken Monocle": {
+    "base_id_offset": 314,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Sextant": {
+    "base_id_offset": 315,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Ring": {
+    "base_id_offset": 316,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Earring": {
+    "base_id_offset": 317,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Broken Spectacles": {
+    "base_id_offset": 318,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Silver Trinket": {
+    "base_id_offset": 319,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Fancy Boot": {
+    "base_id_offset": 320,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Dredge Crane": {
+    "base_id_offset": 321,
+    "classification": "progression",
+    "item_group": "Boat Upgrade",
+    "expansion": "Base"
+  },
+  "Icebreaker": {
+    "base_id_offset": 322,
+    "classification": "progression",
+    "item_group": "Boat Upgrade",
+    "expansion": "PaleReach"
+  },
+  "Ice Shaper": {
+    "base_id_offset": 321,
+    "classification": "filler",
+    "item_group": "Miscellaneous",
+    "expansion": "PaleReach"
   }
 }

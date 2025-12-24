@@ -2525,10 +2525,10 @@
     "can_catch_rod": true,
     "can_catch_net": false
   },
-  "Quest - Sampling Device": {
+  "Pursuit - Sampling Device": {
     "base_id_offset": 259,
     "region": "Open Ocean",
-    "location_group": "Quest",
+    "location_group": "Pursuit",
     "expansion": "Base",
     "requirement": "",
     "can_catch_rod": true,
@@ -2659,5 +2659,1160 @@
     "requirement": "",
     "can_catch_rod": true,
     "can_catch_net": false
+  },
+  "Dredge - Open Ocean - Silver Plate 1(M-10)": {
+    "base_id_offset": 274,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Cloth 1(J-8)": {
+    "base_id_offset": 275,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Lumber 1(I-6)": {
+    "base_id_offset": 276,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Lumber 2(K-8)": {
+    "base_id_offset": 277,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Ornate Key(I-7)": {
+    "base_id_offset": 278,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Lumber 1(L-10)": {
+    "base_id_offset": 279,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Scrap 1(K-10)": {
+    "base_id_offset": 280,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Ring 1(K-8)": {
+    "base_id_offset": 281,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Belt Buckle(L-8)": {
+    "base_id_offset": 282,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Iron Chain 1(L-8)": {
+    "base_id_offset": 283,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Earring 1(K-9)": {
+    "base_id_offset": 284,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Lumber 2(K-10)": {
+    "base_id_offset": 285,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Goblet(K-10)": {
+    "base_id_offset": 286,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Cloth 1(K-10)": {
+    "base_id_offset": 287,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Cloth 2(L-8)": {
+    "base_id_offset": 288,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Silver Trinket(I-6)": {
+    "base_id_offset": 289,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Scrap 1(L-8)": {
+    "base_id_offset": 290,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Lumber 3(K-8)": {
+    "base_id_offset": 291,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Scrap 2(I-6)": {
+    "base_id_offset": 292,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - The Marrows - Scrap 3(J-9)": {
+    "base_id_offset": 293,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Silver Trinket(O-5)": {
+    "base_id_offset": 294,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Lumber 1(M-4)": {
+    "base_id_offset": 295,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Lumber 2(O-4)": {
+    "base_id_offset": 296,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Lumber 3(N-3)": {
+    "base_id_offset": 297,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Doubloon(O-3)": {
+    "base_id_offset": 298,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Lumber 4(O-2)": {
+    "base_id_offset": 299,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Scrap 1(O-4)": {
+    "base_id_offset": 300,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Scrap 2(N-4)": {
+    "base_id_offset": 301,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Scrap 3(N-3)": {
+    "base_id_offset": 302,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Scrap 4(O-2)": {
+    "base_id_offset": 303,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Scrap 5(O-4)": {
+    "base_id_offset": 304,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Cloth 1(P-5)": {
+    "base_id_offset": 305,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Cloth 2(O-4)": {
+    "base_id_offset": 306,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Ring 1(O-2)": {
+    "base_id_offset": 307,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Cloth 3(O-2)": {
+    "base_id_offset": 308,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Metal 1(O-4)": {
+    "base_id_offset": 309,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - The Marrows - Metal 1(J-8)": {
+    "base_id_offset": 310,
+    "region": "The Marrows",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - Gale Cliffs - Musicbox(N-3)": {
+    "base_id_offset": 311,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - Gale Cliffs - Earring(N-3)": {
+    "base_id_offset": 312,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - Gale Cliffs - Family Crest(O-3)": {
+    "base_id_offset": 313,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Ring Relic(F-3)": {
+    "base_id_offset": 314,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "Hadal"
+  },
+  "Dredge - Gale Cliffs - Research Part 1(N-4)": {
+    "base_id_offset": 315,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Bag of Doubloons(N-3)": {
+    "base_id_offset": 316,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Ring 2(P-4)": {
+    "base_id_offset": 317,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Ring 1(E-4)": {
+    "base_id_offset": 318,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Earring 1(F-3)": {
+    "base_id_offset": 319,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Bag of Doubloons(G-5)": {
+    "base_id_offset": 320,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Doubloon 1(I-4)": {
+    "base_id_offset": 321,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Scrap 1(G-5)": {
+    "base_id_offset": 322,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Lumber 1(D-3)": {
+    "base_id_offset": 323,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Lumber 2(E-4)": {
+    "base_id_offset": 324,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Mortar 1(E-14)": {
+    "base_id_offset": 325,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Mortar 2(G-13)": {
+    "base_id_offset": 326,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Dog Tag 1(H-13)": {
+    "base_id_offset": 327,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Lumber 1(H-14)": {
+    "base_id_offset": 328,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Lumber 2(E-15)": {
+    "base_id_offset": 329,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Lumber 3(D-12)": {
+    "base_id_offset": 330,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Lumber 4(F-14)": {
+    "base_id_offset": 331,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Scrap 1(F-15)": {
+    "base_id_offset": 332,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Scrap 2(E-14)": {
+    "base_id_offset": 333,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Scrap 3(G-13)": {
+    "base_id_offset": 334,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Cloth 1(D-12)": {
+    "base_id_offset": 335,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Cloth 2(G-14)": {
+    "base_id_offset": 336,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Metal 1(E-14)": {
+    "base_id_offset": 337,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - Twisted Strand - Earring(F-14)": {
+    "base_id_offset": 338,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Broken Monocle(F-13)": {
+    "base_id_offset": 339,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Twisted Strand - Ring 1(E-12)": {
+    "base_id_offset": 340,
+    "region": "Twisted Strand",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - Stellar Basin - Research Part 1(G-2)": {
+    "base_id_offset": 341,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Lumber 3(G-2)": {
+    "base_id_offset": 342,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Lumber 4(G-2)": {
+    "base_id_offset": 343,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Cloth 1(G-2)": {
+    "base_id_offset": 344,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Metal 1(G-2)": {
+    "base_id_offset": 345,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - Open Ocean - Doubloon 2(P-9)": {
+    "base_id_offset": 346,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Tablet 1(N-14)": {
+    "base_id_offset": 347,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": "explosives"
+  },
+  "Dredge - Devil's Spine - Tablet 2(Q-13)": {
+    "base_id_offset": 348,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Tablet 3(P-13)": {
+    "base_id_offset": 349,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Lumber 1(O-15)": {
+    "base_id_offset": 350,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Cloth 1(N-13)": {
+    "base_id_offset": 351,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Lumber 2(P-13)": {
+    "base_id_offset": 352,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Silver Plate 1(Q-12)": {
+    "base_id_offset": 353,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Lumber 3(O-13)": {
+    "base_id_offset": 354,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Scrap 1(O-13)": {
+    "base_id_offset": 355,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Cloth 2(Q-12)": {
+    "base_id_offset": 356,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Scrap 2(P-13)": {
+    "base_id_offset": 357,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Silver Plate 2(O-15)": {
+    "base_id_offset": 358,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Scrap 2(O-13)": {
+    "base_id_offset": 359,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Cloth 3(P-14)": {
+    "base_id_offset": 360,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Broken Spectacles(O-13)": {
+    "base_id_offset": 361,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Goblet 1(Q-12)": {
+    "base_id_offset": 362,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Metal 1(O-14)": {
+    "base_id_offset": 363,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Doubloon(P-14)": {
+    "base_id_offset": 364,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Ring 1(P-14)": {
+    "base_id_offset": 365,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Sextant(O-14)": {
+    "base_id_offset": 366,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Ring 2(P-15)": {
+    "base_id_offset": 367,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Earring 1(N-14)": {
+    "base_id_offset": 368,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Goblet 2(P-12": {
+    "base_id_offset": 369,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Earring 2(Q-14)": {
+    "base_id_offset": 370,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Ring 3(P-13)": {
+    "base_id_offset": 371,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Earring 3(P-14)": {
+    "base_id_offset": 372,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Bag of Doubloons(K-3)": {
+    "base_id_offset": 373,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Iron Chain 1(L-5)": {
+    "base_id_offset": 374,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Iron Chain 2(I-10)": {
+    "base_id_offset": 375,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Broken Monocle 1(I-10)": {
+    "base_id_offset": 376,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Broken Monocle 2(I-10)": {
+    "base_id_offset": 377,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Sextant(E-10)": {
+    "base_id_offset": 378,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Fancy Boot(C-7)": {
+    "base_id_offset": 379,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Goblet(I-4)": {
+    "base_id_offset": 380,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Doubloon 3(H-2)": {
+    "base_id_offset": 381,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Earring(K-2)": {
+    "base_id_offset": 382,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Ring 1(I-6)": {
+    "base_id_offset": 383,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Research Part 2(P-2)": {
+    "base_id_offset": 384,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Research Part 1(H-13)": {
+    "base_id_offset": 385,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Research Part 2(K-3)": {
+    "base_id_offset": 386,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Research Part 2(G-4)": {
+    "base_id_offset": 387,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Earring 2(F-4)": {
+    "base_id_offset": 388,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Ring 2(E-4)": {
+    "base_id_offset": 389,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Doubloon(E-3)": {
+    "base_id_offset": 390,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Sextant(F-3)": {
+    "base_id_offset": 391,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Broken Spectacles(G-4)": {
+    "base_id_offset": 392,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Cloth 2(P-10)": {
+    "base_id_offset": 393,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Flag 1(H-13)": {
+    "base_id_offset": 394,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Stellar Basin - Flag 1(G-2)": {
+    "base_id_offset": 395,
+    "region": "Stellar Basin",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Gale Cliffs - Flag 1(N-2)": {
+    "base_id_offset": 396,
+    "region": "Gale Cliffs",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Devil's Spine - Flag 1(P-14)": {
+    "base_id_offset": 397,
+    "region": "Devil's Spine",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Flag 2(I-10)": {
+    "base_id_offset": 398,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Flag 3(L-5)": {
+    "base_id_offset": 399,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "Base",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Icebreaker 1(I--4)": {
+    "base_id_offset": 400,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Icebreaker 2(J--6)": {
+    "base_id_offset": 401,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Icebreaker 3(F--4)": {
+    "base_id_offset": 402,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Ice Axe 1(G--7)": {
+    "base_id_offset": 403,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": "icebreaker"
+  },
+  "Dredge - Pale Reach - Ice Axe 2(K--4)": {
+    "base_id_offset": 404,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": "icebreaker"
+  },
+  "Dredge - Pale Reach - Ice Axe 3(F--5)": {
+    "base_id_offset": 405,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": "icebreaker"
+  },
+  "Dredge - Pale Reach - Ice Axe 4(J--4)": {
+    "base_id_offset": 406,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": "icebreaker"
+  },
+  "Dredge - Pale Reach - Ice Shaper(H--3)": {
+    "base_id_offset": 407,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Lumber 1(H--1)": {
+    "base_id_offset": 408,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Lumber 2(G--4)": {
+    "base_id_offset": 409,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Lumber 3(I--5)": {
+    "base_id_offset": 410,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Scrap 1(K--6)": {
+    "base_id_offset": 411,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Scrap 2(F--3)": {
+    "base_id_offset": 412,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Scrap 3(F--6)": {
+    "base_id_offset": 413,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Cloth 1(I--6)": {
+    "base_id_offset": 414,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Cloth 2(J--4)": {
+    "base_id_offset": 415,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": "icebreaker"
+  },
+  "Dredge - Pale Reach - Metal 1(H--3)": {
+    "base_id_offset": 416,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Ring(J--6)": {
+    "base_id_offset": 417,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirement": ""
+  },
+  "Dredge - Pale Reach - Teleport Anchor(G--7)": {
+    "base_id_offset": 418,
+    "region": "The Pale Reach",
+    "location_group": "Pursuit",
+    "expansion": "PaleReach",
+    "requirement": "pursuit completion"
+  },
+  "Dredge - Open Ocean - Crate 1(I-11)": {
+    "base_id_offset": 419,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 2(I-11)": {
+    "base_id_offset": 420,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 3(J-10)": {
+    "base_id_offset": 421,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 4(J-11)": {
+    "base_id_offset": 422,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 5(O-9)": {
+    "base_id_offset": 423,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 6(P-9)": {
+    "base_id_offset": 424,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 7(P-8)": {
+    "base_id_offset": 425,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 8(N-7)": {
+    "base_id_offset": 426,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 9(J-2)": {
+    "base_id_offset": 427,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 10(J-2)": {
+    "base_id_offset": 428,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 11(J-4)": {
+    "base_id_offset": 429,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 12(I-2)": {
+    "base_id_offset": 430,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 13(C-8)": {
+    "base_id_offset": 431,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 14(C-8)": {
+    "base_id_offset": 432,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 15(E-6)": {
+    "base_id_offset": 433,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 16(E-11)": {
+    "base_id_offset": 434,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 17(I-14)": {
+    "base_id_offset": 435,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 18(I-14)": {
+    "base_id_offset": 436,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 19(L-13)": {
+    "base_id_offset": 437,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
+  },
+  "Dredge - Open Ocean - Crate 20(L-15)": {
+    "base_id_offset": 438,
+    "region": "Open Ocean",
+    "location_group": "Dredge",
+    "expansion": "IronRig",
+    "requirement": ""
   }
 }

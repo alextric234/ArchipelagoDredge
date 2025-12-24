@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from BaseClasses import CollectionState, Location
-from worlds.generic.Rules import set_rule
+from worlds.generic.Rules import set_rule, add_rule
 from .items import item_table
 from .locations import location_table, DREDGELocationData
 from .options import DREDGEOptions
@@ -46,16 +46,31 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                 set_fish_rule(world_location, location, player, world.options)
             case "Research":
                 set_research_rule(world_location, location, player)
-            case "Relic" | "Shop" | "World" | "Quest":
+            case "Dredge":
+                set_dredge_rule(world_location, location, player)
+            case "Relic" | "Shop" | "World" | "Pursuit":
                 world_location.item_rule = lambda item: not item.advancement
             case _:
                 set_rule(world_location, lambda state: True)
+
+def set_dredge_rule(world_location: Location, location: DREDGELocationData, player: int) -> None:
+    add_rule(world_location, lambda state: state.has("Dredge Crane", player))
+    match location.requirement:
+        case "explosives":
+            add_rule(world_location, lambda state: state.has("Packed Explosives", player))
+        case "icebreaker":
+            add_rule(world_location, lambda state: state.has("Icebreaker", player))
+        case "":
+            return
+        case _:
+            #maybe log here
+            return
+    return
 
 
 def has_engines(distance: int, state: CollectionState, player: int) -> bool:
     valid_engines = [name for name, item in item_table.items() if item.item_value >= distance]
     return state.has_any(valid_engines, player)
-
 
 def has_relics(state: CollectionState, player: int) -> bool:
     return state.has("Ornate Key", player) \
