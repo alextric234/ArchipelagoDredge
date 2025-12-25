@@ -2052,25 +2052,25 @@
     "item_group": "Material",
     "expansion": "Base"
   },
-  "Cloth": {
+  "Bolt of Cloth": {
     "base_id_offset": 306,
     "classification": "filler",
     "item_group": "Material",
     "expansion": "Base"
   },
-  "Scrap": {
+  "Metal Scraps": {
     "base_id_offset": 307,
     "classification": "filler",
     "item_group": "Material",
     "expansion": "Base"
   },
-  "Metal": {
+  "Refined Metal": {
     "base_id_offset": 308,
     "classification": "filler",
     "item_group": "Material",
     "expansion": "Base"
   },
-  "Crate": {
+  "Ironhaven Crate": {
     "base_id_offset": 309,
     "classification": "filler",
     "item_group": "Material",
@@ -2082,7 +2082,7 @@
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Iron Chain": {
+  "Old Iron Chain": {
     "base_id_offset": 311,
     "classification": "filler",
     "item_group": "Trinket",
