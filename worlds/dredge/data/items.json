@@ -2076,88 +2076,154 @@
     "item_group": "Material",
     "expansion": "Base"
   },
-  "Doubloons": {
+  "Doubloon": {
     "base_id_offset": 310,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Bag of Doubloons": {
+  "Iron Chain": {
     "base_id_offset": 311,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Iron Chain": {
+  "Silver Plate": {
     "base_id_offset": 312,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Silver Plate": {
+  "Broken Monocle": {
     "base_id_offset": 313,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Broken Monocle": {
+  "Sextant": {
     "base_id_offset": 314,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Sextant": {
+  "Broken Spectacles": {
     "base_id_offset": 315,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Ring": {
+  "Silver Trinket": {
     "base_id_offset": 316,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Earring": {
+  "Fancy Boot": {
     "base_id_offset": 317,
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
   },
-  "Broken Spectacles": {
-    "base_id_offset": 318,
-    "classification": "filler",
-    "item_group": "Trinket",
-    "expansion": "Base"
-  },
-  "Silver Trinket": {
-    "base_id_offset": 319,
-    "classification": "filler",
-    "item_group": "Trinket",
-    "expansion": "Base"
-  },
-  "Fancy Boot": {
-    "base_id_offset": 320,
-    "classification": "filler",
-    "item_group": "Trinket",
-    "expansion": "Base"
-  },
   "Dredge Crane": {
-    "base_id_offset": 321,
+    "base_id_offset": 318,
     "classification": "progression",
     "item_group": "Boat Upgrade",
     "expansion": "Base"
   },
   "Icebreaker": {
-    "base_id_offset": 322,
+    "base_id_offset": 319,
     "classification": "progression",
     "item_group": "Boat Upgrade",
     "expansion": "PaleReach"
   },
   "Ice Shaper": {
-    "base_id_offset": 321,
+    "base_id_offset": 320,
     "classification": "filler",
     "item_group": "Miscellaneous",
     "expansion": "PaleReach"
+  },
+  "Bag of Doubloons": {
+    "base_id_offset": 321,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Big Bag of Doubloons": {
+    "base_id_offset": 322,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Pearl Earrings": {
+    "base_id_offset": 323,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Opal Earrings": {
+    "base_id_offset": 324,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Sapphire Earrings": {
+    "base_id_offset": 325,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Emerald Earrings": {
+    "base_id_offset": 326,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Ruby Earrings": {
+    "base_id_offset": 327,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Worn Gold Ring": {
+    "base_id_offset": 328,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Citrine Ring": {
+    "base_id_offset": 329,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Opal Ring": {
+    "base_id_offset": 330,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Sapphire Ring": {
+    "base_id_offset": 331,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Emerald Ring": {
+    "base_id_offset": 332,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Ruby Ring": {
+    "base_id_offset": 333,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
+  },
+  "Signet Ring": {
+    "base_id_offset": 334,
+    "classification": "filler",
+    "item_group": "Trinket",
+    "expansion": "Base"
   }
 }
