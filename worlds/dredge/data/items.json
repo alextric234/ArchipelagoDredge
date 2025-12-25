@@ -2225,5 +2225,23 @@
     "classification": "filler",
     "item_group": "Trinket",
     "expansion": "Base"
+  },
+  "Icebreaker Plow Half 1": {
+    "base_id_offset": 335,
+    "classification": "progression",
+    "item_group": "Boat Upgrade",
+    "expansion": "PaleReach"
+  },
+  "Icebreaker Bracing": {
+    "base_id_offset": 336,
+    "classification": "progression",
+    "item_group": "Boat Upgrade",
+    "expansion": "PaleReach"
+  },
+  "Icebreaker Plow Half 2": {
+    "base_id_offset": 337,
+    "classification": "progression",
+    "item_group": "Boat Upgrade",
+    "expansion": "PaleReach"
   }
 }
