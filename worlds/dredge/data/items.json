@@ -1745,7 +1745,6 @@
     "item_group": "Crab Pot",
     "expansion": "IronRig",
     "can_catch": [
-      "Crab"
     ],
     "size": 4
   },
