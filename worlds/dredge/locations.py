@@ -92,8 +92,9 @@ def get_player_location_table(options: DREDGEOptions) -> Dict[str, bool]:
 
 LOCATION_NAME_GROUPS: Dict[str, Set[str]] = {}
 for loc_name, loc_data in location_table.items():
-    loc_group_name = loc_name.split(" - ", 1)[0]
-    LOCATION_NAME_GROUPS.setdefault(loc_group_name, set()).add(loc_name)
+    loc_name_components = loc_name.split(" - ", 1)
+    if len(loc_name_components) > 1:
+        LOCATION_NAME_GROUPS.setdefault(loc_name_components[0], set()).add(loc_name)
     if loc_data.location_group:
         LOCATION_NAME_GROUPS.setdefault(loc_data.location_group, set()).add(loc_name)
 
