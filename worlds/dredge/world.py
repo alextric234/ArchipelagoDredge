@@ -1,4 +1,6 @@
 from worlds.AutoWorld import World
+from collections.abc import Mapping
+from typing import Any
 
 from . import items, locations, regions, rules, web_world
 from .options import DREDGEOptions
@@ -34,3 +36,9 @@ class DREDGEWorld(World):
 
     def get_filler_item_name(self) -> str:
         return items.get_random_filler_item_name(self)
+
+    def fill_slot_data(self) -> Mapping[str, Any]:
+        # If you need access to the player's chosen options on the client side, there is a helper for that.
+        return self.options.as_dict(
+            "include_iron_rig_dlc", "include_pale_reach_dlc"
+        )

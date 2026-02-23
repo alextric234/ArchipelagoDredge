@@ -3,12 +3,12 @@ from __future__ import annotations
 import json
 import pkgutil
 
-from typing import Dict, Set, TYPE_CHECKING
+from typing import Dict, Set, TYPE_CHECKING, Literal, Sequence, Union
 
 from BaseClasses import Location
 from BaseClasses import LocationProgressType as LPT
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from .options import DREDGEOptions
 
@@ -20,20 +20,44 @@ if TYPE_CHECKING:
 class DREDGELocation(Location):
     game: str = "DREDGE"
 
+CatchType = Literal["Coastal", "Shallow", "Oceanic", "Abyssal", "Hadal", "Mangrove", "Volcanic", "Ice", "Crab"]
+IronRigPhase = Literal[0,1,2,3,4,5]
+
+@dataclass(frozen=True)
+class ItemsReq:
+    type: Literal["items"] = "items"
+    any_of: Sequence[str] = field(default_factory=list)
+    all_of: Sequence[str] = field(default_factory=list)
+
+@dataclass(frozen=True)
+class ResearchReq:
+    type: Literal["research"] = "research"
+    all_of: Sequence[str] = field(default_factory=list)
+    cost: int = 0
+
+@dataclass(frozen=True)
+class CatchTypeReq:
+    type: Literal["catch_type"] = "catch_type"
+    value: CatchType = "Coastal"
+
+@dataclass(frozen=True)
+class IronRigPhaseReq:
+    type: Literal["iron_rig_phase"] = "iron_rig_phase"
+    value:IronRigPhase = 0
+
+Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq]
+
 @dataclass
 class DREDGELocationData:
     base_id_offset: int
     region: str
     location_group: str
     expansion: str
-    requirement: str = ""
+    requirements: list[Requirement] = field(default_factory=list)
     can_catch_rod: bool = True
     can_catch_net: bool = False
     progress_type: LPT = LPT.DEFAULT
     is_aberration: bool = False
-    is_exotic: bool = False
-    iron_rig_phase: int = 0
-    is_behind_debris: bool = False
 
 
 location_base_id = 3459028911689314
@@ -42,18 +66,56 @@ def load_data_file(*args) -> dict:
     fname = "/".join(["data", *args])
     return json.loads(pkgutil.get_data(__name__, fname).decode())
 
+def parse_requirement(obj: dict) -> Requirement:
+    t = obj["type"]  # required
+    if t == "items":
+        return ItemsReq(
+            any_of=obj.get("any_of", []),
+            all_of=obj.get("all_of", []),
+        )
+    if t == "research":
+        cost = obj.get("cost", 0)
+        if not isinstance(cost, int) or cost < 0:
+            raise ValueError(f"Invalid research cost: {cost!r}")
+
+        all_of = obj.get("all_of", [])
+        if not isinstance(all_of, list):
+            raise TypeError("research.all_of must be a list")
+
+        return ResearchReq(all_of=all_of, cost=cost)
+    if t == "catch_type":
+        return CatchTypeReq(value=obj["value"])
+    if t == "iron_rig_phase":
+        value = obj["value"]
+        if value not in (0, 1, 2, 3, 4):
+            raise ValueError(f"Invalid iron_rig_phase value: {value!r}")
+        return IronRigPhaseReq(value=value)
+    raise ValueError(f"Unknown requirement type: {t!r} ({obj})")
+
+
+def parse_requirements(raw) -> list[Requirement]:
+    # If you want to allow omission of the key:
+    if raw is None:
+        return []
+
+    if not isinstance(raw, list):
+        raise TypeError(
+            f"`requirement` must be a list of objects, got {type(raw).__name__}: {raw!r}"
+        )
+
+    return [parse_requirement(r) for r in raw]
+
 location_table = {
     name: DREDGELocationData(
         base_id_offset=entry["base_id_offset"],
         region=entry["region"],
         location_group=entry["location_group"],
         expansion=entry["expansion"],
-        requirement=entry.get("requirement", ""),
+        requirements=parse_requirements(entry.get("requirement")),
         can_catch_rod=entry.get("can_catch_rod", True),
         can_catch_net=entry.get("can_catch_net", False),
         progress_type=entry.get("progress_type", LPT.DEFAULT),
-        is_aberration=entry.get("is_aberration", False),
-        iron_rig_phase=entry.get("iron_rig_phase", 0),
+        is_aberration=entry.get("is_aberration", False)
     )
     for name, entry in load_data_file("locations.json").items()
 }
