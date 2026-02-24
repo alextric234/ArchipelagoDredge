@@ -3587,7 +3587,6 @@
     "requirements": [
       {
         "type": "research",
-        "all_of": [],
         "cost": 1
       }
     ]
@@ -3600,7 +3599,6 @@
     "requirements": [
       {
         "type": "research",
-        "all_of": [],
         "cost": 2
       }
     ]
@@ -3611,6 +3609,10 @@
     "location_group": "Research",
     "expansion": "Base",
     "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Flexible Fishing Pole Researched"]
+      },
       {
         "type": "research",
         "cost": 2
@@ -3624,8 +3626,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Flexible Fishing Pole Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Flexible Fishing Pole Researched"],
         "cost": 2
       }
     ]
@@ -3637,8 +3642,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Heat-Resistant Line Researched", "Anti-Tangle Line Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Heat-Resistant Line Researched", "Anti-Tangle Line Researched"],
         "cost": 4
       }
     ]
@@ -3650,8 +3658,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Versatile Rod Researched", "Hydraulic Rod Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Versatile Rod Researched", "Hydraulic Rod Researched"],
         "cost": 5
       }
     ]
@@ -3668,7 +3679,6 @@
       },
       {
         "type": "research",
-        "all_of": [],
         "cost": 1
       }
     ]
@@ -3680,8 +3690,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Bottomless Lines Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Bottomless Lines Researched"],
         "cost": 3
       }
     ]
@@ -3694,7 +3707,6 @@
     "requirements": [
       {
         "type": "research",
-        "all_of": [],
         "cost": 1
       }
     ]
@@ -3706,8 +3718,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Improved Outboard Engine Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Improved Outboard Engine Researched"],
         "cost": 5
       }
     ]
@@ -3719,8 +3734,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Improved Outboard Engine Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Improved Outboard Engine Researched"],
         "cost": 2
       }
     ]
@@ -3732,8 +3750,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Improved Outboard Engine Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Improved Outboard Engine Researched"],
         "cost": 3
       }
     ]
@@ -3745,8 +3766,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Twin Prop Engine Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Twin Prop Engine Researched"],
         "cost": 4
       }
     ]
@@ -3758,8 +3782,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Refined Outboard Engine Researched", "Twin Jet Drive Engine Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Refined Outboard Engine Researched", "Twin Jet Drive Engine Researched"],
         "cost": 5
       }
     ]
@@ -3776,7 +3803,6 @@
       },
       {
         "type": "research",
-        "all_of": [],
         "cost": 1
       }
     ]
@@ -3793,7 +3819,6 @@
       },
       {
         "type": "research",
-        "all_of": [],
         "cost": 1
       }
     ]
@@ -3810,7 +3835,6 @@
       },
       {
         "type": "research",
-        "all_of": [],
         "cost": 1
       }
     ]
@@ -3822,8 +3846,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Efficient Crab Pot Researched", "Hardy Crab Pot Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Efficient Crab Pot Researched", "Hardy Crab Pot Researched"],
         "cost": 2
       }
     ]
@@ -3835,8 +3862,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Hardy Crab Pot Researched", "Large Crab Pot Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Hardy Crab Pot Researched", "Large Crab Pot Researched"],
         "cost": 2
       }
     ]
@@ -3848,8 +3878,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Complex Crab Pot Researched", "Massive Crab Pot Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Complex Crab Pot Researched", "Massive Crab Pot Researched"],
         "cost": 3
       }
     ]
@@ -3866,7 +3899,6 @@
       },
       {
         "type": "research",
-        "all_of": [],
         "cost": 1
       }
     ]
@@ -3879,7 +3911,7 @@
     "requirements": [
       {
         "type": "research",
-        "all_of": ["Improved Trawl Net"],
+        "all_of": ["Improved Trawl Net Researched"],
         "cost": 2
       }
     ]
@@ -3891,8 +3923,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Improved Trawl Net Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Improved Trawl Net"],
         "cost": 3
       }
     ]
@@ -3904,8 +3939,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Improved Trawl Net Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Improved Trawl Net"],
         "cost": 2
       }
     ]
@@ -3917,8 +3955,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Large Trawl Net Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Large Trawl Net"],
         "cost": 4
       }
     ]
@@ -6088,6 +6129,266 @@
       {
         "type": "items",
         "all_of": ["Dredge Crane"]
+      }
+    ]
+  },
+  "Flexible Fishing Pole Researched":{
+    "base_id_offset": 439,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "research",
+        "cost": 2
+      }
+    ]
+  },
+  "Heat-Resistant Line Researched":{
+    "base_id_offset": 440,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Flexible Fishing Pole Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 2
+      }
+    ]
+  },
+  "Anti-Tangle Line Researched":{
+    "base_id_offset": 441,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Flexible Fishing Pole Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 2
+      }
+    ]
+  },
+  "Versatile Rod Researched":{
+    "base_id_offset": 442,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Heat-Resistant Line Researched", "Anti-Tangle Line Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 4
+      }
+    ]
+  },
+  "Hydraulic Rod Researched":{
+    "base_id_offset": 443,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "research",
+        "cost": 1
+      }
+    ]
+  },
+  "Bottomless Lines Researched":{
+    "base_id_offset": 444,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Sampling Device"]
+      },
+      {
+        "type": "research",
+        "cost": 1
+      }
+    ]
+  },
+  "Improved Outboard Engine Researched":{
+    "base_id_offset": 445,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "research",
+        "cost": 1
+      }
+    ]
+  },
+  "Twin Prop Engine Researched":{
+    "base_id_offset": 446,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Improved Outboard Engine Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 3
+      }
+    ]
+  },
+  "Refined Outboard Engine Researched":{
+    "base_id_offset": 447,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Improved Outboard Engine Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 2
+      }
+    ]
+  },
+  "Twin Jet Drive Engine Researched":{
+    "base_id_offset": 448,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Twin Prop Engine Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 4
+      }
+    ]
+  },
+  "Efficient Crab Pot Researched":{
+    "base_id_offset": 449,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "any_of": ["Basic Crab Pot", "Efficient Crab Pot", "Hardy Crab Pot", "Large Crab Pot", "Complex Crab Pot", "Massive Crab Pot", "Reinforced Crab Pot"]
+      },
+      {
+        "type": "research",
+        "cost": 1
+      }
+    ]
+  },
+  "Hardy Crab Pot Researched":{
+    "base_id_offset": 450,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "any_of": ["Basic Crab Pot", "Efficient Crab Pot", "Hardy Crab Pot", "Large Crab Pot", "Complex Crab Pot", "Massive Crab Pot", "Reinforced Crab Pot"]
+      },
+      {
+        "type": "research",
+        "cost": 1
+      }
+    ]
+  },
+  "Large Crab Pot Researched":{
+    "base_id_offset": 451,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "any_of": ["Basic Crab Pot", "Efficient Crab Pot", "Hardy Crab Pot", "Large Crab Pot", "Complex Crab Pot", "Massive Crab Pot", "Reinforced Crab Pot"]
+      },
+      {
+        "type": "research",
+        "cost": 1
+      }
+    ]
+  },
+  "Complex Crab Pot Researched":{
+    "base_id_offset": 452,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Efficient Crab Pot Researched", "Hardy Crab Pot Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 2
+      }
+    ]
+  },
+  "Massive Crab Pot Researched":{
+    "base_id_offset": 453,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Hardy Crab Pot Researched", "Large Crab Pot Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 2
+      }
+    ]
+  },
+  "Improved Trawl Net Researched":{
+    "base_id_offset": 454,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Progressive Hull"]
+      },
+      {
+        "type": "research",
+        "cost": 1
+      }
+    ]
+  },
+  "Large Trawl Net Researched":{
+    "base_id_offset": 455,
+	"region": "Open Ocean",
+	"location_group": "Research Unlock",
+	"expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Improved Trawl Net Researched"]
+      },
+      {
+        "type": "research",
+        "cost": 3
       }
     ]
   }

@@ -5,7 +5,7 @@ import pkgutil
 
 from typing import Dict, Set, TYPE_CHECKING, Literal, Sequence, Union
 
-from BaseClasses import Location
+from BaseClasses import Location, Region
 from BaseClasses import LocationProgressType as LPT
 
 from dataclasses import dataclass, field
@@ -32,7 +32,6 @@ class ItemsReq:
 @dataclass(frozen=True)
 class ResearchReq:
     type: Literal["research"] = "research"
-    all_of: Sequence[str] = field(default_factory=list)
     cost: int = 0
 
 @dataclass(frozen=True)
@@ -78,11 +77,7 @@ def parse_requirement(obj: dict) -> Requirement:
         if not isinstance(cost, int) or cost < 0:
             raise ValueError(f"Invalid research cost: {cost!r}")
 
-        all_of = obj.get("all_of", [])
-        if not isinstance(all_of, list):
-            raise TypeError("research.all_of must be a list")
-
-        return ResearchReq(all_of=all_of, cost=cost)
+        return ResearchReq(cost=cost)
     if t == "catch_type":
         return CatchTypeReq(value=obj["value"])
     if t == "iron_rig_phase":
@@ -169,7 +164,13 @@ def create_locations(world: DREDGEWorld) -> None:
         if is_aberration and not world.options.include_aberrations:
             location.progress_type = LPT.EXCLUDED
         region.locations.append(location)
+        if location_table[location_name].location_group == "Research Unlock":
+            add_research_unlock_item(world, location)
 
 def create_victory_event_location(world: DREDGEWorld) -> None:
     victory_region = world.get_region("Insanity")
     victory_region.add_event("The Collector", "Victory", location_type=DREDGELocation, item_type=items.DREDGEItem)
+
+def add_research_unlock_item(world: DREDGEWorld, location: DREDGELocation) -> None:
+    research_unlock_item = world.create_item(location.name)
+    location.place_locked_item(research_unlock_item)
