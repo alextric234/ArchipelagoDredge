@@ -49,8 +49,25 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                     add_catch_type_rule(world_location, location, player, world.options)
                 case ResearchReq():
                     add_research_rule(requirement, world_location, player)
+                case IronRigPhaseReq():
+                    add_iron_rig_phase_rule(requirement, world_location, player)
                 case _:
                     set_rule(world_location, lambda state: True)
+
+def add_iron_rig_phase_rule(requirement, world_location, player) -> None:
+    if requirement.value > 4:
+        add_rule(world_location, lambda state: state.has_any(tools_for("Infused Mangrove", "Rod", "IronRig"), player))
+    if requirement.value > 3:
+        add_rule(world_location, lambda state: state.has_any(tools_for("Infused Hadal", "Rod", "IronRig"), player))
+        add_rule(world_location, lambda state: state.has_any(tools_for("Infused Abyssal", "Rod", "IronRig"), player))
+    if requirement.value > 2:
+        add_rule(world_location, lambda state: state.has_any(tools_for("Infused Oceanic", "Rod", "IronRig"), player))
+        add_rule(world_location, lambda state: state.has("Siphon Trawler", player))
+    if requirement.value > 1:
+        add_rule(world_location, lambda state: state.has_any(tools_for("Infused Shallow", "Rod", "IronRig"), player))
+        add_rule(world_location, lambda state: state.has_any(tools_for("Infused Coastal", "Rod", "IronRig"), player))
+    if requirement.value > 0:
+        add_rule(world_location, lambda state: state.has("Dredge Crane", player))
 
 def add_research_rule(requirement, world_location, player) -> None:
     add_rule(world_location, lambda state: state.has("Research Part", player, requirement.cost))
