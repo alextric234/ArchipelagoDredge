@@ -1568,7 +1568,9 @@
     "expansion": "IronRig",
     "can_catch": [
       "Coastal",
-      "Shallow"
+      "Shallow",
+      "Infused Coastal",
+      "Infused Shallow"
     ],
     "size": 3
   },
@@ -1580,7 +1582,10 @@
     "can_catch": [
       "Coastal",
       "Shallow",
-      "Oceanic"
+      "Oceanic",
+      "Infused Coastal",
+      "Infused Shallow",
+      "Infused Oceanic"
     ],
     "size": 4
   },
@@ -1592,7 +1597,10 @@
     "can_catch": [
       "Oceanic",
       "Abyssal",
-      "Hadal"
+      "Hadal",
+      "Infused Oceanic",
+      "Infused Abyssal",
+      "Infused Hadal"
     ],
     "size": 4
   },
@@ -1603,7 +1611,9 @@
     "expansion": "IronRig",
     "can_catch": [
       "Mangrove",
-      "Coastal"
+      "Coastal",
+      "Infused Mangrove",
+      "Infused Coastal"
     ],
     "size": 3
   },
@@ -1614,7 +1624,9 @@
     "expansion": "IronRig",
     "can_catch": [
       "Volcanic",
-      "Shallow"
+      "Shallow",
+      "Infused Volcanic",
+      "Infused Shallow"
     ],
     "size": 3
   },
