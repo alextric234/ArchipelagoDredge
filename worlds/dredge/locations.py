@@ -76,13 +76,12 @@ def parse_requirement(obj: dict) -> Requirement:
         cost = obj.get("cost", 0)
         if not isinstance(cost, int) or cost < 0:
             raise ValueError(f"Invalid research cost: {cost!r}")
-
         return ResearchReq(cost=cost)
     if t == "catch_type":
         return CatchTypeReq(value=obj["value"])
     if t == "iron_rig_phase":
         value = obj["value"]
-        if value not in (0, 1, 2, 3, 4):
+        if value not in (0, 1, 2, 3, 4, 5):
             raise ValueError(f"Invalid iron_rig_phase value: {value!r}")
         return IronRigPhaseReq(value=value)
     raise ValueError(f"Unknown requirement type: {t!r} ({obj})")
@@ -106,7 +105,7 @@ location_table = {
         region=entry["region"],
         location_group=entry["location_group"],
         expansion=entry["expansion"],
-        requirements=parse_requirements(entry.get("requirement")),
+        requirements=parse_requirements(entry.get("requirements")),
         can_catch_rod=entry.get("can_catch_rod", True),
         can_catch_net=entry.get("can_catch_net", False),
         progress_type=entry.get("progress_type", LPT.DEFAULT),

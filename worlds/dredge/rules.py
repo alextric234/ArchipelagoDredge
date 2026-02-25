@@ -53,7 +53,7 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                     set_rule(world_location, lambda state: True)
 
 def add_research_rule(requirement, world_location, player) -> None:
-    add_rule(world_location, lambda state: state.count("Research Part", player) == requirement.cost)
+    add_rule(world_location, lambda state: state.has("Research Part", player, requirement.cost))
     return
 
 def add_item_rules(requirement, world_location, player) -> None:
@@ -91,10 +91,10 @@ def get_iron_rig_phase(location: DREDGELocationData) -> int | None:
 
 
 def tools_for(catch_type: str, tool_group: str, fish_expansion: str) -> tuple[str, ...]:
-    if fish_expansion == "IronRig":
-        return CATCH_TOOL_INDEX.get((catch_type, tool_group, "IronRig"), ())
-    else:
-        return CATCH_TOOL_INDEX.get((catch_type, tool_group, "Base"), ())
+    return (
+        CATCH_TOOL_INDEX.get((catch_type, tool_group, fish_expansion))
+        or CATCH_TOOL_INDEX.get((catch_type, tool_group, "Base"), ())
+    )
 
 
 def add_catch_type_rule(world_location: Location, location: DREDGELocationData, player: int, options: DREDGEOptions) -> None:
