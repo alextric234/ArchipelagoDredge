@@ -58,9 +58,9 @@ def add_research_rule(requirement, world_location, player) -> None:
 
 def add_item_rules(requirement, world_location, player) -> None:
     if requirement.all_of:
-        add_rule(world_location, lambda state: state.has_all(requirement.all_of), player)
+        add_rule(world_location, lambda state: state.has_all(requirement.all_of, player))
     if requirement.any_of:
-        add_rule(world_location, lambda state: state.has_any(requirement.any_of), player)
+        add_rule(world_location, lambda state: state.has_any(requirement.any_of, player))
     return
 
 def has_engines(distance: int, state: CollectionState, player: int) -> bool:

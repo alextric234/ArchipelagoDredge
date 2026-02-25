@@ -133,7 +133,7 @@
     ],
     "can_catch_rod": true,
     "can_catch_net": false,
-    "is_aberration": true,
+    "is_aberration": true
   },
   "Armored Searobin": {
     "base_id_offset": 8,
