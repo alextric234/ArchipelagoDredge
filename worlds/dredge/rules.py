@@ -53,7 +53,7 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                     set_rule(world_location, lambda state: True)
 
 def add_research_rule(requirement, world_location, player) -> None:
-    add_rule(world_location, lambda state: (state.has_all(requirement.all_of, player) and state.count("Research Part", requirement.cost, player)))
+    add_rule(world_location, lambda state: state.count("Research Part", player) == requirement.cost)
     return
 
 def add_item_rules(requirement, world_location, player) -> None:
