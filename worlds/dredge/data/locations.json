@@ -750,7 +750,7 @@
     "requirements": [
       {
         "type": "items",
-        "all_of": ["Packed Explosives","Exotic Bait"]
+        "all_of": ["Packed Explosives"]
       },
       {
         "type": "catch_type",
@@ -1469,11 +1469,11 @@
     "base_id_offset": 95,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
-    "expansion": "Base",
+    "expansion": "IronRig",
     "requirements": [
       {
         "type": "catch_type",
-        "value": "Hadal"
+        "value": "Infused Hadal"
       },
       {
         "type": "iron_rig_phase",
@@ -3320,11 +3320,11 @@
     "base_id_offset": 214,
     "region": "Devil's Spine",
     "location_group": "Encyclopedia",
-    "expansion": "Base",
+    "expansion": "IronRig",
     "requirements": [
       {
         "type": "catch_type",
-        "value": "Hadal"
+        "value": "Infused Hadal"
       },
       {
         "type": "iron_rig_phase",
