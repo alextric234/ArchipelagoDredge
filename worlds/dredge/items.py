@@ -18,7 +18,7 @@ class DREDGEItem(Item):
 CATCH_TOOL_GROUPS = {"Rod", "Net", "Crab Pot"}
 EXCLUDED_CATCH_TOOLS = {"Tendon Rod", "Viscera Crane"}
 
-ToolIndexKey = tuple[str, str, str]  # (catch_type, tool_group, expansion)
+ToolIndexKey = tuple[str, str]  # (catch_type, tool_group, expansion)
 ToolIndex = dict[ToolIndexKey, tuple[str, ...]]
 
 @dataclass
@@ -136,10 +136,9 @@ def build_catch_tool_index() -> ToolIndex:
         if name in EXCLUDED_CATCH_TOOLS:
             continue
 
-        expansion = getattr(item, "expansion", "Base")
-
         for catch_type in can_catch:
-            idx[(catch_type, item.item_group, expansion)].append(name)
+            idx[(catch_type, item.item_group)].append(name)
+
 
     return {k: tuple(v) for k, v in idx.items()}
 
