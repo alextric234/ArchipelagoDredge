@@ -136,6 +136,7 @@ def can_catch_fish(
     has_net = (
         allow_net_logic
         and state.has_any(tools_for(catch_type, "Net"), player)
+        and state.has("Progressive Hull", player)
     )
 
     return has_rod or has_net
