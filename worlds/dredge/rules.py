@@ -98,8 +98,19 @@ def get_catch_type(location: DREDGELocationData) -> str | None:
                 return v
     return None
 
-def tools_for(catch_type: str, tool_group: str) -> tuple[str, ...]:
-    return CATCH_TOOL_INDEX.get((catch_type, tool_group))
+def tools_for(
+        catch_type: str,
+        tool_group: str,
+        size: int | None = None) -> tuple[str, ...]:
+    tools = CATCH_TOOL_INDEX.get((catch_type, tool_group))
+
+    if size is None:
+        return tools
+
+    return tuple(
+        tool for tool in tools
+        if getattr(item_table[tool], "size", None) == size
+    )
 
 
 def add_catch_type_rule(world_location: Location, location: DREDGELocationData, player: int, options: DREDGEOptions) -> None:
@@ -136,7 +147,7 @@ def can_catch_fish(
     has_net = (
         allow_net_logic
         and state.has_any(tools_for(catch_type, "Net"), player)
-        and state.has("Progressive Hull", player)
+        and can_use_net(state, player, catch_type)
     )
 
     return has_rod or has_net
@@ -144,3 +155,11 @@ def can_catch_fish(
 
 def set_completion_condition(world: DREDGEWorld) -> None:
     world.multiworld.completion_condition[world.player] = lambda state: state.has("Victory", world.player)
+
+
+def can_use_net(state: CollectionState, player: int, catch_type: str) -> bool:
+    if state.has("Progressive Hull", player, 3):
+        return True
+    if state.has("Progressive Hull", player) & state.has_any(tools_for(catch_type, "Net", 4), player):
+        return True
+    return False
