@@ -267,7 +267,7 @@
   },
   "Bearded Mackerel": {
     "base_id_offset": 17,
-    "region": "Open Ocean",
+    "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
     "requirements": [
@@ -578,13 +578,13 @@
   },
   "Bulbous Toothfish": {
     "base_id_offset": 37,
-    "region": "Open Ocean",
+    "region": "The Pale Reach",
     "location_group": "Encyclopedia",
     "expansion": "PaleReach",
     "requirements": [
       {
         "type": "catch_type",
-        "value": "Coastal"
+        "value": "Ice"
       }
     ],
     "can_catch_rod": true,
@@ -1351,7 +1351,7 @@
   },
   "Flayed Mackerel": {
     "base_id_offset": 87,
-    "region": "Open Ocean",
+    "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
     "requirements": [
@@ -3161,7 +3161,7 @@
   },
   "Tiger Mackerel": {
     "base_id_offset": 204,
-    "region": "Open Ocean",
+    "region": "Gale Cliffs",
     "location_group": "Encyclopedia",
     "expansion": "Base",
     "requirements": [
