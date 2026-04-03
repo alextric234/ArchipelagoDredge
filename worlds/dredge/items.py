@@ -15,7 +15,7 @@ class DREDGEItem(Item):
     game: str = "DREDGE"
 
 
-CATCH_TOOL_GROUPS = {"Rod", "Net", "Crab Pot"}
+CATCH_TOOL_GROUPS = {"Rod", "Net", "Crab Pot", "Consumable"}
 EXCLUDED_CATCH_TOOLS = {"Tendon Rod", "Viscera Crane"}
 
 ToolIndexKey = tuple[str, str]  # (catch_type, tool_group, expansion)
