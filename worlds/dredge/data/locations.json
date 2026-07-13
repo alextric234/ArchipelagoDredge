@@ -6371,5 +6371,19 @@
         "cost": 3
       }
     ]
+  },
+  "A Place to Rest - Deliver Materials":{
+    "base_id_offset": 456,
+	"region": "The Marrows",
+	"location_group": "Quest",
+	"expansion": "Base",
+    "requirements": []
+  },
+  "A Place to Rest - Escort Builder":{
+    "base_id_offset": 457,
+	"region": "The Marrows",
+	"location_group": "Quest",
+	"expansion": "Base",
+    "requirements": []
   }
 }

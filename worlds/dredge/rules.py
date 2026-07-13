@@ -38,7 +38,7 @@ def set_region_rules(world: "DREDGEWorld") -> None:
 def set_location_rules(world: "DREDGEWorld") -> None:
     player = world.player
     for world_location in world.get_locations():
-        if world_location.name == "The Collector":
+        if world_location.address is None:
             continue
         location = location_table[world_location.name]
         for requirement in location.requirements:

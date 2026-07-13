@@ -153,7 +153,6 @@ for loc_name, loc_data in location_table.items():
 
 def create_all_locations(world: DREDGEWorld) -> None:
     create_locations(world)
-    create_victory_event_location(world)
 
 def create_locations(world: DREDGEWorld) -> None:
     for location_name, is_aberration in get_player_location_table(world.options).items():
@@ -165,10 +164,6 @@ def create_locations(world: DREDGEWorld) -> None:
         region.locations.append(location)
         if location_table[location_name].location_group == "Research Unlock":
             add_research_unlock_item(world, location)
-
-def create_victory_event_location(world: DREDGEWorld) -> None:
-    victory_region = world.get_region("Insanity")
-    victory_region.add_event("The Collector", "Victory", location_type=DREDGELocation, item_type=items.DREDGEItem)
 
 def add_research_unlock_item(world: DREDGEWorld, location: DREDGELocation) -> None:
     research_unlock_item = world.create_item(location.name)

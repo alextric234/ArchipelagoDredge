@@ -2,7 +2,7 @@ from worlds.AutoWorld import World
 from collections.abc import Mapping
 from typing import Any
 
-from . import items, locations, regions, rules, web_world
+from . import items, locations, regions, rules, web_world, events
 from .options import DREDGEOptions
 
 class DREDGEWorld(World):
@@ -23,6 +23,7 @@ class DREDGEWorld(World):
     def create_regions(self) -> None:
         regions.create_and_connect_regions(self)
         locations.create_all_locations(self)
+        events.create_all_events(self)
 
     def set_rules(self) -> None:
         rules.set_all_rules(self)

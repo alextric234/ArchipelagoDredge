@@ -2356,5 +2356,11 @@
 	"classification": "progression",
 	"item_group": "Research",
 	"expansion": "Base"
+ },
+  "The Builder": {
+	"base_id_offset": 355,
+	"classification": "progression",
+	"item_group": "Quest NPC",
+	"expansion": "Base"
  }
 }
