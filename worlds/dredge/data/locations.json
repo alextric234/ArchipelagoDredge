@@ -6377,13 +6377,21 @@
 	"region": "The Marrows",
 	"location_group": "Quest",
 	"expansion": "Base",
-    "requirements": []
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["Dredge Crane"]
+      }]
   },
   "A Place to Rest - Escort Builder":{
     "base_id_offset": 457,
 	"region": "The Marrows",
 	"location_group": "Quest",
 	"expansion": "Base",
-    "requirements": []
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": ["A Place to Rest - Returned to Builder"]
+      }]
   }
 }

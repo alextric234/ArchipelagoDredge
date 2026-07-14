@@ -15,6 +15,20 @@ def set_all_rules(world: DREDGEWorld) -> None:
     set_region_rules(world)
     set_location_rules(world)
     set_completion_condition(world)
+    set_prototype_rules(world)
+
+def set_prototype_rules(world: DREDGEWorld) -> None:
+    set_rule(
+        world.get_location("A Place to Rest - Materials Delivered Event"),
+        lambda state: state.has("Dredge Crane", world.player),
+    )
+    set_rule(
+        world.get_location("A Place to Rest - Returned to Builder Event"),
+        lambda state: state.has(
+            "A Place to Rest - Materials Delivered",
+            world.player,
+        ),
+    )
 
 def set_region_rules(world: "DREDGEWorld") -> None:
     player = world.player

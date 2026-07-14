@@ -22,7 +22,7 @@ def create_a_place_to_rest_events(world: DREDGEWorld) -> None:
     add_event(
         world,
         "The Marrows",
-        "A Place to Rest - Materials Delivered",
+        "A Place to Rest - Materials Delivered Event",
         "A Place to Rest - Materials Delivered",
     )
 
