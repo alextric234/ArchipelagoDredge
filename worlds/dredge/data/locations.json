@@ -3894,8 +3894,11 @@
     "expansion": "Base",
     "requirements": [
       {
+        "type": "items",
+        "all_of": ["Improved Trawl Net Researched"]
+      },
+      {
         "type": "research",
-        "all_of": ["Improved Trawl Net Researched"],
         "cost": 2
       }
     ]
