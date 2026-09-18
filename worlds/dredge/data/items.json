@@ -2362,5 +2362,41 @@
 	"classification": "progression",
 	"item_group": "Quest NPC",
 	"expansion": "Base"
+ },
+  "Gale Cliffs Fishing License": {
+	"base_id_offset": 356,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "Stellar Basin Fishing License": {
+	"base_id_offset": 357,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "Twisted Strand Fishing License": {
+	"base_id_offset": 358,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "Devil's Spine Fishing License": {
+	"base_id_offset": 359,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "Open Ocean Fishing License": {
+	"base_id_offset": 360,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "Pale Reach Fishing License": {
+	"base_id_offset": 361,
+	"classification": "progression",
+	"item_group": "Quest NPC",
+	"expansion": "PaleReach"
  }
 }

@@ -48,13 +48,14 @@ def set_region_rules(world: "DREDGEWorld") -> None:
     world.get_entrance("Open Ocean to Insanity").access_rule = \
         lambda state: has_relics(state, player)
 
-
 def set_location_rules(world: "DREDGEWorld") -> None:
     player = world.player
     for world_location in world.get_locations():
         if world_location.address is None:
             continue
         location = location_table[world_location.name]
+        if location.location_group == "Encyclopedia":
+            add_license_rule(world_location, location, player)
         for requirement in location.requirements:
             match requirement:
                 case ItemsReq():
@@ -67,6 +68,21 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                     add_iron_rig_phase_rule(requirement, world_location, player)
                 case _:
                     set_rule(world_location, lambda state: True)
+
+def add_license_rule(world_location, location, player):
+    match location.region:
+        case "Gale Cliffs":
+            add_rule(world_location, lambda state: state.has("Gale Cliffs Fishing License", player))
+        case "Stellar Basin":
+            add_rule(world_location, lambda state: state.has("Stellar Basin Fishing License", player))
+        case "Twisted Strand":
+            add_rule(world_location, lambda state: state.has("Twisted Strand Fishing License", player))
+        case "Devil's Spine":
+            add_rule(world_location, lambda state: state.has("Devil's Spine Fishing License", player))
+        case "Open Ocean":
+            add_rule(world_location, lambda state: state.has("Open Ocean Fishing License", player))
+        case "The Pale Reach":
+            add_rule(world_location, lambda state: state.has("Pale Reach Fishing License", player))
 
 def add_iron_rig_phase_rule(requirement, world_location, player) -> None:
     if requirement.value > 4:
