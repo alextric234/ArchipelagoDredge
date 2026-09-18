@@ -2359,8 +2359,8 @@
  },
   "The Builder": {
 	"base_id_offset": 355,
-	"classification": "progression",
-	"item_group": "Quest NPC",
+	"classification": "deprioritized",
+	"item_group": "Unused",
 	"expansion": "Base"
  },
   "Gale Cliffs Fishing License": {

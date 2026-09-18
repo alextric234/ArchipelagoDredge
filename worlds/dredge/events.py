@@ -42,5 +42,5 @@ def create_victory_event_location(world: DREDGEWorld) -> None:
     )
 
 def create_all_events(world: DREDGEWorld) -> None:
-    create_a_place_to_rest_events(world)
+    #create_a_place_to_rest_events(world)
     create_victory_event_location(world)

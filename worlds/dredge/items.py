@@ -87,7 +87,9 @@ def create_all_items(world: DREDGEWorld) -> None:
 
     progression_classes = {ItemClassification.progression, ItemClassification.progression_skip_balancing}
     for item, data in item_table.items():
-        if data.classification not in progression_classes or data.item_group == "Research":
+        if (data.classification not in progression_classes
+                or data.item_group == "Research"
+                or data.expansion == "Unused"):
             continue
 
         for index in range(data.classification):

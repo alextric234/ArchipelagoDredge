@@ -15,7 +15,7 @@ def set_all_rules(world: DREDGEWorld) -> None:
     set_region_rules(world)
     set_location_rules(world)
     set_completion_condition(world)
-    set_prototype_rules(world)
+    #set_prototype_rules(world)
 
 def set_prototype_rules(world: DREDGEWorld) -> None:
     set_rule(

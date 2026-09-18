@@ -6378,7 +6378,7 @@
   "A Place to Rest - Deliver Materials":{
     "base_id_offset": 456,
 	"region": "The Marrows",
-	"location_group": "Quest",
+	"location_group": "Pursuit",
 	"expansion": "Base",
     "requirements": [
       {
@@ -6389,7 +6389,7 @@
   "A Place to Rest - Escort Builder":{
     "base_id_offset": 457,
 	"region": "The Marrows",
-	"location_group": "Quest",
+	"location_group": "Pursuit",
 	"expansion": "Base",
     "requirements": [
       {
