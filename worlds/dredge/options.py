@@ -74,6 +74,30 @@ class IncludeDredgeLocations(Toggle):
     """
     display_name = "Include Dredge Locations"
 
+class AddFishingLicenses(Toggle):
+    """
+    If enabled, adds a required item to be able to catch each region's fish.
+    """
+    display_name = "Add Fishing Licenses"
+
+class AddPassageItems(Toggle):
+    """
+    If enabled, adds required items to be able to traverse each zone.
+    The Windward Litany = Gale Cliffs
+    The Astral Testament = Stellar Basin
+    The Mangrove Canticle = Twisted Strand
+    The Cinder Gospel = Devil's Spine
+    The Pelagic Psalm = Open Ocean
+    The Rimebound Chronicle = Pale Reach
+    """
+    display_name = "Add Passage Items"
+
+class DeathLink(Toggle):
+    """
+    Enables deathlink
+    """
+    display_name = "Death Link"
+
 # class EnableTraps(Toggle):
 #     """
 #     Allow traps to be added to the pool to replace filler items
@@ -93,4 +117,7 @@ class DREDGEOptions(PerGameCommonOptions):
     logical_nets: LogicalNets
     include_aberrations: IncludeAberrations
     include_dredge_locations: IncludeDredgeLocations
+    add_fishing_licenses: AddFishingLicenses
+    add_passage_items: AddPassageItems
+    death_link: DeathLink
     # enable_traps: EnableTraps

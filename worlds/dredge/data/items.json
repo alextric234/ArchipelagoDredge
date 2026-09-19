@@ -1412,7 +1412,7 @@
   "Starting Gear - Basic Fishing Pole": {
     "base_id_offset": 235,
     "classification": "progression",
-    "item_group": "Rod",
+    "item_group": "Staring Gear",
     "expansion": "Base",
     "can_catch": [
       "Coastal"
@@ -1857,7 +1857,7 @@
   "Starting Gear - Peculiar Engine": {
     "base_id_offset": 276,
     "classification": "progression",
-    "item_group": "Engine",
+    "item_group": "Staring Gear",
     "expansion": "Base",
     "size": 2,
     "item_value": 0
@@ -2366,73 +2366,73 @@
   "Gale Cliffs Fishing License": {
 	"base_id_offset": 356,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual License",
 	"expansion": "Base"
  },
   "Stellar Basin Fishing License": {
 	"base_id_offset": 357,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual License",
 	"expansion": "Base"
  },
   "Twisted Strand Fishing License": {
 	"base_id_offset": 358,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual License",
 	"expansion": "Base"
  },
   "Devil's Spine Fishing License": {
 	"base_id_offset": 359,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual License",
 	"expansion": "Base"
  },
   "Open Ocean Fishing License": {
 	"base_id_offset": 360,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual License",
 	"expansion": "Base"
  },
   "Pale Reach Fishing License": {
 	"base_id_offset": 361,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual License",
 	"expansion": "PaleReach"
  },
   "The Windward Litany": {
 	"base_id_offset": 362,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual Passage Item",
 	"expansion": "Base"
  },
   "The Astral Testament": {
 	"base_id_offset": 363,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual Passage Item",
 	"expansion": "Base"
  },
   "The Mangrove Canticle": {
 	"base_id_offset": 364,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual Passage Item",
 	"expansion": "Base"
  },
   "The Cinder Gospel": {
 	"base_id_offset": 365,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual Passage Item",
 	"expansion": "Base"
  },
   "The Pelagic Psalm": {
 	"base_id_offset": 366,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual Passage Item",
 	"expansion": "Base"
  },
   "The Rimebound Chronicle": {
 	"base_id_offset": 367,
 	"classification": "progression",
-	"item_group": "Virtual",
+	"item_group": "Virtual Passage Item",
 	"expansion": "PaleReach"
  }
 }

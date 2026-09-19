@@ -89,7 +89,14 @@ def create_all_items(world: DREDGEWorld) -> None:
     for item, data in item_table.items():
         if (data.classification not in progression_classes
                 or data.item_group == "Research"
+                or data.item_group == "Staring Gear"
                 or data.expansion == "Unused"):
+            continue
+
+        if not world.options.add_fishing_licenses and data.item_group == "Virtual License":
+            continue
+
+        if not world.options.add_passage_items and data.item_group == "Virtual Passage Item":
             continue
 
         for index in range(data.classification):
@@ -145,3 +152,8 @@ def build_catch_tool_index() -> ToolIndex:
     return {k: tuple(v) for k, v in idx.items()}
 
 CATCH_TOOL_INDEX: ToolIndex = build_catch_tool_index()
+
+
+def add_precollected_items(world: DREDGEWorld) -> None:
+    world.multiworld.push_precollected(world.create_item("Starting Gear - Basic Fishing Pole"))
+    world.multiworld.push_precollected(world.create_item("Starting Gear - Peculiar Engine"))

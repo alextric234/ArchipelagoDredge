@@ -34,19 +34,19 @@ def set_region_rules(world: "DREDGEWorld") -> None:
     player = world.player
 
     world.get_entrance("The Marrows to Open Ocean").access_rule = \
-        lambda state: has_passage_item("The Pelagic Psalm", state, player)
+        lambda state: not world.options.add_passage_items or has_passage_item("The Pelagic Psalm", state, player)
     world.get_entrance("Open Ocean to Gale Cliffs").access_rule = \
-        lambda state: has_passage_item("The Windward Litany", state, player) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Windward Litany", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to Stellar Basin").access_rule = \
-        lambda state: has_passage_item("The Astral Testament", state, player) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Astral Testament", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to Twisted Strand").access_rule = \
-        lambda state: has_passage_item("The Mangrove Canticle", state, player) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Mangrove Canticle", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to Devil's Spine").access_rule = \
-        lambda state: has_passage_item("The Cinder Gospel", state, player) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Cinder Gospel", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to The Iron Rig").access_rule = \
         lambda state: not world.options.require_engines or has_engines(2, state, player)
     world.get_entrance("Open Ocean to The Pale Reach").access_rule = \
-        lambda state: has_passage_item("The Rimebound Chronicle", state, player) and (not world.options.require_engines or has_engines(2, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Rimebound Chronicle", state, player)) and (not world.options.require_engines or has_engines(2, state, player))
     world.get_entrance("Open Ocean to Insanity").access_rule = \
         lambda state: has_relics(state, player)
 
@@ -56,7 +56,7 @@ def set_location_rules(world: "DREDGEWorld") -> None:
         if world_location.address is None:
             continue
         location = location_table[world_location.name]
-        if location.location_group == "Encyclopedia":
+        if world.options.add_fishing_licenses and location.location_group == "Encyclopedia":
             add_license_rule(world_location, location, player)
         for requirement in location.requirements:
             match requirement:

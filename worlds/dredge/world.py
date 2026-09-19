@@ -29,8 +29,7 @@ class DREDGEWorld(World):
         rules.set_all_rules(self)
 
     def create_items(self) -> None:
-        self.multiworld.push_precollected(self.create_item("Starting Gear - Basic Fishing Pole"))
-        self.multiworld.push_precollected(self.create_item("Starting Gear - Peculiar Engine"))
+        items.add_precollected_items(self)
         items.create_all_items(self)
 
     def create_item(self, name: str) -> items.DREDGEItem:
@@ -43,5 +42,9 @@ class DREDGEWorld(World):
     def fill_slot_data(self) -> Mapping[str, Any]:
         # If you need access to the player's chosen options on the client side, there is a helper for that.
         return self.options.as_dict(
-            "include_iron_rig_dlc", "include_pale_reach_dlc"
+            "death_link",
+            "include_iron_rig_dlc",
+            "include_pale_reach_dlc",
+            "add_fishing_licenses",
+            "add_passage_items"
         )
