@@ -33,18 +33,20 @@ def set_prototype_rules(world: DREDGEWorld) -> None:
 def set_region_rules(world: "DREDGEWorld") -> None:
     player = world.player
 
+    world.get_entrance("The Marrows to Open Ocean").access_rule = \
+        lambda state: has_passage_item("The Pelagic Psalm", state, player)
     world.get_entrance("Open Ocean to Gale Cliffs").access_rule = \
-        lambda state: not world.options.require_engines or has_engines(1, state, player)
+        lambda state: has_passage_item("The Windward Litany", state, player) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to Stellar Basin").access_rule = \
-        lambda state: not world.options.require_engines or has_engines(1, state, player)
+        lambda state: has_passage_item("The Astral Testament", state, player) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to Twisted Strand").access_rule = \
-        lambda state: not world.options.require_engines or has_engines(1, state, player)
+        lambda state: has_passage_item("The Mangrove Canticle", state, player) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to Devil's Spine").access_rule = \
-        lambda state: not world.options.require_engines or has_engines(1, state, player)
+        lambda state: has_passage_item("The Cinder Gospel", state, player) and (not world.options.require_engines or has_engines(1, state, player))
     world.get_entrance("Open Ocean to The Iron Rig").access_rule = \
         lambda state: not world.options.require_engines or has_engines(2, state, player)
     world.get_entrance("Open Ocean to The Pale Reach").access_rule = \
-        lambda state: not world.options.require_engines or has_engines(2, state, player)
+        lambda state: has_passage_item("The Rimebound Chronicle", state, player) and (not world.options.require_engines or has_engines(2, state, player))
     world.get_entrance("Open Ocean to Insanity").access_rule = \
         lambda state: has_relics(state, player)
 
@@ -109,6 +111,9 @@ def add_item_rules(requirement, world_location, player) -> None:
     if requirement.any_of:
         add_rule(world_location, lambda state: state.has_any(requirement.any_of, player))
     return
+
+def has_passage_item(passage_item, state, player):
+    return state.has(passage_item, player)
 
 def has_engines(distance: int, state: CollectionState, player: int) -> bool:
     valid_engines = [name for name, item in item_table.items() if item.item_value >= distance]
