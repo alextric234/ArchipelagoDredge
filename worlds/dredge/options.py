@@ -68,6 +68,12 @@ class IncludeAberrations(Toggle):
     """
     display_name = "Include Aberrations"
 
+class IncludeDredgeLocations(Toggle):
+    """
+    If enabled, checks for dredge locations may contain progression items.
+    """
+    display_name = "Include Dredge Locations"
+
 # class EnableTraps(Toggle):
 #     """
 #     Allow traps to be added to the pool to replace filler items
@@ -86,4 +92,5 @@ class DREDGEOptions(PerGameCommonOptions):
     require_engines: RequireEngines
     logical_nets: LogicalNets
     include_aberrations: IncludeAberrations
+    include_dredge_locations: IncludeDredgeLocations
     # enable_traps: EnableTraps
