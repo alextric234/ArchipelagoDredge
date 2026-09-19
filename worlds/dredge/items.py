@@ -99,13 +99,12 @@ def create_all_items(world: DREDGEWorld) -> None:
         if not world.options.add_passage_items and data.item_group == "Virtual Passage Item":
             continue
 
-        for index in range(data.classification):
-            if data.expansion == "Base":
-                item_pool.append(world.create_item(item))
-            elif world.options.include_pale_reach_dlc and data.expansion == "PaleReach":
-                item_pool.append(world.create_item(item))
-            elif world.options.include_iron_rig_dlc and data.expansion == "IronRig":
-                item_pool.append(world.create_item(item))
+        if data.expansion == "Base":
+            item_pool.append(world.create_item(item))
+        elif world.options.include_pale_reach_dlc and data.expansion == "PaleReach":
+            item_pool.append(world.create_item(item))
+        elif world.options.include_iron_rig_dlc and data.expansion == "IronRig":
+            item_pool.append(world.create_item(item))
 
     num_base_hull_upgrades = 2
     for _ in range(num_base_hull_upgrades):

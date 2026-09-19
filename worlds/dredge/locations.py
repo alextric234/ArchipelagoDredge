@@ -12,9 +12,6 @@ from dataclasses import dataclass, field
 
 from .options import DREDGEOptions
 
-from . import items
-from ..noita.locations import location_group
-
 if TYPE_CHECKING:
     from .world import DREDGEWorld
 
