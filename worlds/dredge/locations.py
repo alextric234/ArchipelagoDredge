@@ -163,8 +163,6 @@ def create_locations(world: DREDGEWorld) -> None:
         location = DREDGELocation(world.player, location_name, location_id, region)
         if dredge_location.is_aberration and not world.options.include_aberrations:
             location.progress_type = LPT.EXCLUDED
-        if dredge_location.location_group == "Dredge" and not world.options.include_dredge_locations:
-            location.progress_type = LPT.EXCLUDED
         region.locations.append(location)
         if location_table[location_name].location_group == "Research Unlock":
             add_research_unlock_item(world, location)

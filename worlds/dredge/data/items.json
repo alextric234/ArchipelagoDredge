@@ -1412,7 +1412,7 @@
   "Starting Gear - Basic Fishing Pole": {
     "base_id_offset": 235,
     "classification": "progression",
-    "item_group": "Staring Gear",
+    "item_group": "Rod",
     "expansion": "Base",
     "can_catch": [
       "Coastal"
@@ -1857,7 +1857,7 @@
   "Starting Gear - Peculiar Engine": {
     "base_id_offset": 276,
     "classification": "progression",
-    "item_group": "Staring Gear",
+    "item_group": "Engine",
     "expansion": "Base",
     "size": 2,
     "item_value": 0

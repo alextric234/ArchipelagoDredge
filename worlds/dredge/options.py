@@ -68,12 +68,6 @@ class IncludeAberrations(Toggle):
     """
     display_name = "Include Aberrations"
 
-class IncludeDredgeLocations(Toggle):
-    """
-    If enabled, checks for dredge locations may contain progression items.
-    """
-    display_name = "Include Dredge Locations"
-
 class AddFishingLicenses(Toggle):
     """
     If enabled, adds a required item to be able to catch each region's fish.
@@ -116,7 +110,6 @@ class DREDGEOptions(PerGameCommonOptions):
     require_engines: RequireEngines
     logical_nets: LogicalNets
     include_aberrations: IncludeAberrations
-    include_dredge_locations: IncludeDredgeLocations
     add_fishing_licenses: AddFishingLicenses
     add_passage_items: AddPassageItems
     death_link: DeathLink

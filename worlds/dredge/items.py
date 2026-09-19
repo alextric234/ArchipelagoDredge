@@ -89,8 +89,10 @@ def create_all_items(world: DREDGEWorld) -> None:
     for item, data in item_table.items():
         if (data.classification not in progression_classes
                 or data.item_group == "Research"
-                or data.item_group == "Staring Gear"
                 or data.expansion == "Unused"):
+            continue
+
+        if item.startswith("Starting Gear"):
             continue
 
         if not world.options.add_fishing_licenses and data.item_group == "Virtual License":
