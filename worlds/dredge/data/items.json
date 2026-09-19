@@ -2396,7 +2396,43 @@
   "Pale Reach Fishing License": {
 	"base_id_offset": 361,
 	"classification": "progression",
-	"item_group": "Quest NPC",
+	"item_group": "Virtual",
+	"expansion": "PaleReach"
+ },
+  "The Windward Litany": {
+	"base_id_offset": 362,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "The Astral Testament": {
+	"base_id_offset": 363,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "The Mangrove Canticle": {
+	"base_id_offset": 364,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "The Cinder Gospel": {
+	"base_id_offset": 365,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "The Pelagic Psalm": {
+	"base_id_offset": 366,
+	"classification": "progression",
+	"item_group": "Virtual",
+	"expansion": "Base"
+ },
+  "The Rimebound Chronicle": {
+	"base_id_offset": 367,
+	"classification": "progression",
+	"item_group": "Virtual",
 	"expansion": "PaleReach"
  }
 }
