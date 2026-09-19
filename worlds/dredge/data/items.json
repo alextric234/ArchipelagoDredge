@@ -2434,5 +2434,41 @@
 	"classification": "progression",
 	"item_group": "Virtual Passage Item",
 	"expansion": "PaleReach"
+ },
+  "Cracked Bulb": {
+	"base_id_offset": 368,
+	"classification": "useful",
+	"item_group": "Light",
+	"expansion": "Base"
+ },
+  "Cloudy Lens": {
+	"base_id_offset": 369,
+	"classification": "useful",
+	"item_group": "Light",
+	"expansion": "Base"
+ },
+  "Halogen Spotlight": {
+	"base_id_offset": 370,
+	"classification": "useful",
+	"item_group": "Light",
+	"expansion": "Base"
+ },
+  "Tungsten Floodlight": {
+	"base_id_offset": 371,
+	"classification": "useful",
+	"item_group": "Light",
+	"expansion": "Base"
+ },
+  "Incandescent Array": {
+	"base_id_offset": 372,
+	"classification": "useful",
+	"item_group": "Light",
+	"expansion": "Base"
+ },
+  "Flame of the Sky": {
+	"base_id_offset": 373,
+	"classification": "useful",
+	"item_group": "Light",
+	"expansion": "Base"
  }
 }
