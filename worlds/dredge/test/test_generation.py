@@ -1,6 +1,6 @@
 from BaseClasses import ItemClassification
 
-from . import DredgeTestBase
+from .bases import DredgeTestBase
 from ..items import item_table
 
 

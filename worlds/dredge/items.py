@@ -127,7 +127,7 @@ def create_all_items(world: DREDGEWorld) -> None:
     needed_number_of_filler_items = number_of_unfilled_locations - number_of_items
 
     if needed_number_of_filler_items < 0:
-        raise Exception(f"DREDGE ({world.player_name}): {number_of_items} items for only "
+        raise Exception(f"[DREDGE - '{world.player_name}'] {number_of_items} items for only "
                         f"{number_of_unfilled_locations} locations")
 
     if needed_number_of_filler_items > 0:
