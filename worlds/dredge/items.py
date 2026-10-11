@@ -66,16 +66,21 @@ for name, data in item_table.items():
     if data.item_group:
         ITEM_NAME_GROUPS[data.item_group].add(name)
 
+def is_expansion_enabled(world: DREDGEWorld, expansion: str) -> bool:
+    if expansion == "Base":
+        return True
+    if expansion == "PaleReach":
+        return bool(world.options.include_pale_reach_dlc)
+    if expansion == "IronRig":
+        return bool(world.options.include_iron_rig_dlc)
+    return False
+
 def get_random_filler_item_name(world: DREDGEWorld) -> str:
     filler_pool = [
         item
         for item, data in item_table.items()
         if data.classification == ItemClassification.filler
-           and (
-                   data.expansion == "Base"
-                   or (world.options.include_pale_reach_dlc and data.expansion == "PaleReach")
-                   or (world.options.include_iron_rig_dlc and data.expansion == "IronRig")
-           )
+           and is_expansion_enabled(world, data.expansion)
     ]
 
     random_filler_item = world.random.choice(filler_pool)
@@ -89,7 +94,7 @@ def create_all_items(world: DREDGEWorld) -> None:
     for item, data in item_table.items():
         if (data.classification not in progression_classes
                 or data.item_group == "Research"
-                or data.expansion == "Unused"):
+                or not is_expansion_enabled(world, data.expansion)):
             continue
 
         if item.startswith("Starting Gear"):
@@ -101,12 +106,7 @@ def create_all_items(world: DREDGEWorld) -> None:
         if not world.options.add_passage_items and data.item_group == "Virtual Passage Item":
             continue
 
-        if data.expansion == "Base":
-            item_pool.append(world.create_item(item))
-        elif world.options.include_pale_reach_dlc and data.expansion == "PaleReach":
-            item_pool.append(world.create_item(item))
-        elif world.options.include_iron_rig_dlc and data.expansion == "IronRig":
-            item_pool.append(world.create_item(item))
+        item_pool.append(world.create_item(item))
 
     num_base_hull_upgrades = 2
     for _ in range(num_base_hull_upgrades):
@@ -119,7 +119,7 @@ def create_all_items(world: DREDGEWorld) -> None:
         item_pool.append(world.create_item("Research Part"))
 
     for item, data in item_table.items():
-        if data.classification == ItemClassification.useful:
+        if data.classification == ItemClassification.useful and is_expansion_enabled(world, data.expansion):
             item_pool.append(world.create_item(item))
 
     number_of_items = len(item_pool)
