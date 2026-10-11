@@ -126,6 +126,10 @@ def create_all_items(world: DREDGEWorld) -> None:
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
     needed_number_of_filler_items = number_of_unfilled_locations - number_of_items
 
+    if needed_number_of_filler_items < 0:
+        raise Exception(f"DREDGE ({world.player_name}): {number_of_items} items for only "
+                        f"{number_of_unfilled_locations} locations")
+
     if needed_number_of_filler_items > 0:
         for _ in range(needed_number_of_filler_items):
             item_pool.append(world.create_item(get_random_filler_item_name(world)))

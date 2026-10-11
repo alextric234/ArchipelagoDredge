@@ -69,7 +69,7 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                 case IronRigPhaseReq():
                     add_iron_rig_phase_rule(requirement, world_location, player)
                 case _:
-                    set_rule(world_location, lambda state: True)
+                    raise ValueError(f"Unhandled requirement {requirement!r} for {world_location.name}")
 
 def add_license_rule(world_location, location, player):
     match location.region:
@@ -137,7 +137,7 @@ def tools_for(
         catch_type: str,
         tool_group: str,
         size: int | None = None) -> tuple[str, ...]:
-    tools = CATCH_TOOL_INDEX.get((catch_type, tool_group))
+    tools = CATCH_TOOL_INDEX.get((catch_type, tool_group), ())
 
     if size is None:
         return tools
@@ -195,6 +195,6 @@ def set_completion_condition(world: DREDGEWorld) -> None:
 def can_use_net(state: CollectionState, player: int, catch_type: str) -> bool:
     if state.has("Progressive Hull", player, 3):
         return True
-    if state.has("Progressive Hull", player) & state.has_any(tools_for(catch_type, "Net", 4), player):
+    if state.has("Progressive Hull", player) and state.has_any(tools_for(catch_type, "Net", 4), player):
         return True
     return False
