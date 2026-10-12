@@ -2,6 +2,7 @@ from BaseClasses import ItemClassification
 
 from .bases import DredgeTestBase
 from ..items import item_table
+from ..locations import location_table
 
 
 def pool_item_names(test: DredgeTestBase) -> list[str]:
@@ -27,6 +28,27 @@ class TestDefaultOptions(DredgeTestBase):
     def test_no_aberration_chance_items(self) -> None:
         groups = {item_table[name].item_group for name in pool_item_names(self)}
         self.assertNotIn("Aberration Chance", groups)
+
+
+def message_location_names(test: DredgeTestBase) -> list[str]:
+    return [location.name for location in test.multiworld.get_locations(test.player)
+            if location.name in location_table and location_table[location.name].location_group == "Message"]
+
+
+class TestMessageBottles(DredgeTestBase):
+    options = {}
+
+    def test_ten_bottles_by_default(self) -> None:
+        self.assertEqual(len(message_location_names(self)), 10)
+
+
+class TestNoMessageBottles(DredgeTestBase):
+    options = {
+        "include_message_bottles": False,
+    }
+
+    def test_no_bottles(self) -> None:
+        self.assertEqual(message_location_names(self), [])
 
 
 class TestPaleReach(DredgeTestBase):

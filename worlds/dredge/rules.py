@@ -146,7 +146,7 @@ OPEN_OCEAN_PERFORMANCE = (50, 2100)
 PALE_REACH_PERFORMANCE = (60, 2100)
 
 # Research, shop and pursuit locations are filed under Open Ocean but aren't done out at sea.
-AT_SEA_LOCATION_GROUPS = {"Dredge", "Encyclopedia", "World"}
+AT_SEA_LOCATION_GROUPS = {"Dredge", "Encyclopedia", "World", "Message"}
 
 BASE_SPEED = 10
 ENGINES = tuple(name for name, item in item_table.items() if item.item_group == "Engine")

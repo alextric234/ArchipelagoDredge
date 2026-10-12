@@ -19,6 +19,7 @@ The goal collect all 5 relics and deliver them to The Collector
 Currently:
 - First time catching a fish
 - Unlocking researches
+- Picking up messages in bottles (option: Include Messages in Bottles)
 
 Planned:
 - Random loot dredging

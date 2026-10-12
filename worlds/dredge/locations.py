@@ -143,6 +143,8 @@ def get_player_location_table(options: DREDGEOptions) -> list[str]:
         all_locations.extend(both_dlc_locations)
 
     all_locations = list(filter(exclude_groups, all_locations))
+    if not options.include_message_bottles:
+        all_locations = [name for name in all_locations if location_table[name].location_group != "Message"]
 
     return all_locations
 

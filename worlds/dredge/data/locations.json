@@ -6391,5 +6391,75 @@
         "type": "items",
         "all_of": ["A Place to Rest - Returned to Builder"]
       }]
+  },
+  "The Marrows - Message in a Bottle 1(K-9)": {
+    "base_id_offset": 458,
+    "region": "The Marrows",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "The Marrows - Message in a Bottle 2(K-7)": {
+    "base_id_offset": 459,
+    "region": "The Marrows",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Gale Cliffs - Message in a Bottle 1(N-3)": {
+    "base_id_offset": 460,
+    "region": "Gale Cliffs",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Gale Cliffs - Message in a Bottle 2(N-4)": {
+    "base_id_offset": 461,
+    "region": "Gale Cliffs",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stellar Basin - Message in a Bottle 1(E-5)": {
+    "base_id_offset": 462,
+    "region": "Stellar Basin",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stellar Basin - Message in a Bottle 2(G-4)": {
+    "base_id_offset": 463,
+    "region": "Stellar Basin",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Twisted Strand - Message in a Bottle 1(F-13)": {
+    "base_id_offset": 464,
+    "region": "Twisted Strand",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Twisted Strand - Message in a Bottle 2(F-13)": {
+    "base_id_offset": 465,
+    "region": "Twisted Strand",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Devil's Spine - Message in a Bottle 1(N-14)": {
+    "base_id_offset": 466,
+    "region": "Devil's Spine",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Devil's Spine - Message in a Bottle 2(P-12)": {
+    "base_id_offset": 467,
+    "region": "Devil's Spine",
+    "location_group": "Message",
+    "expansion": "Base",
+    "requirements": []
   }
 }

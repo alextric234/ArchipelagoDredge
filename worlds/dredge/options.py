@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from Options import OptionSet, Range, Toggle, PerGameCommonOptions, StartInventoryPool
+from Options import DefaultOnToggle, OptionSet, Range, Toggle, PerGameCommonOptions, StartInventoryPool
 
 
 # class Goal(Choice):
@@ -91,6 +91,12 @@ class AddPassageItems(Toggle):
     """
     display_name = "Add Passage Items"
 
+class IncludeMessageBottles(DefaultOnToggle):
+    """
+    If enabled, picking up each of the 10 messages in a bottle is a check.
+    """
+    display_name = "Include Messages in Bottles"
+
 class ProgressiveAberrationChanceItems(Range):
     """
     How many Progressive Aberration Chance items to add. Each raises the minimum chance of catching an aberration by
@@ -174,6 +180,7 @@ class DREDGEOptions(PerGameCommonOptions):
     include_aberrations: IncludeAberrations
     add_fishing_licenses: AddFishingLicenses
     add_passage_items: AddPassageItems
+    include_message_bottles: IncludeMessageBottles
     progressive_aberration_chance_items: ProgressiveAberrationChanceItems
     guaranteed_aberrations_item: GuaranteedAberrationsItem
     trap_percentage: TrapPercentage
