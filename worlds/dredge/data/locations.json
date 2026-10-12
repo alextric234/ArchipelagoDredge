@@ -784,6 +784,10 @@
       {
         "type": "catch_type",
         "value": "Ice"
+      },
+      {
+        "type": "items",
+        "all_of": ["Radiant Trawl Net"]
       }
     ],
     "can_catch_rod": false,
@@ -2293,6 +2297,10 @@
       {
         "type": "catch_type",
         "value": "Ice"
+      },
+      {
+        "type": "items",
+        "all_of": ["Radiant Trawl Net"]
       }
     ],
     "can_catch_rod": false,
