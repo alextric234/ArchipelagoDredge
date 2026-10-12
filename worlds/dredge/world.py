@@ -60,6 +60,8 @@ class DREDGEWorld(World):
             "include_pale_reach_dlc",
             "add_fishing_licenses",
             "add_passage_items",
+            "logical_nets",
+            "require_boat_performance",
             "progressive_aberration_chance_items",
             "guaranteed_aberrations_item"
         )
