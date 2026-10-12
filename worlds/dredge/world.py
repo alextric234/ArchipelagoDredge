@@ -20,6 +20,9 @@ class DREDGEWorld(World):
     location_name_to_id = locations.LOCATION_NAME_TO_ID
     location_name_groups = locations.LOCATION_NAME_GROUPS
 
+    def generate_early(self) -> None:
+        items.limit_starting_hulls(self)
+
     def create_regions(self) -> None:
         regions.create_and_connect_regions(self)
         locations.create_all_locations(self)

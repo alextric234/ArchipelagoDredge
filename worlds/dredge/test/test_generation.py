@@ -69,3 +69,31 @@ class TestLicensesAndPassagesWithoutDlc(DredgeTestBase):
         "add_passage_items": True,
         "require_engines": True,
     }
+
+
+class TestStartingHullsCappedWithoutIronRig(DredgeTestBase):
+    options = {
+        "start_inventory_from_pool": {"Progressive Hull": 4},
+    }
+
+    def test_capped_at_pool_hulls(self) -> None:
+        self.assertEqual(self.world.options.start_inventory_from_pool.value["Progressive Hull"], 3)
+
+
+class TestStartingHullsCappedWithIronRig(DredgeTestBase):
+    options = {
+        "include_iron_rig_dlc": True,
+        "start_inventory_from_pool": {"Progressive Hull": 5},
+    }
+
+    def test_capped_at_pool_hulls(self) -> None:
+        self.assertEqual(self.world.options.start_inventory_from_pool.value["Progressive Hull"], 4)
+
+
+class TestStartingHullsWithinPool(DredgeTestBase):
+    options = {
+        "start_inventory_from_pool": {"Progressive Hull": 2},
+    }
+
+    def test_request_kept(self) -> None:
+        self.assertEqual(self.world.options.start_inventory_from_pool.value["Progressive Hull"], 2)

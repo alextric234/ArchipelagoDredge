@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import pkgutil
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -77,6 +78,19 @@ def is_expansion_enabled(world: DREDGEWorld, expansion: str) -> bool:
         return bool(world.options.include_iron_rig_dlc)
     return False
 
+def progressive_hull_count(world: DREDGEWorld) -> int:
+    return 4 if world.options.include_iron_rig_dlc else 3
+
+def limit_starting_hulls(world: DREDGEWorld) -> None:
+    # Archipelago grants every requested start_inventory_from_pool item, even ones missing from the pool,
+    # which would hand a seed without the Iron Rig its Iron Rig hull.
+    requested = world.options.start_inventory_from_pool.value.get("Progressive Hull", 0)
+    available = progressive_hull_count(world)
+    if requested > available:
+        logging.warning(f"[DREDGE - '{world.player_name}'] start_inventory_from_pool asks for {requested} "
+                        f"Progressive Hulls but this seed only has {available}; starting with {available}.")
+        world.options.start_inventory_from_pool.value["Progressive Hull"] = available
+
 def get_random_filler_item_name(world: DREDGEWorld) -> str:
     filler_pool = [
         item
@@ -99,7 +113,7 @@ def create_all_items(world: DREDGEWorld) -> None:
                 or not is_expansion_enabled(world, data.expansion)):
             continue
 
-        if item.startswith("Starting Gear"):
+        if item.startswith("Starting Gear") or item == "Progressive Hull":
             continue
 
         if not world.options.add_fishing_licenses and data.item_group == "Virtual License":
@@ -110,10 +124,7 @@ def create_all_items(world: DREDGEWorld) -> None:
 
         item_pool.append(world.create_item(item))
 
-    num_base_hull_upgrades = 2
-    for _ in range(num_base_hull_upgrades):
-        item_pool.append(world.create_item("Progressive Hull"))
-    if world.options.include_iron_rig_dlc:
+    for _ in range(progressive_hull_count(world)):
         item_pool.append(world.create_item("Progressive Hull"))
 
     num_research_parts = 30

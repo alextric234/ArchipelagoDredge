@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from Options import Toggle, PerGameCommonOptions
+from Options import Toggle, PerGameCommonOptions, StartInventoryPool
 
 
 # class Goal(Choice):
@@ -113,4 +113,5 @@ class DREDGEOptions(PerGameCommonOptions):
     add_fishing_licenses: AddFishingLicenses
     add_passage_items: AddPassageItems
     death_link: DeathLink
+    start_inventory_from_pool: StartInventoryPool
     # enable_traps: EnableTraps
