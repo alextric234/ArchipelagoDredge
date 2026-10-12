@@ -749,12 +749,12 @@
     "expansion": "Base",
     "requirements": [
       {
-        "type": "items",
-        "all_of": ["Packed Explosives"]
-      },
-      {
         "type": "catch_type",
         "value": "Abyssal"
+      },
+      {
+        "type": "items",
+        "any_of": ["Packed Explosives", "Exotic Bait"]
       }
     ],
     "can_catch_rod": true,
@@ -1578,7 +1578,7 @@
     "requirements": [
       {
         "type": "items",
-        "all_of": ["Packed Explosives"]
+        "any_of": ["Packed Explosives", "Exotic Bait"]
       },
       {
         "type": "catch_type",
@@ -1699,6 +1699,10 @@
       {
         "type": "catch_type",
         "value": "Hadal"
+      },
+      {
+        "type": "items",
+        "any_of": ["Exotic Bait"]
       }
     ],
     "can_catch_rod": true,
@@ -2182,6 +2186,10 @@
       {
         "type": "catch_type",
         "value": "Abyssal"
+      },
+      {
+        "type": "items",
+        "any_of": ["Exotic Bait"]
       }
     ],
     "can_catch_rod": true,
@@ -2846,6 +2854,10 @@
       {
         "type": "catch_type",
         "value": "Ice"
+      },
+      {
+        "type": "items",
+        "any_of": ["Icebreaker", "Exotic Bait"]
       }
     ],
     "can_catch_rod": true,
