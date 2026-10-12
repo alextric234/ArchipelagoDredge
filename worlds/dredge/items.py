@@ -136,8 +136,14 @@ def create_all_items(world: DREDGEWorld) -> None:
         item_pool.append(world.create_item("Research Part"))
 
     for item, data in item_table.items():
-        if data.classification == ItemClassification.useful and is_expansion_enabled(world, data.expansion):
+        if (data.classification == ItemClassification.useful and is_expansion_enabled(world, data.expansion)
+                and data.item_group != "Aberration Chance"):
             item_pool.append(world.create_item(item))
+
+    for _ in range(world.options.progressive_aberration_chance_items.value):
+        item_pool.append(world.create_item("Progressive Aberration Chance"))
+    if world.options.guaranteed_aberrations_item:
+        item_pool.append(world.create_item("Guaranteed Aberrations"))
 
     number_of_items = len(item_pool)
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))

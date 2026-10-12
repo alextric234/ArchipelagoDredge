@@ -24,6 +24,10 @@ class TestDefaultOptions(DredgeTestBase):
         self.assertNotIn("Virtual License", groups)
         self.assertNotIn("Virtual Passage Item", groups)
 
+    def test_no_aberration_chance_items(self) -> None:
+        groups = {item_table[name].item_group for name in pool_item_names(self)}
+        self.assertNotIn("Aberration Chance", groups)
+
 
 class TestPaleReach(DredgeTestBase):
     options = {
@@ -97,3 +101,44 @@ class TestStartingHullsWithinPool(DredgeTestBase):
 
     def test_request_kept(self) -> None:
         self.assertEqual(self.world.options.start_inventory_from_pool.value["Progressive Hull"], 2)
+
+
+class TestAberrationChanceItems(DredgeTestBase):
+    options = {
+        "progressive_aberration_chance_items": 20,
+        "guaranteed_aberrations_item": True,
+    }
+
+    def test_items_in_pool(self) -> None:
+        names = pool_item_names(self)
+        self.assertEqual(names.count("Progressive Aberration Chance"), 20)
+        self.assertEqual(names.count("Guaranteed Aberrations"), 1)
+
+    def test_slot_data(self) -> None:
+        slot_data = self.world.fill_slot_data()
+        self.assertEqual(slot_data["progressive_aberration_chance_items"], 20)
+        self.assertEqual(slot_data["guaranteed_aberrations_item"], 1)
+
+
+class TestAberrationsWithoutChanceItemsWarns(DredgeTestBase):
+    options = {
+        "include_aberrations": True,
+    }
+    run_default_tests = False
+
+    def test_warns(self) -> None:
+        with self.assertLogs(level="WARNING") as logs:
+            self.world.generate_early()
+        self.assertTrue(any("aberration" in line for line in logs.output))
+
+
+class TestAberrationsWithChanceItemsDoesNotWarn(DredgeTestBase):
+    options = {
+        "include_aberrations": True,
+        "guaranteed_aberrations_item": True,
+    }
+    run_default_tests = False
+
+    def test_no_warning(self) -> None:
+        with self.assertNoLogs(level="WARNING"):
+            self.world.generate_early()

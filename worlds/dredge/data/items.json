@@ -2425,5 +2425,17 @@
 	"expansion": "Base",
 	"shape": ["XX"],
 	"lumens": 3500
- }
+ },
+  "Progressive Aberration Chance": {
+    "base_id_offset": 374,
+    "classification": "useful",
+    "item_group": "Aberration Chance",
+    "expansion": "Base"
+  },
+  "Guaranteed Aberrations": {
+    "base_id_offset": 375,
+    "classification": "useful",
+    "item_group": "Aberration Chance",
+    "expansion": "Base"
+  }
 }

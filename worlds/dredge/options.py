@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from Options import Toggle, PerGameCommonOptions, StartInventoryPool
+from Options import Range, Toggle, PerGameCommonOptions, StartInventoryPool
 
 
 # class Goal(Choice):
@@ -91,6 +91,26 @@ class AddPassageItems(Toggle):
     """
     display_name = "Add Passage Items"
 
+class ProgressiveAberrationChanceItems(Range):
+    """
+    How many Progressive Aberration Chance items to add. Each raises the minimum chance of catching an aberration by
+    an equal share, so having all of them makes every catch an aberration. 0 adds none.
+
+    The boost can be switched off in game with "ap aberrations off" or in the mod settings.
+    """
+    display_name = "Progressive Aberration Chance Items"
+    range_start = 0
+    range_end = 20
+    default = 0
+
+class GuaranteedAberrationsItem(Toggle):
+    """
+    Adds a Guaranteed Aberrations item that makes every catch an aberration as soon as it's received.
+
+    The boost can be switched off in game with "ap aberrations off" or in the mod settings.
+    """
+    display_name = "Guaranteed Aberrations Item"
+
 class DeathLink(Toggle):
     """
     Enables deathlink
@@ -117,6 +137,8 @@ class DREDGEOptions(PerGameCommonOptions):
     include_aberrations: IncludeAberrations
     add_fishing_licenses: AddFishingLicenses
     add_passage_items: AddPassageItems
+    progressive_aberration_chance_items: ProgressiveAberrationChanceItems
+    guaranteed_aberrations_item: GuaranteedAberrationsItem
     death_link: DeathLink
     start_inventory_from_pool: StartInventoryPool
     # enable_traps: EnableTraps
