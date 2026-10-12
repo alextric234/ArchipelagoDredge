@@ -100,6 +100,7 @@ def add_iron_rig_phase_rule(requirement, world_location, player) -> None:
         add_rule(world_location, lambda state: state.has_any(tools_for("Infused Coastal", "Rod"), player))
     if requirement.value > 0:
         add_rule(world_location, lambda state: state.has("Dredge Crane", player))
+        add_rule(world_location, lambda state: state.can_reach_region("The Iron Rig", player))
 
 def add_research_rule(requirement, world_location, player) -> None:
     add_rule(world_location, lambda state: state.has("Research Part", player, requirement.cost))

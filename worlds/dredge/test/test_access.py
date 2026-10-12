@@ -35,6 +35,24 @@ class TestPassageAccess(DredgeTestBase):
                 self.assertAccessDependency(locations, [[passage_item]], only_check_listed=True)
 
 
+class TestIronRigPhaseAccess(DredgeTestBase):
+    options = {
+        "include_iron_rig_dlc": True,
+        "add_passage_items": True,
+    }
+    run_default_tests = False
+
+    def test_phase_locations_need_rig_access(self) -> None:
+        locations = [
+            location.name
+            for location in self.multiworld.get_locations(self.player)
+            if location.address is not None
+            and any(req.type == "iron_rig_phase" for req in location_table[location.name].requirements)
+        ]
+        self.assertTrue(locations, "No Iron Rig phase locations")
+        self.assertAccessDependency(locations, [["The Pelagic Psalm"]], only_check_listed=True)
+
+
 class TestLicenseAccess(DredgeTestBase):
     options = {
         "include_pale_reach_dlc": True,
