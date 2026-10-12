@@ -2,15 +2,15 @@ from unittest import TestCase
 
 from BaseClasses import CollectionState
 from .bases import DredgeTestBase
-from ..fitting import hulls_needed
+from ..fitting import best_total, hulls_needed
 from ..items import item_table
 from ..rules import can_equip
 
 
 class TestHullsNeeded(TestCase):
-    def test_every_rod_and_net_fits_some_hull(self) -> None:
+    def test_every_rod_net_engine_and_light_fits_some_hull(self) -> None:
         for name, item in item_table.items():
-            if item.item_group not in ("Rod", "Net"):
+            if item.item_group not in ("Rod", "Net", "Engine", "Light"):
                 continue
             for include_iron_rig in (False, True):
                 with self.subTest(item=name, include_iron_rig=include_iron_rig):
@@ -40,6 +40,25 @@ class TestHullsNeeded(TestCase):
     def test_items_without_a_shape_need_no_hull(self) -> None:
         self.assertEqual(hulls_needed("Dredge Crane", False), 0)
         self.assertEqual(hulls_needed("Not An Item", False), 0)
+
+
+class TestBestTotal(TestCase):
+    def test_starting_hull_fits_only_one_of_two_engines(self) -> None:
+        engines = ["Starting Gear - Peculiar Engine", "Twin Prop Engine"]
+        self.assertEqual(best_total(engines, "speed", 0, False), 35)
+        self.assertEqual(best_total(engines, "speed", 1, False), 49)
+
+    def test_two_cell_light_needs_a_hull(self) -> None:
+        self.assertEqual(best_total(["Halogen Spotlight"], "lumens", 0, False), 0)
+        self.assertEqual(best_total(["Halogen Spotlight"], "lumens", 1, False), 1800)
+
+    def test_picks_the_best_light_that_fits(self) -> None:
+        lights = ["Cracked Bulb", "Halogen Spotlight", "Flame of the Sky"]
+        self.assertEqual(best_total(lights, "lumens", 1, False), 3500)
+        self.assertEqual(best_total(lights, "lumens", 4, True), 5300)
+
+    def test_nothing_owned(self) -> None:
+        self.assertEqual(best_total([], "speed", 4, True), 0)
 
 
 class TestCanEquip(DredgeTestBase):

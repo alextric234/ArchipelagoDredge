@@ -1,3 +1,4 @@
+from BaseClasses import ItemClassification
 from worlds.AutoWorld import World
 from collections.abc import Mapping
 from typing import Any
@@ -37,7 +38,10 @@ class DREDGEWorld(World):
 
     def create_item(self, name: str) -> items.DREDGEItem:
         item_data = items.item_table[name]
-        return items.DREDGEItem(name, item_data.classification, self.item_name_to_id[name], self.player)
+        classification = item_data.classification
+        if item_data.item_group == "Light" and self.options.require_boat_performance:
+            classification = ItemClassification.progression
+        return items.DREDGEItem(name, classification, self.item_name_to_id[name], self.player)
 
     def get_filler_item_name(self) -> str:
         return items.get_random_filler_item_name(self)

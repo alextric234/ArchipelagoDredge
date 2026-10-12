@@ -49,7 +49,7 @@ class TestAllOptions(DredgeTestBase):
     options = {
         "include_iron_rig_dlc": True,
         "include_pale_reach_dlc": True,
-        "require_engines": True,
+        "require_boat_performance": True,
         "logical_nets": True,
         "include_aberrations": True,
         "add_fishing_licenses": True,
@@ -67,7 +67,7 @@ class TestLicensesAndPassagesWithoutDlc(DredgeTestBase):
     options = {
         "add_fishing_licenses": True,
         "add_passage_items": True,
-        "require_engines": True,
+        "require_boat_performance": True,
     }
 
 

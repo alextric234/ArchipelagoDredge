@@ -30,7 +30,8 @@ class DREDGEItemData:
     expansion: str
     can_catch: List[str] = field(default_factory=list)
     size: int = 0
-    item_value: int = 0
+    speed: int = 0
+    lumens: int = 0
     max_quantity: int = 1
     shape: List[str] = field(default_factory=list)
 
@@ -51,7 +52,8 @@ item_table = {
         expansion=entry["expansion"],
         can_catch=entry.get("can_catch", []),
         size=entry.get("size", 0),
-        item_value=entry.get("item_value", 0),
+        speed=entry.get("speed", 0),
+        lumens=entry.get("lumens", 0),
         shape=entry.get("shape", []),
     )
     for name, entry in load_data_file("items.json").items()

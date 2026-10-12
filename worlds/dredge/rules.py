@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 
 from BaseClasses import CollectionState, Location
 from worlds.generic.Rules import set_rule, add_rule
-from .fitting import hulls_needed
+from .fitting import best_total, hulls_needed
 from .items import item_table, CATCH_TOOL_INDEX
 from .locations import location_table, DREDGELocationData, ItemsReq, CatchTypeReq, ResearchReq, IronRigPhaseReq
 from .options import DREDGEOptions
@@ -37,17 +37,17 @@ def set_region_rules(world: "DREDGEWorld") -> None:
     world.get_entrance("The Marrows to Open Ocean").access_rule = \
         lambda state: not world.options.add_passage_items or has_passage_item("The Pelagic Psalm", state, player)
     world.get_entrance("Open Ocean to Gale Cliffs").access_rule = \
-        lambda state: (not world.options.add_passage_items or has_passage_item("The Windward Litany", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Windward Litany", state, player)) and has_boat_performance(world, MID_REGIONS_PERFORMANCE, state)
     world.get_entrance("Open Ocean to Stellar Basin").access_rule = \
-        lambda state: (not world.options.add_passage_items or has_passage_item("The Astral Testament", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Astral Testament", state, player)) and has_boat_performance(world, MID_REGIONS_PERFORMANCE, state)
     world.get_entrance("Open Ocean to Twisted Strand").access_rule = \
-        lambda state: (not world.options.add_passage_items or has_passage_item("The Mangrove Canticle", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Mangrove Canticle", state, player)) and has_boat_performance(world, MID_REGIONS_PERFORMANCE, state)
     world.get_entrance("Open Ocean to Devil's Spine").access_rule = \
-        lambda state: (not world.options.add_passage_items or has_passage_item("The Cinder Gospel", state, player)) and (not world.options.require_engines or has_engines(1, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Cinder Gospel", state, player)) and has_boat_performance(world, MID_REGIONS_PERFORMANCE, state)
     world.get_entrance("Open Ocean to The Iron Rig").access_rule = \
-        lambda state: not world.options.require_engines or has_engines(2, state, player)
+        lambda state: has_boat_performance(world, OPEN_OCEAN_PERFORMANCE, state)
     world.get_entrance("Open Ocean to The Pale Reach").access_rule = \
-        lambda state: (not world.options.add_passage_items or has_passage_item("The Rimebound Chronicle", state, player)) and (not world.options.require_engines or has_engines(2, state, player))
+        lambda state: (not world.options.add_passage_items or has_passage_item("The Rimebound Chronicle", state, player)) and has_boat_performance(world, PALE_REACH_PERFORMANCE, state)
     world.get_entrance("Open Ocean to Insanity").access_rule = \
         lambda state: has_relics(state, player)
 
@@ -60,6 +60,8 @@ def set_location_rules(world: "DREDGEWorld") -> None:
         location = location_table[world_location.name]
         if world.options.add_fishing_licenses and location.location_group == "Encyclopedia":
             add_license_rule(world_location, location, player)
+        if location.region == "Open Ocean" and location.location_group in AT_SEA_LOCATION_GROUPS:
+            add_rule(world_location, lambda state: has_boat_performance(world, OPEN_OCEAN_PERFORMANCE, state))
         for requirement in location.requirements:
             match requirement:
                 case ItemsReq():
@@ -137,9 +139,31 @@ def can_equip_any(item_names, state: CollectionState, player: int, include_iron_
 def has_passage_item(passage_item, state, player):
     return state.has(passage_item, player)
 
-def has_engines(distance: int, state: CollectionState, player: int) -> bool:
-    valid_engines = [name for name, item in item_table.items() if item.item_value >= distance]
-    return state.has_any(valid_engines, player)
+# (knots, lumens). 1800 lumens keeps a full-sanity boat above 0.25 sanity, where Phantom Sharks and Monster Ray
+# attacks start, through a whole 12-hour night.
+MID_REGIONS_PERFORMANCE = (50, 1800)
+OPEN_OCEAN_PERFORMANCE = (50, 2100)
+PALE_REACH_PERFORMANCE = (60, 2100)
+
+# Research, shop and pursuit locations are filed under Open Ocean but aren't done out at sea.
+AT_SEA_LOCATION_GROUPS = {"Dredge", "Encyclopedia", "World"}
+
+BASE_SPEED = 10
+ENGINES = tuple(name for name, item in item_table.items() if item.item_group == "Engine")
+LIGHTS = tuple(name for name, item in item_table.items() if item.item_group == "Light")
+
+
+def has_boat_performance(world: DREDGEWorld, performance: tuple[int, int], state: CollectionState) -> bool:
+    if not world.options.require_boat_performance:
+        return True
+    knots, lumens = performance
+    player = world.player
+    hull_count = state.count("Progressive Hull", player)
+    include_iron_rig = bool(world.options.include_iron_rig_dlc)
+    engines = [name for name in ENGINES if state.has(name, player)]
+    lights = [name for name in LIGHTS if state.has(name, player)]
+    return (BASE_SPEED + best_total(engines, "speed", hull_count, include_iron_rig) >= knots
+            and best_total(lights, "lumens", hull_count, include_iron_rig) >= lumens)
 
 def has_relics(state: CollectionState, player: int) -> bool:
     return state.has("Ornate Key", player) \

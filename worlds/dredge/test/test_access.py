@@ -1,3 +1,4 @@
+from BaseClasses import CollectionState
 from .bases import DredgeTestBase
 from ..locations import location_table, ItemsReq
 
@@ -93,3 +94,56 @@ class TestLicenseAccess(DredgeTestBase):
                 ]
                 self.assertTrue(locations, f"No encyclopedia locations in {region_name}")
                 self.assertAccessDependency(locations, [[license_item]], only_check_listed=True)
+
+
+class TestBoatPerformanceAccess(DredgeTestBase):
+    options = {
+        "include_pale_reach_dlc": True,
+        "require_boat_performance": True,
+    }
+    run_default_tests = False
+
+    def state_with(self, *item_names: str) -> CollectionState:
+        state = CollectionState(self.multiworld)
+        for name in item_names:
+            state.collect(self.world.create_item(name), True)
+        return state
+
+    def test_lights_are_progression(self) -> None:
+        self.assertTrue(self.world.create_item("Cracked Bulb").advancement)
+
+    def test_mid_regions(self) -> None:
+        ready = ("Progressive Hull", "Twin Prop Engine", "Halogen Spotlight")
+        for region in ("Gale Cliffs", "Stellar Basin", "Twisted Strand", "Devil's Spine"):
+            with self.subTest(region=region):
+                self.assertTrue(self.state_with(*ready).can_reach_region(region, self.player))
+                for missing in ready:
+                    items = [name for name in ready if name != missing]
+                    self.assertFalse(self.state_with(*items).can_reach_region(region, self.player), missing)
+
+    def test_open_ocean_locations_need_more_light(self) -> None:
+        dim = self.state_with("Progressive Hull", "Twin Prop Engine", "Halogen Spotlight")
+        bright = self.state_with("Progressive Hull", "Twin Prop Engine", "Tungsten Floodlight")
+        for state in (dim, bright):
+            state.collect(self.world.create_item("Dredge Crane"), True)
+        locations = [location for location in self.multiworld.get_region("Open Ocean", self.player).locations
+                     if location.address is not None
+                     and location_table[location.name].location_group in ("Dredge", "Encyclopedia", "World")
+                     and location.can_reach(bright)]
+        self.assertTrue(locations, "No Open Ocean location reachable with a Tungsten Floodlight")
+        for location in locations:
+            with self.subTest(location=location.name):
+                self.assertFalse(location.can_reach(dim))
+
+    def test_pale_reach_needs_more_speed(self) -> None:
+        state = self.state_with("Progressive Hull", "Twin Prop Engine", "Tungsten Floodlight")
+        self.assertFalse(state.can_reach_region("The Pale Reach", self.player))
+        state.collect(self.world.create_item("Engine Stack"), True)
+        self.assertTrue(state.can_reach_region("The Pale Reach", self.player))
+
+
+class TestLightsUsefulWithoutBoatPerformance(DredgeTestBase):
+    run_default_tests = False
+
+    def test_lights_are_useful(self) -> None:
+        self.assertFalse(self.world.create_item("Cracked Bulb").advancement)

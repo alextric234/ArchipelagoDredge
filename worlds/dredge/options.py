@@ -44,11 +44,16 @@ class IncludePaleReachDLC(Toggle):
 #     internal_name = "require_pale_reach_ending"
 #     display_name = "Require Pale Reach Ending"
 
-class RequireEngines(Toggle):
+class RequireBoatPerformance(Toggle):
     """
-    Set logic to require engine upgrade to reach further archipelagos
+    Set logic to require a fast enough, well lit boat to reach further areas, counting only engines and lights that
+    fit in the hull together.
+
+    Gale Cliffs, Stellar Basin, Twisted Strand and Devil's Spine: 50 knots and 1800 lumens
+    Open Ocean dredging, fishing and pickups, and the Iron Rig: 50 knots and 2100 lumens
+    The Pale Reach: 60 knots and 2100 lumens
     """
-    display_name = "Require Engines"
+    display_name = "Require Boat Performance"
 
 class LogicalNets(Toggle):
     """
@@ -107,7 +112,7 @@ class DREDGEOptions(PerGameCommonOptions):
     # require_iron_rig_ending: RequireIronRigEnding
     include_pale_reach_dlc: IncludePaleReachDLC
     # require_pale_reach_ending: RequirePaleReachEnding
-    require_engines: RequireEngines
+    require_boat_performance: RequireBoatPerformance
     logical_nets: LogicalNets
     include_aberrations: IncludeAberrations
     add_fishing_licenses: AddFishingLicenses

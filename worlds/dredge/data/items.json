@@ -1892,7 +1892,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 2,
-    "item_value": 0
+    "shape": ["X", "X"],
+    "speed": 14
   },
   "Rusty Outboard Engine": {
     "base_id_offset": 278,
@@ -1900,7 +1901,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 2,
-    "item_value": 0
+    "shape": ["X", "X"],
+    "speed": 10
   },
   "Improved Outboard Engine": {
     "base_id_offset": 279,
@@ -1908,7 +1910,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 2,
-    "item_value": 1
+    "shape": ["X", "X"],
+    "speed": 15
   },
   "Refined Outboard Engine": {
     "base_id_offset": 280,
@@ -1916,7 +1919,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 3,
-    "item_value": 1
+    "shape": ["XX", "X."],
+    "speed": 25
   },
   "Twin Prop Engine": {
     "base_id_offset": 281,
@@ -1924,7 +1928,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 4,
-    "item_value": 2
+    "shape": ["XX", "XX"],
+    "speed": 35
   },
   "Jet Drive Engine": {
     "base_id_offset": 282,
@@ -1932,7 +1937,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 1,
-    "item_value": 3
+    "shape": ["X"],
+    "speed": 9
   },
   "Twin Jet Drive Engine": {
     "base_id_offset": 283,
@@ -1940,7 +1946,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 6,
-    "item_value": 0
+    "shape": ["X.X", "XXX"],
+    "speed": 50
   },
   "Engine Stack": {
     "base_id_offset": 284,
@@ -1948,7 +1955,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 6,
-    "item_value": 0
+    "shape": ["XXX", "XXX"],
+    "speed": 64
   },
   "Weak Valve Engine": {
     "base_id_offset": 285,
@@ -1956,7 +1964,8 @@
     "item_group": "Engine",
     "expansion": "Base",
     "size": 3,
-    "item_value": 1
+    "shape": ["XX", "X."],
+    "speed": 18
   },
   "Progressive Hull": {
     "base_id_offset": 286,
@@ -2463,36 +2472,48 @@
 	"base_id_offset": 368,
 	"classification": "useful",
 	"item_group": "Light",
-	"expansion": "Base"
+	"expansion": "Base",
+	"shape": ["X"],
+	"lumens": 500
  },
   "Cloudy Lens": {
 	"base_id_offset": 369,
 	"classification": "useful",
 	"item_group": "Light",
-	"expansion": "Base"
+	"expansion": "Base",
+	"shape": ["X"],
+	"lumens": 750
  },
   "Halogen Spotlight": {
 	"base_id_offset": 370,
 	"classification": "useful",
 	"item_group": "Light",
-	"expansion": "Base"
+	"expansion": "Base",
+	"shape": ["XX"],
+	"lumens": 1800
  },
   "Tungsten Floodlight": {
 	"base_id_offset": 371,
 	"classification": "useful",
 	"item_group": "Light",
-	"expansion": "Base"
+	"expansion": "Base",
+	"shape": ["XX"],
+	"lumens": 2100
  },
   "Incandescent Array": {
 	"base_id_offset": 372,
 	"classification": "useful",
 	"item_group": "Light",
-	"expansion": "Base"
+	"expansion": "Base",
+	"shape": ["XXX"],
+	"lumens": 3000
  },
   "Flame of the Sky": {
 	"base_id_offset": 373,
 	"classification": "useful",
 	"item_group": "Light",
-	"expansion": "Base"
+	"expansion": "Base",
+	"shape": ["XX"],
+	"lumens": 3500
  }
 }
