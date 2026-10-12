@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from Options import Range, Toggle, PerGameCommonOptions, StartInventoryPool
+from Options import OptionSet, Range, Toggle, PerGameCommonOptions, StartInventoryPool
 
 
 # class Goal(Choice):
@@ -111,6 +111,43 @@ class GuaranteedAberrationsItem(Toggle):
     """
     display_name = "Guaranteed Aberrations Item"
 
+TRAP_NAMES = [
+    "Damaging Event Trap", "Scary Event Trap", "Money Loss Trap", "Teleport Trap", "Panic Trap", "Hull Damage Trap",
+    "Engine Damage Trap", "Nightfall Trap", "Rot Trap", "Slow Trap", "Lights Out Trap", "Cargo Scramble Trap",
+    "Reverse Controls Trap",
+]
+
+class TrapPercentage(Range):
+    """
+    The percentage of filler items replaced with traps. 0 adds no traps.
+    """
+    display_name = "Trap Percentage"
+    range_start = 0
+    range_end = 100
+    default = 0
+
+class EnabledTraps(OptionSet):
+    """
+    Which traps can replace filler.
+
+    Damaging Event Trap: a monster that can damage your boat appears
+    Scary Event Trap: something unsettling but harmless happens
+    Money Loss Trap: lose 10% of your money
+    Teleport Trap: get pulled back to where the Manifest ability takes you
+    Panic Trap: your panic rises sharply
+    Hull Damage Trap: your boat takes a hit
+    Engine Damage Trap: an engine takes damage
+    Nightfall Trap: time skips ahead to nightfall
+    Rot Trap: a fish in your cargo rots
+    Slow Trap: your boat slows down for a short while
+    Lights Out Trap: your lights go out for a short while
+    Cargo Scramble Trap: your cargo gets rearranged
+    Reverse Controls Trap: your steering and throttle are reversed for a short while
+    """
+    display_name = "Enabled Traps"
+    valid_keys = TRAP_NAMES
+    default = frozenset(TRAP_NAMES)
+
 class DeathLink(Toggle):
     """
     Enables deathlink
@@ -139,6 +176,8 @@ class DREDGEOptions(PerGameCommonOptions):
     add_passage_items: AddPassageItems
     progressive_aberration_chance_items: ProgressiveAberrationChanceItems
     guaranteed_aberrations_item: GuaranteedAberrationsItem
+    trap_percentage: TrapPercentage
+    enabled_traps: EnabledTraps
     death_link: DeathLink
     start_inventory_from_pool: StartInventoryPool
     # enable_traps: EnableTraps

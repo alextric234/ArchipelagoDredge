@@ -2437,5 +2437,83 @@
     "classification": "useful",
     "item_group": "Aberration Chance",
     "expansion": "Base"
+  },
+  "Damaging Event Trap": {
+    "base_id_offset": 376,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Scary Event Trap": {
+    "base_id_offset": 377,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Money Loss Trap": {
+    "base_id_offset": 378,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Teleport Trap": {
+    "base_id_offset": 379,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Panic Trap": {
+    "base_id_offset": 380,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Hull Damage Trap": {
+    "base_id_offset": 381,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Engine Damage Trap": {
+    "base_id_offset": 382,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Nightfall Trap": {
+    "base_id_offset": 383,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Rot Trap": {
+    "base_id_offset": 384,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Slow Trap": {
+    "base_id_offset": 385,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Lights Out Trap": {
+    "base_id_offset": 386,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Cargo Scramble Trap": {
+    "base_id_offset": 387,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
+  },
+  "Reverse Controls Trap": {
+    "base_id_offset": 388,
+    "classification": "trap",
+    "item_group": "Trap",
+    "expansion": "Base"
   }
 }

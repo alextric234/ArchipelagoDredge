@@ -96,6 +96,10 @@ def limit_starting_hulls(world: DREDGEWorld) -> None:
         world.options.start_inventory_from_pool.value["Progressive Hull"] = available
 
 def get_random_filler_item_name(world: DREDGEWorld) -> str:
+    traps = sorted(world.options.enabled_traps.value)
+    if traps and world.random.randrange(100) < world.options.trap_percentage.value:
+        return world.random.choice(traps)
+
     filler_pool = [
         item
         for item, data in item_table.items()

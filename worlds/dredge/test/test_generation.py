@@ -142,3 +142,24 @@ class TestAberrationsWithChanceItemsDoesNotWarn(DredgeTestBase):
     def test_no_warning(self) -> None:
         with self.assertNoLogs(level="WARNING"):
             self.world.generate_early()
+
+
+class TestNoTrapsByDefault(DredgeTestBase):
+    run_default_tests = False
+
+    def test_no_traps(self) -> None:
+        groups = {item_table[name].item_group for name in pool_item_names(self)}
+        self.assertNotIn("Trap", groups)
+
+
+class TestAllFillerTraps(DredgeTestBase):
+    options = {
+        "trap_percentage": 100,
+        "enabled_traps": ["Rot Trap", "Slow Trap"],
+    }
+
+    def test_filler_is_only_enabled_traps(self) -> None:
+        names = pool_item_names(self)
+        traps = {name for name in names if item_table[name].item_group == "Trap"}
+        self.assertEqual(traps, {"Rot Trap", "Slow Trap"})
+        self.assertFalse(any(item_table[name].classification == ItemClassification.filler for name in names))
