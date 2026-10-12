@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 from functools import cache
-from itertools import combinations
 
 from .items import item_table, load_data_file
 
