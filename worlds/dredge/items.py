@@ -31,6 +31,7 @@ class DREDGEItemData:
     size: int = 0
     item_value: int = 0
     max_quantity: int = 1
+    shape: List[str] = field(default_factory=list)
 
 
 item_base_id = 3459028911689314
@@ -50,6 +51,7 @@ item_table = {
         can_catch=entry.get("can_catch", []),
         size=entry.get("size", 0),
         item_value=entry.get("item_value", 0),
+        shape=entry.get("shape", []),
     )
     for name, entry in load_data_file("items.json").items()
 }
