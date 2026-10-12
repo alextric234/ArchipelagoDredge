@@ -1,4 +1,4 @@
-from BaseClasses import CollectionState
+from BaseClasses import CollectionState, LocationProgressType
 from .bases import DredgeTestBase
 from ..locations import location_table, ItemsReq
 
@@ -168,3 +168,55 @@ class TestResearchUnlockEvents(DredgeTestBase):
         self.assertFalse(location.can_reach(state))
         state.collect(self.multiworld.get_location("Flexible Fishing Pole Researched", self.player).item, True)
         self.assertTrue(location.can_reach(state))
+
+
+BASE_PURSUITS = {
+    "Fishmonger's Gift", "Shipwright's Gift", "Little Marrow Trader's Gift", "Travelling Merchant's Gift",
+    "Package Delivery", "Craven Courier", "Figure in Blue", "Figure in Gold", "Figure in Purple", "Figure in Red",
+    "Research Assistant", "A Place to Rest",
+}
+
+
+def pursuit_locations(test: DredgeTestBase) -> dict[str, object]:
+    return {location.name: location for location in test.multiworld.get_locations(test.player)
+            if location.name in location_table and location_table[location.name].location_group == "Pursuit"}
+
+
+class TestPursuitAccess(DredgeTestBase):
+    options = {
+        "add_passage_items": True,
+    }
+    run_default_tests = False
+
+    def test_base_pursuits_present(self) -> None:
+        self.assertEqual(set(pursuit_locations(self)), BASE_PURSUITS)
+
+    def test_a_place_to_rest_only_needs_dredge_crane(self) -> None:
+        location = pursuit_locations(self)["A Place to Rest"]
+        self.assertEqual(location.progress_type, LocationProgressType.DEFAULT)
+        self.assertEqual(location_table["A Place to Rest"].requirements, [ItemsReq(all_of=["Dredge Crane"])])
+
+    def test_hooded_figure_needs_its_fish_regions(self) -> None:
+        # Tiger Mackerel is a Gale Cliffs fish and Snake Mackerel a Devil's Spine one.
+        self.assertAccessDependency(["Figure in Blue"], [["The Windward Litany"]], only_check_listed=True)
+        self.assertAccessDependency(["Figure in Blue"], [["The Cinder Gospel"]], only_check_listed=True)
+
+    def test_travelling_merchant_needs_open_ocean(self) -> None:
+        self.assertAccessDependency(["Travelling Merchant's Gift"], [["The Pelagic Psalm"]], only_check_listed=True)
+
+    def test_trader_and_builder_need_dredge_crane(self) -> None:
+        self.assertAccessDependency(["Little Marrow Trader's Gift", "A Place to Rest"], [["Dredge Crane"]],
+                                    only_check_listed=True)
+
+
+class TestPaleReachPursuit(DredgeTestBase):
+    options = {
+        "include_pale_reach_dlc": True,
+        "include_aberrations": True,
+    }
+    run_default_tests = False
+
+    def test_figure_in_white_present_and_not_excluded(self) -> None:
+        pursuits = pursuit_locations(self)
+        self.assertEqual(set(pursuits), BASE_PURSUITS | {"Figure in White"})
+        self.assertEqual(pursuits["Figure in White"].progress_type, LocationProgressType.DEFAULT)

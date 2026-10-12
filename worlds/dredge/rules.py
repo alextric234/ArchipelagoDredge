@@ -6,7 +6,8 @@ from BaseClasses import CollectionState, Location
 from worlds.generic.Rules import set_rule, add_rule
 from .fitting import best_total, hulls_needed
 from .items import item_table, CATCH_TOOL_INDEX
-from .locations import location_table, DREDGELocationData, ItemsReq, CatchTypeReq, ResearchReq, IronRigPhaseReq
+from .locations import (location_table, DREDGELocationData, ItemsReq, CatchTypeReq, ResearchReq, IronRigPhaseReq,
+                        LocationsReq, RegionsReq)
 from .options import DREDGEOptions
 
 if TYPE_CHECKING:
@@ -72,6 +73,12 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                     add_research_rule(requirement, world_location, player)
                 case IronRigPhaseReq():
                     add_iron_rig_phase_rule(requirement, world_location, player, include_iron_rig)
+                case LocationsReq():
+                    add_rule(world_location, lambda state, names=requirement.all_of:
+                             all(state.can_reach_location(name, player) for name in names))
+                case RegionsReq():
+                    add_rule(world_location, lambda state, names=requirement.any_of:
+                             any(state.can_reach_region(name, player) for name in names))
                 case _:
                     raise ValueError(f"Unhandled requirement {requirement!r} for {world_location.name}")
 
@@ -145,8 +152,8 @@ MID_REGIONS_PERFORMANCE = (50, 1800)
 OPEN_OCEAN_PERFORMANCE = (50, 2100)
 PALE_REACH_PERFORMANCE = (60, 2100)
 
-# Research, shop and pursuit locations are filed under Open Ocean but aren't done out at sea.
-AT_SEA_LOCATION_GROUPS = {"Dredge", "Encyclopedia", "World", "Message"}
+# Research and shop locations are filed under Open Ocean but aren't done out at sea; pursuits there are met at sea.
+AT_SEA_LOCATION_GROUPS = {"Dredge", "Encyclopedia", "World", "Message", "Pursuit"}
 
 BASE_SPEED = 10
 ENGINES = tuple(name for name, item in item_table.items() if item.item_group == "Engine")

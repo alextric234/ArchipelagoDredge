@@ -20,6 +20,7 @@ Currently:
 - First time catching a fish
 - Unlocking researches
 - Picking up messages in bottles (option: Include Messages in Bottles)
+- Finishing the pursuits and earning the gifts that reward a research book (the book itself is shuffled)
 
 Planned:
 - Random loot dredging

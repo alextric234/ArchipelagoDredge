@@ -43,7 +43,17 @@ class IronRigPhaseReq:
     type: Literal["iron_rig_phase"] = "iron_rig_phase"
     value:IronRigPhase = 0
 
-Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq]
+@dataclass(frozen=True)
+class LocationsReq:
+    type: Literal["locations"] = "locations"
+    all_of: Sequence[str] = field(default_factory=list)
+
+@dataclass(frozen=True)
+class RegionsReq:
+    type: Literal["regions"] = "regions"
+    any_of: Sequence[str] = field(default_factory=list)
+
+Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq, LocationsReq, RegionsReq]
 
 @dataclass
 class DREDGELocationData:
@@ -86,6 +96,10 @@ def parse_requirement(obj: dict) -> Requirement:
         if value not in (0, 1, 2, 3, 4, 5):
             raise ValueError(f"Invalid iron_rig_phase value: {value!r}")
         return IronRigPhaseReq(value=value)
+    if t == "locations":
+        return LocationsReq(all_of=obj["all_of"])
+    if t == "regions":
+        return RegionsReq(any_of=obj["any_of"])
     raise ValueError(f"Unknown requirement type: {t!r} ({obj})")
 
 
@@ -150,7 +164,7 @@ def get_player_location_table(options: DREDGEOptions) -> list[str]:
 
 def exclude_groups(location_name):
     # removing these checks while waiting for fix from mod
-    excluded_groups = {"Shop", "Pursuit", "World", "Relic"}
+    excluded_groups = {"Shop", "Unused Pursuit", "World", "Relic"}
     dredge_location = location_table[location_name]
     return not (dredge_location.location_group in excluded_groups)
 

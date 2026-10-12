@@ -4011,7 +4011,7 @@
   "Sampling Device": {
     "base_id_offset": 259,
     "region": "Open Ocean",
-    "location_group": "Pursuit",
+    "location_group": "Unused Pursuit",
     "expansion": "Base",
     "requirements": [],
     "can_catch_rod": true,
@@ -5878,7 +5878,7 @@
   "Pale Reach - Teleport Anchor(G--7)": {
     "base_id_offset": 418,
     "region": "The Pale Reach",
-    "location_group": "Pursuit",
+    "location_group": "Unused Pursuit",
     "expansion": "PaleReach",
     "requirements": [
       {
@@ -6373,7 +6373,7 @@
   "A Place to Rest - Deliver Materials":{
     "base_id_offset": 456,
 	"region": "The Marrows",
-	"location_group": "Pursuit",
+	"location_group": "Unused Pursuit",
 	"expansion": "Base",
     "requirements": [
       {
@@ -6384,7 +6384,7 @@
   "A Place to Rest - Escort Builder":{
     "base_id_offset": 457,
 	"region": "The Marrows",
-	"location_group": "Pursuit",
+	"location_group": "Unused Pursuit",
 	"expansion": "Base",
     "requirements": [
       {
@@ -6461,5 +6461,234 @@
     "location_group": "Message",
     "expansion": "Base",
     "requirements": []
+  },
+  "Fishmonger's Gift": {
+    "base_id_offset": 468,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Shipwright's Gift": {
+    "base_id_offset": 469,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "any_of": [
+          "Starting Gear - Basic Fishing Pole",
+          "Simple Skimmer",
+          "Weighted Line",
+          "Hydraulic Rod",
+          "Flexible Fishing Pole",
+          "Heat-Resistant Line",
+          "Anti-Tangle Line",
+          "Versatile Rod",
+          "Harvesting Platform",
+          "Bottomless Lines",
+          "Fathomless Winch",
+          "Sampling Device",
+          "Barbed Ice Rod",
+          "Glacial Lance",
+          "Infused Rod",
+          "Infused Winch",
+          "Infused Hoist",
+          "Infused Coiling Rod",
+          "Infused Fireproof Rod",
+          "Sinew Spindle",
+          "Viscera Crane",
+          "Tendon Rod",
+          "Basic Crab Pot",
+          "Efficient Crab Pot",
+          "Hardy Crab Pot",
+          "Large Crab Pot",
+          "Complex Crab Pot",
+          "Massive Crab Pot",
+          "Reinforced Crab Pot",
+          "Mouth of the Deep",
+          "Flotsam Trap",
+          "Basic Trawl Net",
+          "Improved Trawl Net",
+          "Silt Filtering Trawl Net",
+          "Tempered Mesh Net",
+          "Large Trawl Net",
+          "Heavy-Duty Trawl Net",
+          "Brittle Trawl Net",
+          "Radiant Trawl Net",
+          "Siphon Trawler",
+          "Starting Gear - Peculiar Engine",
+          "Rusty Outboard Engine",
+          "Improved Outboard Engine",
+          "Refined Outboard Engine",
+          "Twin Prop Engine",
+          "Jet Drive Engine",
+          "Twin Jet Drive Engine",
+          "Engine Stack",
+          "Weak Valve Engine"
+        ]
+      }
+    ]
+  },
+  "Little Marrow Trader's Gift": {
+    "base_id_offset": 470,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Dredge Crane"
+        ]
+      }
+    ]
+  },
+  "Travelling Merchant's Gift": {
+    "base_id_offset": 471,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "regions",
+        "any_of": [
+          "Gale Cliffs",
+          "Stellar Basin",
+          "Twisted Strand",
+          "Devil's Spine"
+        ]
+      }
+    ]
+  },
+  "Package Delivery": {
+    "base_id_offset": 472,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Craven Courier": {
+    "base_id_offset": 473,
+    "region": "Open Ocean",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Figure in Blue": {
+    "base_id_offset": 474,
+    "region": "Open Ocean",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Blue Mackerel",
+          "Tiger Mackerel",
+          "Snake Mackerel"
+        ]
+      }
+    ]
+  },
+  "Figure in Gold": {
+    "base_id_offset": 475,
+    "region": "Open Ocean",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Red Snapper",
+          "Fangtooth",
+          "Blue Crab"
+        ]
+      }
+    ]
+  },
+  "Figure in Purple": {
+    "base_id_offset": 476,
+    "region": "Open Ocean",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Tarpon",
+          "Horseshoe Crab",
+          "Barreleye"
+        ]
+      }
+    ]
+  },
+  "Figure in Red": {
+    "base_id_offset": 477,
+    "region": "Open Ocean",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Cusk Eel",
+          "Sailfish",
+          "Frilled Shark"
+        ]
+      }
+    ]
+  },
+  "Figure in White": {
+    "base_id_offset": 478,
+    "region": "The Pale Reach",
+    "location_group": "Pursuit",
+    "expansion": "PaleReach",
+    "is_aberration": true,
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Fractalline Icefish",
+          "Fallen Stars",
+          "Craterous Seer"
+        ]
+      }
+    ]
+  },
+  "Research Assistant": {
+    "base_id_offset": 479,
+    "region": "Stellar Basin",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Glowing Octopus",
+          "Firefly Squid",
+          "Aurora Jellyfish",
+          "Anglerfish",
+          "Snailfish",
+          "Giant Amphipod",
+          "Loosejaw"
+        ]
+      }
+    ]
+  },
+  "A Place to Rest": {
+    "base_id_offset": 480,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Dredge Crane"
+        ]
+      }
+    ]
   }
 }
