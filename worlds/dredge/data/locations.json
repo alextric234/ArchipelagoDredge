@@ -5739,7 +5739,7 @@
     "requirements": [
       {
         "type": "items",
-        "all_of": ["Dredge Crane"]
+        "all_of": ["Icebreaker", "Dredge Crane"]
       }
     ]
   },
@@ -5847,7 +5847,7 @@
     "requirements": [
       {
         "type": "items",
-        "all_of": ["Dredge Crane"]
+        "all_of": ["Icebreaker", "Dredge Crane"]
       }
     ]
   },
