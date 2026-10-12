@@ -1902,7 +1902,8 @@
     "expansion": "Base",
     "size": 2,
     "shape": ["X", "X"],
-    "speed": 10
+    "speed": 10,
+    "rebuyable": true
   },
   "Improved Outboard Engine": {
     "base_id_offset": 279,
@@ -1911,7 +1912,8 @@
     "expansion": "Base",
     "size": 2,
     "shape": ["X", "X"],
-    "speed": 15
+    "speed": 15,
+    "rebuyable": true
   },
   "Refined Outboard Engine": {
     "base_id_offset": 280,
@@ -1920,7 +1922,8 @@
     "expansion": "Base",
     "size": 3,
     "shape": ["XX", "X."],
-    "speed": 25
+    "speed": 25,
+    "rebuyable": true
   },
   "Twin Prop Engine": {
     "base_id_offset": 281,
@@ -1929,7 +1932,8 @@
     "expansion": "Base",
     "size": 4,
     "shape": ["XX", "XX"],
-    "speed": 35
+    "speed": 35,
+    "rebuyable": true
   },
   "Jet Drive Engine": {
     "base_id_offset": 282,
@@ -1938,7 +1942,8 @@
     "expansion": "Base",
     "size": 1,
     "shape": ["X"],
-    "speed": 9
+    "speed": 9,
+    "rebuyable": true
   },
   "Twin Jet Drive Engine": {
     "base_id_offset": 283,
@@ -1947,7 +1952,8 @@
     "expansion": "Base",
     "size": 6,
     "shape": ["X.X", "XXX"],
-    "speed": 50
+    "speed": 50,
+    "rebuyable": true
   },
   "Engine Stack": {
     "base_id_offset": 284,
@@ -1956,7 +1962,8 @@
     "expansion": "Base",
     "size": 6,
     "shape": ["XXX", "XXX"],
-    "speed": 64
+    "speed": 64,
+    "rebuyable": true
   },
   "Weak Valve Engine": {
     "base_id_offset": 285,
@@ -2474,7 +2481,8 @@
 	"item_group": "Light",
 	"expansion": "Base",
 	"shape": ["X"],
-	"lumens": 500
+	"lumens": 500,
+	"rebuyable": true
  },
   "Cloudy Lens": {
 	"base_id_offset": 369,
@@ -2482,7 +2490,8 @@
 	"item_group": "Light",
 	"expansion": "Base",
 	"shape": ["X"],
-	"lumens": 750
+	"lumens": 750,
+	"rebuyable": true
  },
   "Halogen Spotlight": {
 	"base_id_offset": 370,
@@ -2490,7 +2499,8 @@
 	"item_group": "Light",
 	"expansion": "Base",
 	"shape": ["XX"],
-	"lumens": 1800
+	"lumens": 1800,
+	"rebuyable": true
  },
   "Tungsten Floodlight": {
 	"base_id_offset": 371,
@@ -2498,7 +2508,8 @@
 	"item_group": "Light",
 	"expansion": "Base",
 	"shape": ["XX"],
-	"lumens": 2100
+	"lumens": 2100,
+	"rebuyable": true
  },
   "Incandescent Array": {
 	"base_id_offset": 372,
@@ -2506,7 +2517,8 @@
 	"item_group": "Light",
 	"expansion": "Base",
 	"shape": ["XXX"],
-	"lumens": 3000
+	"lumens": 3000,
+	"rebuyable": true
  },
   "Flame of the Sky": {
 	"base_id_offset": 373,

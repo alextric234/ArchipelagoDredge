@@ -32,6 +32,7 @@ class DREDGEItemData:
     size: int = 0
     speed: int = 0
     lumens: int = 0
+    rebuyable: bool = False
     max_quantity: int = 1
     shape: List[str] = field(default_factory=list)
 
@@ -54,6 +55,7 @@ item_table = {
         size=entry.get("size", 0),
         speed=entry.get("speed", 0),
         lumens=entry.get("lumens", 0),
+        rebuyable=entry.get("rebuyable", False),
         shape=entry.get("shape", []),
     )
     for name, entry in load_data_file("items.json").items()

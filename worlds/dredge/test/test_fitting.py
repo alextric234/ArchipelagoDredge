@@ -57,6 +57,14 @@ class TestBestTotal(TestCase):
         self.assertEqual(best_total(lights, "lumens", 1, False), 3500)
         self.assertEqual(best_total(lights, "lumens", 4, True), 5300)
 
+    def test_rebuyable_items_count_more_than_once(self) -> None:
+        self.assertEqual(best_total(["Jet Drive Engine"], "speed", 1, False), 54)
+        self.assertEqual(best_total(["Cloudy Lens"], "lumens", 1, False), 1500)
+
+    def test_other_items_count_once(self) -> None:
+        self.assertEqual(best_total(["Starting Gear - Peculiar Engine"], "speed", 1, False), 14)
+        self.assertEqual(best_total(["Flame of the Sky"], "lumens", 4, True), 3500)
+
     def test_nothing_owned(self) -> None:
         self.assertEqual(best_total([], "speed", 4, True), 0)
 

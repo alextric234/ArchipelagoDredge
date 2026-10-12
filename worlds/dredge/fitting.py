@@ -40,10 +40,19 @@ def placements(shape: set[Cell], cells: set[Cell]) -> list[frozenset[Cell]]:
     return list(result)
 
 
-def fits_together(options: list[list[frozenset[Cell]]], used: frozenset[Cell] = frozenset()) -> bool:
+def fits_together(options: list[list[frozenset[Cell]]], used: frozenset[Cell] = frozenset(), start: int = 0) -> bool:
+    """Whether every item can be placed without overlap. Copies of one item share the same options list and sit next
+    to each other, so each copy only tries placements after the previous one's to skip reordered duplicates."""
     if not options:
         return True
-    return any(placed.isdisjoint(used) and fits_together(options[1:], used | placed) for placed in options[0])
+    first, rest = options[0], options[1:]
+    for index in range(start, len(first)):
+        placed = first[index]
+        if placed.isdisjoint(used):
+            next_start = index + 1 if rest and rest[0] is first else 0
+            if fits_together(rest, used | placed, next_start):
+                return True
+    return False
 
 
 def layout_rows(hull_count: int, include_iron_rig: bool) -> list[str]:
@@ -52,7 +61,8 @@ def layout_rows(hull_count: int, include_iron_rig: bool) -> list[str]:
 
 
 def best_total(item_names: Iterable[str], stat: str, hull_count: int, include_iron_rig: bool) -> int:
-    """The highest summed stat (speed or lumens) of items that can all be equipped on the hull at once."""
+    """The highest summed stat (speed or lumens) of items that can all be equipped on the hull at once, counting
+    extra copies of rebuyable items."""
     return _best_total(frozenset(item_names), stat, hull_count, include_iron_rig)
 
 
@@ -63,15 +73,32 @@ def _item_placements(item_name: str, hull_count: int, include_iron_rig: bool) ->
     return placements(parse_cells(item.shape, "X"), cells)
 
 
+def _loadouts(names: list[str], free_cells: int) -> list[tuple[str, ...]]:
+    """Every combination of the items that could fill at most free_cells, taking rebuyable items more than once."""
+    if not names:
+        return [()]
+    name, rest = names[0], names[1:]
+    item = item_table[name]
+    size = len(parse_cells(item.shape, "X"))
+    max_copies = free_cells // size if item.rebuyable else min(1, free_cells // size)
+    return [(name,) * copies + loadout
+            for copies in range(max_copies + 1)
+            for loadout in _loadouts(rest, free_cells - copies * size)]
+
+
 @cache
 def _best_total(item_names: frozenset[str], stat: str, hull_count: int, include_iron_rig: bool) -> int:
     options = {name: _item_placements(name, hull_count, include_iron_rig) for name in item_names}
-    fitting_names = [name for name in item_names if options[name]]
-    candidates = [combo for size in range(1, len(fitting_names) + 1) for combo in combinations(fitting_names, size)]
-    candidates.sort(key=lambda combo: sum(getattr(item_table[name], stat) for name in combo), reverse=True)
-    for combo in candidates:
-        if fits_together([options[name] for name in combo]):
-            return sum(getattr(item_table[name], stat) for name in combo)
+    fitting_names = sorted(name for name in item_names if options[name])
+    if not fitting_names:
+        return 0
+    kinds = CELL_KINDS_BY_ITEM_GROUP[item_table[fitting_names[0]].item_group]
+    free_cells = len(parse_cells(layout_rows(hull_count, include_iron_rig), kinds))
+    loadouts = _loadouts(fitting_names, free_cells)
+    loadouts.sort(key=lambda loadout: sum(getattr(item_table[name], stat) for name in loadout), reverse=True)
+    for loadout in loadouts:
+        if fits_together([options[name] for name in loadout]):
+            return sum(getattr(item_table[name], stat) for name in loadout)
     return 0
 
 
