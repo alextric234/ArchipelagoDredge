@@ -66,10 +66,12 @@ def load_data_file(*args) -> dict:
 def parse_requirement(obj: dict) -> Requirement:
     t = obj["type"]  # required
     if t == "items":
-        return ItemsReq(
-            any_of=obj.get("any_of", []),
-            all_of=obj.get("all_of", []),
-        )
+        any_of = obj.get("any_of", [])
+        all_of = obj.get("all_of", [])
+        for key, names in (("any_of", any_of), ("all_of", all_of)):
+            if not isinstance(names, list):
+                raise TypeError(f"`{key}` must be a list of item names, got {type(names).__name__}: {names!r}")
+        return ItemsReq(any_of=any_of, all_of=all_of)
     if t == "research":
         cost = obj.get("cost", 0)
         if not isinstance(cost, int) or cost < 0:
