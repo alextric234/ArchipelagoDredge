@@ -1862,14 +1862,6 @@
     "size": 2,
     "item_value": 0
   },
-  "Arterial Engine": {
-    "base_id_offset": 277,
-    "classification": "progression",
-    "item_group": "Engine",
-    "expansion": "Base",
-    "size": 1,
-    "item_value": 0
-  },
   "Rusty Outboard Engine": {
     "base_id_offset": 278,
     "classification": "progression",
