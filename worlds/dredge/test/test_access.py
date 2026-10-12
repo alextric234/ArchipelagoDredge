@@ -220,3 +220,15 @@ class TestPaleReachPursuit(DredgeTestBase):
         pursuits = pursuit_locations(self)
         self.assertEqual(set(pursuits), BASE_PURSUITS | {"Figure in White"})
         self.assertEqual(pursuits["Figure in White"].progress_type, LocationProgressType.DEFAULT)
+
+
+class TestPursuitLicenseAccess(DredgeTestBase):
+    options = {
+        "add_fishing_licenses": True,
+    }
+    run_default_tests = False
+
+    def test_hooded_figure_needs_its_fish_licenses(self) -> None:
+        for license_name in ("Gale Cliffs Fishing License", "Devil's Spine Fishing License"):
+            with self.subTest(license=license_name):
+                self.assertAccessDependency(["Figure in Blue"], [[license_name]], only_check_listed=True)
