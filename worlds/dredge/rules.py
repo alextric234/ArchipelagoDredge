@@ -106,11 +106,18 @@ def add_research_rule(requirement, world_location, player) -> None:
     add_rule(world_location, lambda state: state.has("Research Part", player, requirement.cost))
     return
 
+ICEBREAKER_PARTS = ("Icebreaker Plow Half 1", "Icebreaker Plow Half 2", "Icebreaker Bracing")
+
+def has_item(item_name: str, state: CollectionState, player: int) -> bool:
+    if item_name == "Icebreaker":
+        return state.has(item_name, player) or state.has_all(ICEBREAKER_PARTS, player)
+    return state.has(item_name, player)
+
 def add_item_rules(requirement, world_location, player) -> None:
     if requirement.all_of:
-        add_rule(world_location, lambda state: state.has_all(requirement.all_of, player))
+        add_rule(world_location, lambda state: all(has_item(name, state, player) for name in requirement.all_of))
     if requirement.any_of:
-        add_rule(world_location, lambda state: state.has_any(requirement.any_of, player))
+        add_rule(world_location, lambda state: any(has_item(name, state, player) for name in requirement.any_of))
     return
 
 def has_passage_item(passage_item, state, player):

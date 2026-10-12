@@ -1,5 +1,5 @@
 from .bases import DredgeTestBase
-from ..locations import location_table
+from ..locations import location_table, ItemsReq
 
 PASSAGE_ITEM_BY_REGION = {
     "Gale Cliffs": "The Windward Litany",
@@ -51,6 +51,27 @@ class TestIronRigPhaseAccess(DredgeTestBase):
         ]
         self.assertTrue(locations, "No Iron Rig phase locations")
         self.assertAccessDependency(locations, [["The Pelagic Psalm"]], only_check_listed=True)
+
+
+class TestIcebreakerAccess(DredgeTestBase):
+    options = {
+        "include_pale_reach_dlc": True,
+    }
+    run_default_tests = False
+
+    def test_icebreaker_or_all_parts(self) -> None:
+        locations = [
+            location.name
+            for location in self.multiworld.get_locations(self.player)
+            if location.address is not None
+            and any(isinstance(req, ItemsReq) and "Icebreaker" in req.all_of
+                    for req in location_table[location.name].requirements)
+        ]
+        self.assertTrue(locations, "No locations require the Icebreaker")
+        self.assertAccessDependency(
+            locations,
+            [["Icebreaker"], ["Icebreaker Plow Half 1", "Icebreaker Plow Half 2", "Icebreaker Bracing"]],
+            only_check_listed=True)
 
 
 class TestLicenseAccess(DredgeTestBase):
