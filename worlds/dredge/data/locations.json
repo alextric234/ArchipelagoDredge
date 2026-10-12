@@ -6690,5 +6690,82 @@
         ]
       }
     ]
+  },
+  "Grotesque Fish": {
+    "base_id_offset": 481,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "The Collector - Ornate Key": {
+    "base_id_offset": 482,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Ornate Key"
+        ]
+      }
+    ]
+  },
+  "The Collector - Rusted Music Box": {
+    "base_id_offset": 483,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Rusted Music Box"
+        ]
+      }
+    ]
+  },
+  "The Collector - Jewel Encrusted Band": {
+    "base_id_offset": 484,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Jewel Encrusted Band"
+        ]
+      }
+    ]
+  },
+  "The Collector - Shimmering Necklace": {
+    "base_id_offset": 485,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Shimmering Necklace"
+        ]
+      }
+    ]
+  },
+  "The Collector - Antique Pocket Watch": {
+    "base_id_offset": 486,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Antique Pocket Watch"
+        ]
+      }
+    ]
   }
 }

@@ -2515,5 +2515,29 @@
     "classification": "trap",
     "item_group": "Trap",
     "expansion": "Base"
+  },
+  "Haste": {
+    "base_id_offset": 389,
+    "classification": "useful",
+    "item_group": "Ability",
+    "expansion": "Base"
+  },
+  "Manifest": {
+    "base_id_offset": 390,
+    "classification": "useful",
+    "item_group": "Ability",
+    "expansion": "Base"
+  },
+  "Banish": {
+    "base_id_offset": 391,
+    "classification": "useful",
+    "item_group": "Ability",
+    "expansion": "Base"
+  },
+  "Atrophy": {
+    "base_id_offset": 392,
+    "classification": "progression",
+    "item_group": "Ability",
+    "expansion": "Base"
   }
 }

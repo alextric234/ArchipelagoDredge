@@ -21,6 +21,7 @@ Currently:
 - Unlocking researches
 - Picking up messages in bottles (option: Include Messages in Bottles)
 - Finishing the pursuits and earning the gifts that reward a research book (the book itself is shuffled)
+- Meeting the Collector (Grotesque Fish) and handing in each relic
 
 Planned:
 - Random loot dredging
@@ -36,6 +37,7 @@ Currently:
 - Boat Equipment (rods, nets, engines, etc)
 - Boat Upgrades (spaces in the hull)
 - Boat Hull Upgrades
+- The Collector's abilities: Haste, Manifest, Banish and Atrophy
 
   
 Planned:

@@ -227,7 +227,10 @@ def can_catch_fish(
         and can_equip_any(tools_for(catch_type, "Net"), state, player, include_iron_rig)
     )
 
-    return has_rod or has_net
+    # Atrophy harvests a whole fishing spot without any tackle.
+    has_atrophy = location.can_catch_rod and state.has("Atrophy", player)
+
+    return has_rod or has_net or has_atrophy
 
 
 def set_completion_condition(world: DREDGEWorld) -> None:

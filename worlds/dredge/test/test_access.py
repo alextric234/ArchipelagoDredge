@@ -173,7 +173,9 @@ class TestResearchUnlockEvents(DredgeTestBase):
 BASE_PURSUITS = {
     "Fishmonger's Gift", "Shipwright's Gift", "Little Marrow Trader's Gift", "Travelling Merchant's Gift",
     "Package Delivery", "Craven Courier", "Figure in Blue", "Figure in Gold", "Figure in Purple", "Figure in Red",
-    "Research Assistant", "A Place to Rest",
+    "Research Assistant", "A Place to Rest", "Grotesque Fish", "The Collector - Ornate Key",
+    "The Collector - Rusted Music Box", "The Collector - Jewel Encrusted Band", "The Collector - Shimmering Necklace",
+    "The Collector - Antique Pocket Watch",
 }
 
 
@@ -232,3 +234,22 @@ class TestPursuitLicenseAccess(DredgeTestBase):
         for license_name in ("Gale Cliffs Fishing License", "Devil's Spine Fishing License"):
             with self.subTest(license=license_name):
                 self.assertAccessDependency(["Figure in Blue"], [[license_name]], only_check_listed=True)
+
+
+class TestCollectorAccess(DredgeTestBase):
+    run_default_tests = False
+
+    def test_relic_hand_ins_need_their_relic(self) -> None:
+        self.assertAccessDependency(["The Collector - Ornate Key"], [["Ornate Key"]], only_check_listed=True)
+
+    def test_atrophy_catches_spot_fish_without_tackle(self) -> None:
+        state = CollectionState(self.multiworld)
+        sailfish = self.multiworld.get_location("Sailfish", self.player)
+        self.assertFalse(sailfish.can_reach(state))
+        state.collect(self.world.create_item("Atrophy"), True)
+        self.assertTrue(sailfish.can_reach(state))
+
+    def test_atrophy_doesnt_catch_crabs(self) -> None:
+        state = CollectionState(self.multiworld)
+        state.collect(self.world.create_item("Atrophy"), True)
+        self.assertFalse(self.multiworld.get_location("Common Crab", self.player).can_reach(state))
