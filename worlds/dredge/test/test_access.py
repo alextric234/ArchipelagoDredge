@@ -147,3 +147,24 @@ class TestLightsUsefulWithoutBoatPerformance(DredgeTestBase):
 
     def test_lights_are_useful(self) -> None:
         self.assertFalse(self.world.create_item("Cracked Bulb").advancement)
+
+
+class TestResearchUnlockEvents(DredgeTestBase):
+    run_default_tests = False
+
+    def test_unlocks_are_events(self) -> None:
+        self.assertNotIn("Flexible Fishing Pole Researched", self.world.item_name_to_id)
+        self.assertNotIn("Flexible Fishing Pole Researched", self.world.location_name_to_id)
+        location = self.multiworld.get_location("Flexible Fishing Pole Researched", self.player)
+        self.assertIsNone(location.address)
+        self.assertIsNone(location.item.code)
+        self.assertTrue(location.item.advancement)
+
+    def test_unlock_events_gate_later_research(self) -> None:
+        location = self.multiworld.get_location("Heat-Resistant Line Researched", self.player)
+        state = CollectionState(self.multiworld)
+        for _ in range(30):
+            state.collect(self.world.create_item("Research Part"), True)
+        self.assertFalse(location.can_reach(state))
+        state.collect(self.multiworld.get_location("Flexible Fishing Pole Researched", self.player).item, True)
+        self.assertTrue(location.can_reach(state))

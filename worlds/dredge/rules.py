@@ -55,9 +55,9 @@ def set_location_rules(world: "DREDGEWorld") -> None:
     player = world.player
     include_iron_rig = bool(world.options.include_iron_rig_dlc)
     for world_location in world.get_locations():
-        if world_location.address is None:
+        location = location_table.get(world_location.name)
+        if location is None:
             continue
-        location = location_table[world_location.name]
         if world.options.add_fishing_licenses and location.location_group == "Encyclopedia":
             add_license_rule(world_location, location, player)
         if location.region == "Open Ocean" and location.location_group in AT_SEA_LOCATION_GROUPS:

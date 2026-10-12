@@ -5,11 +5,12 @@ import pkgutil
 
 from typing import Dict, Set, TYPE_CHECKING, Literal, Sequence, Union
 
-from BaseClasses import Location, Region
+from BaseClasses import ItemClassification, Location, Region
 from BaseClasses import LocationProgressType as LPT
 
 from dataclasses import dataclass, field
 
+from .items import DREDGEItem
 from .options import DREDGEOptions
 
 if TYPE_CHECKING:
@@ -46,10 +47,11 @@ Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq]
 
 @dataclass
 class DREDGELocationData:
-    base_id_offset: int
     region: str
     location_group: str
     expansion: str
+    # Locations without an id are events: logic-only, never sent or shown to players.
+    base_id_offset: int | None = None
     requirements: list[Requirement] = field(default_factory=list)
     can_catch_rod: bool = True
     can_catch_net: bool = False
@@ -101,7 +103,7 @@ def parse_requirements(raw) -> list[Requirement]:
 
 location_table = {
     name: DREDGELocationData(
-        base_id_offset=entry["base_id_offset"],
+        base_id_offset=entry.get("base_id_offset"),
         region=entry["region"],
         location_group=entry["location_group"],
         expansion=entry["expansion"],
@@ -114,7 +116,8 @@ location_table = {
     for name, entry in load_data_file("locations.json").items()
 }
 
-LOCATION_NAME_TO_ID: Dict[str, int] = {name: location_base_id + data.base_id_offset for name, data in location_table.items()}
+LOCATION_NAME_TO_ID: Dict[str, int] = {name: location_base_id + data.base_id_offset
+                                       for name, data in location_table.items() if data.base_id_offset is not None}
 
 
 
@@ -151,7 +154,7 @@ def exclude_groups(location_name):
 
 LOCATION_NAME_GROUPS: Dict[str, Set[str]] = {}
 for loc_name, loc_data in location_table.items():
-    if loc_data.location_group:
+    if loc_data.location_group and loc_name in LOCATION_NAME_TO_ID:
         LOCATION_NAME_GROUPS.setdefault(loc_data.location_group, set()).add(loc_name)
 
 def create_all_locations(world: DREDGEWorld) -> None:
@@ -160,15 +163,11 @@ def create_all_locations(world: DREDGEWorld) -> None:
 def create_locations(world: DREDGEWorld) -> None:
     for location_name in get_player_location_table(world.options):
         region = world.get_region(location_table[location_name].region)
-        location_id = LOCATION_NAME_TO_ID[location_name]
+        location_id = LOCATION_NAME_TO_ID.get(location_name)
         dredge_location = location_table[location_name]
         location = DREDGELocation(world.player, location_name, location_id, region)
         if dredge_location.is_aberration and not world.options.include_aberrations:
             location.progress_type = LPT.EXCLUDED
         region.locations.append(location)
-        if location_table[location_name].location_group == "Research Unlock":
-            add_research_unlock_item(world, location)
-
-def add_research_unlock_item(world: DREDGEWorld, location: DREDGELocation) -> None:
-    research_unlock_item = world.create_item(location.name)
-    location.place_locked_item(research_unlock_item)
+        if location_id is None:
+            location.place_locked_item(DREDGEItem(location_name, ItemClassification.progression, None, world.player))
