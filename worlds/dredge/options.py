@@ -97,6 +97,13 @@ class IncludeMessageBottles(DefaultOnToggle):
     """
     display_name = "Include Messages in Bottles"
 
+class IncludeResearchChecks(DefaultOnToggle):
+    """
+    If enabled, researching each piece of equipment at the research station is a check. Research costs nothing in an
+    AP save, so these are free checks once the research tree lets you reach them. Research Parts are never in the pool.
+    """
+    display_name = "Include Research Checks"
+
 class ProgressiveAberrationChanceItems(Range):
     """
     How many Progressive Aberration Chance items to add. Each raises the minimum chance of catching an aberration by
@@ -185,6 +192,7 @@ class DREDGEOptions(PerGameCommonOptions):
     add_fishing_licenses: AddFishingLicenses
     add_passage_items: AddPassageItems
     include_message_bottles: IncludeMessageBottles
+    include_research_checks: IncludeResearchChecks
     progressive_aberration_chance_items: ProgressiveAberrationChanceItems
     guaranteed_aberrations_item: GuaranteedAberrationsItem
     trap_percentage: TrapPercentage

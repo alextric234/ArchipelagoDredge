@@ -163,8 +163,6 @@ class TestResearchUnlockEvents(DredgeTestBase):
     def test_unlock_events_gate_later_research(self) -> None:
         location = self.multiworld.get_location("Heat-Resistant Line Researched", self.player)
         state = CollectionState(self.multiworld)
-        for _ in range(30):
-            state.collect(self.world.create_item("Research Part"), True)
         self.assertFalse(location.can_reach(state))
         state.collect(self.multiworld.get_location("Flexible Fishing Pole Researched", self.player).item, True)
         self.assertTrue(location.can_reach(state))
@@ -361,3 +359,26 @@ class TestIronRigRewards(DredgeTestBase):
         self.assertAccessDependency(["Getting Power - Rig Built", "Getting Power - Science Lab Built",
                                      "Getting Power - Generator Fuelled", "Drilling in the Deep - Factory"],
                                     [["Dredge Crane"]], only_check_listed=True)
+
+
+class TestResearchChecks(DredgeTestBase):
+    run_default_tests = False
+
+    def test_research_is_free_and_parts_not_in_pool(self) -> None:
+        parts = [item for item in self.multiworld.itempool if item.player == self.player and item.name == "Research Part"]
+        self.assertEqual(parts, [])
+        state = CollectionState(self.multiworld)
+        self.assertTrue(self.multiworld.get_location("Flexible Fishing Pole", self.player).can_reach(state))
+
+
+class TestNoResearchChecks(DredgeTestBase):
+    options = {
+        "include_research_checks": False,
+    }
+    run_default_tests = False
+
+    def test_no_research_locations(self) -> None:
+        research = [location.name for location in self.multiworld.get_locations(self.player)
+                    if location.name in location_table
+                    and location_table[location.name].location_group in ("Research", "Research Unlock")]
+        self.assertEqual(research, [])

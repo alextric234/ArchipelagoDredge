@@ -137,10 +137,6 @@ def create_all_items(world: DREDGEWorld) -> None:
     for _ in range(progressive_hull_count(world)):
         item_pool.append(world.create_item("Progressive Hull"))
 
-    num_research_parts = 30
-    for _ in range(num_research_parts):
-        item_pool.append(world.create_item("Research Part"))
-
     for item, data in item_table.items():
         if (data.classification == ItemClassification.useful and is_expansion_enabled(world, data.expansion)
                 and data.item_group != "Aberration Chance"):

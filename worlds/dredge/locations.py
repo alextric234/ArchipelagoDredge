@@ -173,6 +173,9 @@ def get_player_location_table(options: DREDGEOptions) -> list[str]:
 
     if not options.include_message_bottles:
         all_locations = [name for name in all_locations if location_table[name].location_group != "Message"]
+    if not options.include_research_checks:
+        all_locations = [name for name in all_locations
+                         if location_table[name].location_group not in ("Research", "Research Unlock")]
 
     return all_locations
 

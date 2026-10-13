@@ -18,7 +18,7 @@ The goal collect all 5 relics and deliver them to The Collector
 
 Currently:
 - First time catching a fish
-- Unlocking researches
+- Unlocking researches (option: Include Research Checks; research costs nothing in an AP save)
 - Picking up messages in bottles (option: Include Messages in Bottles)
 - Finishing the pursuits and earning the gifts that reward a research book (the book itself is shuffled)
 - Meeting the Collector (Grotesque Fish) and handing in each relic

@@ -72,7 +72,7 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                 case CatchTypeReq():
                     add_catch_type_rule(world_location, location, player, world.options)
                 case ResearchReq():
-                    add_research_rule(requirement, world_location, player)
+                    pass
                 case IronRigPhaseReq():
                     add_iron_rig_phase_rule(requirement, world_location, player, include_iron_rig)
                 case LocationsReq():
@@ -121,10 +121,6 @@ def add_iron_rig_phase_rule(requirement, world_location, player, include_iron_ri
     if requirement.value > 0:
         add_rule(world_location, lambda state: state.has("Dredge Crane", player))
         add_rule(world_location, lambda state: state.can_reach_region("The Iron Rig", player))
-
-def add_research_rule(requirement, world_location, player) -> None:
-    add_rule(world_location, lambda state: state.has("Research Part", player, requirement.cost))
-    return
 
 ICEBREAKER_PARTS = ("Icebreaker Plow Half 1", "Icebreaker Plow Half 2", "Icebreaker Bracing")
 
