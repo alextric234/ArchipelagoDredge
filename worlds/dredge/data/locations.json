@@ -3963,15 +3963,6 @@
       }
     ]
   },
-  "Sampling Device": {
-    "base_id_offset": 259,
-    "region": "Open Ocean",
-    "location_group": "Unused Pursuit",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
   "The Marrows - Cod Shrine(J-9)": {
     "base_id_offset": 269,
     "region": "The Marrows",
@@ -6511,6 +6502,12 @@
     "location_group": "Pursuit",
     "expansion": "Base",
     "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Sampling Device"
+        ]
+      },
       {
         "type": "locations",
         "all_of": [

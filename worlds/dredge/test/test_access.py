@@ -262,6 +262,9 @@ class TestCollectorAccess(DredgeTestBase):
 class TestRewardGridPursuitAccess(DredgeTestBase):
     run_default_tests = False
 
+    def test_research_assistant_needs_sampling_device(self) -> None:
+        self.assertAccessDependency(["Research Assistant"], [["Sampling Device"]], only_check_listed=True)
+
     def test_quest_item_pursuits_need_their_items(self) -> None:
         self.assertAccessDependency(["Lost at Sea"], [["Bronze Belt Buckle"]], only_check_listed=True)
         self.assertAccessDependency(["The Bitter End - Dog Tags"], [["Dog Tags"]], only_check_listed=True)

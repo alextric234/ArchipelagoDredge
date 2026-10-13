@@ -171,17 +171,10 @@ def get_player_location_table(options: DREDGEOptions) -> list[str]:
     if options.include_pale_reach_dlc and options.include_iron_rig_dlc:
         all_locations.extend(both_dlc_locations)
 
-    all_locations = list(filter(exclude_groups, all_locations))
     if not options.include_message_bottles:
         all_locations = [name for name in all_locations if location_table[name].location_group != "Message"]
 
     return all_locations
-
-def exclude_groups(location_name):
-    # removing these checks while waiting for fix from mod
-    excluded_groups = {"Unused Pursuit"}
-    dredge_location = location_table[location_name]
-    return not (dredge_location.location_group in excluded_groups)
 
 LOCATION_NAME_GROUPS: Dict[str, Set[str]] = {}
 for loc_name, loc_data in location_table.items():
