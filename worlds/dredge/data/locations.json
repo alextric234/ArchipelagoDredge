@@ -3963,137 +3963,11 @@
       }
     ]
   },
-  "Ornate Key": {
-    "base_id_offset": 254,
-    "region": "Open Ocean",
-    "location_group": "Relic",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Rusted Music Box": {
-    "base_id_offset": 255,
-    "region": "Open Ocean",
-    "location_group": "Relic",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Jewel Encrusted Band": {
-    "base_id_offset": 256,
-    "region": "Open Ocean",
-    "location_group": "Relic",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Shimmering Necklace": {
-    "base_id_offset": 257,
-    "region": "Open Ocean",
-    "location_group": "Relic",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Antique Pocket Watch": {
-    "base_id_offset": 258,
-    "region": "Open Ocean",
-    "location_group": "Relic",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
   "Sampling Device": {
     "base_id_offset": 259,
     "region": "Open Ocean",
     "location_group": "Unused Pursuit",
     "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Simple Skimmer": {
-    "base_id_offset": 260,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Weighted Line": {
-    "base_id_offset": 261,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Barbed Ice Rod": {
-    "base_id_offset": 262,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "PaleReach",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Glacial Lance": {
-    "base_id_offset": 263,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "PaleReach",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Infused Rod": {
-    "base_id_offset": 264,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "IronRig",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Infused Winch": {
-    "base_id_offset": 265,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "IronRig",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Infused Hoist": {
-    "base_id_offset": 266,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "IronRig",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Infused Coiling Rod": {
-    "base_id_offset": 267,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "IronRig",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
-  },
-  "Infused Fireproof Rod": {
-    "base_id_offset": 268,
-    "region": "Open Ocean",
-    "location_group": "Shop",
-    "expansion": "IronRig",
     "requirements": [],
     "can_catch_rod": true,
     "can_catch_net": false
@@ -4150,15 +4024,6 @@
         "type": "aberrations"
       }
     ]
-  },
-  "Basic Fishing Pole": {
-    "base_id_offset": 273,
-    "region": "Open Ocean",
-    "location_group": "Unused World",
-    "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
   },
   "Open Ocean - Silver Plate 1(M-10)": {
     "base_id_offset": 274,
@@ -5892,18 +5757,6 @@
       }
     ]
   },
-  "Pale Reach - Teleport Anchor(G--7)": {
-    "base_id_offset": 418,
-    "region": "The Pale Reach",
-    "location_group": "Unused Pursuit",
-    "expansion": "PaleReach",
-    "requirements": [
-      {
-        "type": "items",
-        "all_of": ["Dredge Crane"]
-      }
-    ]
-  },
   "Open Ocean - Crate 1(I-11)": {
     "base_id_offset": 419,
     "region": "Open Ocean",
@@ -6386,28 +6239,6 @@
         "cost": 3
       }
     ]
-  },
-  "A Place to Rest - Deliver Materials":{
-    "base_id_offset": 456,
-	"region": "The Marrows",
-	"location_group": "Unused Pursuit",
-	"expansion": "Base",
-    "requirements": [
-      {
-        "type": "items",
-        "all_of": ["Dredge Crane"]
-      }]
-  },
-  "A Place to Rest - Escort Builder":{
-    "base_id_offset": 457,
-	"region": "The Marrows",
-	"location_group": "Unused Pursuit",
-	"expansion": "Base",
-    "requirements": [
-      {
-        "type": "items",
-        "all_of": ["A Place to Rest - Returned to Builder"]
-      }]
   },
   "The Marrows - Message in a Bottle 1(K-9)": {
     "base_id_offset": 458,
@@ -7352,6 +7183,20 @@
       {
         "type": "iron_rig_phase",
         "value": 1
+      }
+    ]
+  },
+  "Pale Reach - Teleport Anchor(G--7)": {
+    "base_id_offset": 418,
+    "region": "The Pale Reach",
+    "location_group": "Dredge",
+    "expansion": "PaleReach",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Dredge Crane"
+        ]
       }
     ]
   }

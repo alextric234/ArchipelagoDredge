@@ -179,7 +179,7 @@ def get_player_location_table(options: DREDGEOptions) -> list[str]:
 
 def exclude_groups(location_name):
     # removing these checks while waiting for fix from mod
-    excluded_groups = {"Shop", "Unused Pursuit", "Unused World", "Relic"}
+    excluded_groups = {"Unused Pursuit"}
     dredge_location = location_table[location_name]
     return not (dredge_location.location_group in excluded_groups)
 

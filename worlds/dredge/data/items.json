@@ -2594,5 +2594,11 @@
     "item_group": "Quest Item",
     "expansion": "PaleReach",
     "max_quantity": 4
+  },
+  "Aurous Anchor": {
+    "base_id_offset": 402,
+    "classification": "useful",
+    "item_group": "Equipment",
+    "expansion": "PaleReach"
   }
 }
