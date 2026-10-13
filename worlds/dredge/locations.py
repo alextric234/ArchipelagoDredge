@@ -53,7 +53,11 @@ class RegionsReq:
     type: Literal["regions"] = "regions"
     any_of: Sequence[str] = field(default_factory=list)
 
-Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq, LocationsReq, RegionsReq]
+@dataclass(frozen=True)
+class AberrationsReq:
+    type: Literal["aberrations"] = "aberrations"
+
+Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq, LocationsReq, RegionsReq, AberrationsReq]
 
 @dataclass
 class DREDGELocationData:
@@ -100,6 +104,8 @@ def parse_requirement(obj: dict) -> Requirement:
         return LocationsReq(all_of=obj["all_of"])
     if t == "regions":
         return RegionsReq(any_of=obj["any_of"])
+    if t == "aberrations":
+        return AberrationsReq()
     raise ValueError(f"Unknown requirement type: {t!r} ({obj})")
 
 
@@ -164,7 +170,7 @@ def get_player_location_table(options: DREDGEOptions) -> list[str]:
 
 def exclude_groups(location_name):
     # removing these checks while waiting for fix from mod
-    excluded_groups = {"Shop", "Unused Pursuit", "World", "Relic"}
+    excluded_groups = {"Shop", "Unused Pursuit", "Unused World", "Relic"}
     dredge_location = location_table[location_name]
     return not (dredge_location.location_group in excluded_groups)
 

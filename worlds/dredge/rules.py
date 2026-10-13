@@ -7,7 +7,7 @@ from worlds.generic.Rules import set_rule, add_rule
 from .fitting import best_total, hulls_needed
 from .items import item_table, CATCH_TOOL_INDEX
 from .locations import (location_table, DREDGELocationData, ItemsReq, CatchTypeReq, ResearchReq, IronRigPhaseReq,
-                        LocationsReq, RegionsReq)
+                        LocationsReq, RegionsReq, AberrationsReq)
 from .options import DREDGEOptions
 
 if TYPE_CHECKING:
@@ -61,6 +61,8 @@ def set_location_rules(world: "DREDGEWorld") -> None:
             continue
         if world.options.add_fishing_licenses and location.location_group == "Encyclopedia":
             add_license_rule(world_location, location, player)
+        if location.is_aberration and location.location_group == "Encyclopedia":
+            add_rule(world_location, lambda state: can_get_aberrations(world, state))
         if location.region == "Open Ocean" and location.location_group in AT_SEA_LOCATION_GROUPS:
             add_rule(world_location, lambda state: has_boat_performance(world, OPEN_OCEAN_PERFORMANCE, state))
         for requirement in location.requirements:
@@ -76,6 +78,8 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                 case LocationsReq():
                     add_rule(world_location, lambda state, names=requirement.all_of:
                              all(state.can_reach_location(name, player) for name in names))
+                case AberrationsReq():
+                    add_rule(world_location, lambda state: can_get_aberrations(world, state))
                 case RegionsReq():
                     add_rule(world_location, lambda state, names=requirement.any_of:
                              any(state.can_reach_region(name, player) for name in names))
@@ -171,6 +175,20 @@ def has_boat_performance(world: DREDGEWorld, performance: tuple[int, int], state
     lights = [name for name in LIGHTS if state.has(name, player)]
     return (BASE_SPEED + best_total(engines, "speed", hull_count, include_iron_rig) >= knots
             and best_total(lights, "lumens", hull_count, include_iron_rig) >= lumens)
+
+def can_get_aberrations(world: "DREDGEWorld", state: CollectionState) -> bool:
+    """
+    Aberrations are in logic once the aberration chance items raise the minimum chance to at least half, or the
+    Guaranteed Aberrations item is found. Without either item in the pool they're left to the vanilla chance.
+    """
+    progressive_count = world.options.progressive_aberration_chance_items.value
+    has_guaranteed = bool(world.options.guaranteed_aberrations_item)
+    if not progressive_count and not has_guaranteed:
+        return True
+    player = world.player
+    return ((has_guaranteed and state.has("Guaranteed Aberrations", player))
+            or (progressive_count > 0
+                and state.has("Progressive Aberration Chance", player, (progressive_count + 1) // 2)))
 
 def has_relics(state: CollectionState, player: int) -> bool:
     return state.has("Ornate Key", player) \

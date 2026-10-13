@@ -47,6 +47,9 @@ class DREDGEWorld(World):
         classification = item_data.classification
         if item_data.item_group == "Light" and self.options.require_boat_performance:
             classification = ItemClassification.progression
+        # Logic gates aberrations on these (rules.can_get_aberrations).
+        if item_data.item_group == "Aberration Chance":
+            classification = ItemClassification.progression
         return items.DREDGEItem(name, classification, self.item_name_to_id[name], self.player)
 
     def get_filler_item_name(self) -> str:

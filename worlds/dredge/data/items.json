@@ -2539,5 +2539,53 @@
     "classification": "progression",
     "item_group": "Ability",
     "expansion": "Base"
+  },
+  "Bronze Belt Buckle": {
+    "base_id_offset": 393,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "Base"
+  },
+  "Dog Tags": {
+    "base_id_offset": 394,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "Base"
+  },
+  "Mortar Frame": {
+    "base_id_offset": 395,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "Base"
+  },
+  "Mortar Barrel": {
+    "base_id_offset": 396,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "Base"
+  },
+  "Family Crest": {
+    "base_id_offset": 397,
+    "classification": "useful",
+    "item_group": "Quest Item",
+    "expansion": "Base"
+  },
+  "Stone Tablet 1": {
+    "base_id_offset": 398,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "Base"
+  },
+  "Stone Tablet 2": {
+    "base_id_offset": 399,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "Base"
+  },
+  "Stone Tablet 3": {
+    "base_id_offset": 400,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "Base"
   }
 }

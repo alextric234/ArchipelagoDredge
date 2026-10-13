@@ -4098,46 +4098,63 @@
     "can_catch_rod": true,
     "can_catch_net": false
   },
-  "Sinew Spindle": {
+  "The Marrows - Cod Shrine(J-9)": {
     "base_id_offset": 269,
-    "region": "Open Ocean",
+    "region": "The Marrows",
     "location_group": "World",
     "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Cod"
+        ]
+      }
+    ]
   },
-  "Viscera Crane": {
+  "Stellar Basin - Shark Shrine(H-2)": {
     "base_id_offset": 270,
-    "region": "Open Ocean",
+    "region": "Stellar Basin",
     "location_group": "World",
     "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Hammerhead Shark",
+          "Bronze Whaler",
+          "Blacktip Reef Shark",
+          "Ghost Shark"
+        ]
+      }
+    ]
   },
-  "Tendon Rod": {
+  "Twisted Strand - Aberration Shrine(D-13)": {
     "base_id_offset": 271,
-    "region": "Open Ocean",
+    "region": "Twisted Strand",
     "location_group": "World",
     "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
+    "requirements": [
+      {
+        "type": "aberrations"
+      }
+    ]
   },
-  "Encrusted Talisman": {
+  "Devil's Spine - Shrine 3(O-14)": {
     "base_id_offset": 272,
-    "region": "Open Ocean",
+    "region": "Devil's Spine",
     "location_group": "World",
     "expansion": "Base",
-    "requirements": [],
-    "can_catch_rod": true,
-    "can_catch_net": false
+    "requirements": [
+      {
+        "type": "aberrations"
+      }
+    ]
   },
   "Basic Fishing Pole": {
     "base_id_offset": 273,
     "region": "Open Ocean",
-    "location_group": "World",
+    "location_group": "Unused World",
     "expansion": "Base",
     "requirements": [],
     "can_catch_rod": true,
@@ -6764,6 +6781,386 @@
         "type": "items",
         "all_of": [
           "Antique Pocket Watch"
+        ]
+      }
+    ]
+  },
+  "A Fresh Start": {
+    "base_id_offset": 487,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Castaway": {
+    "base_id_offset": 488,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Caught to Order": {
+    "base_id_offset": 489,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Gulf Flounder",
+          "Grey Eel",
+          "Arrow Squid",
+          "Black Grouper",
+          "Fiddler Crab",
+          "Common Crab"
+        ]
+      },
+      {
+        "type": "aberrations"
+      }
+    ]
+  },
+  "Lost Dog": {
+    "base_id_offset": 490,
+    "region": "Stellar Basin",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Lost at Sea": {
+    "base_id_offset": 491,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Bronze Belt Buckle"
+        ]
+      }
+    ]
+  },
+  "Recording Rarities - Oarfish": {
+    "base_id_offset": 492,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "regions",
+        "any_of": [
+          "Gale Cliffs",
+          "Stellar Basin",
+          "Twisted Strand",
+          "Devil's Spine"
+        ]
+      },
+      {
+        "type": "locations",
+        "all_of": [
+          "Oarfish"
+        ]
+      }
+    ]
+  },
+  "Recording Rarities - Gulper Eel": {
+    "base_id_offset": 493,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "regions",
+        "any_of": [
+          "Gale Cliffs",
+          "Stellar Basin",
+          "Twisted Strand",
+          "Devil's Spine"
+        ]
+      },
+      {
+        "type": "locations",
+        "all_of": [
+          "Gulper Eel"
+        ]
+      }
+    ]
+  },
+  "Recording Rarities - Goliath Tigerfish": {
+    "base_id_offset": 494,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "regions",
+        "any_of": [
+          "Gale Cliffs",
+          "Stellar Basin",
+          "Twisted Strand",
+          "Devil's Spine"
+        ]
+      },
+      {
+        "type": "locations",
+        "all_of": [
+          "Goliath Tigerfish"
+        ]
+      }
+    ]
+  },
+  "Recording Rarities - Coelacanth": {
+    "base_id_offset": 495,
+    "region": "The Marrows",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "regions",
+        "any_of": [
+          "Gale Cliffs",
+          "Stellar Basin",
+          "Twisted Strand",
+          "Devil's Spine"
+        ]
+      },
+      {
+        "type": "locations",
+        "all_of": [
+          "Coelacanth"
+        ]
+      }
+    ]
+  },
+  "The Bitter End - Dog Tags": {
+    "base_id_offset": 496,
+    "region": "Twisted Strand",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Dog Tags"
+        ]
+      }
+    ]
+  },
+  "The Bitter End": {
+    "base_id_offset": 497,
+    "region": "Twisted Strand",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Mortar Frame",
+          "Mortar Barrel"
+        ]
+      },
+      {
+        "type": "locations",
+        "all_of": [
+          "Grey Mullet",
+          "Gar",
+          "Catfish",
+          "Longfin Eel"
+        ]
+      }
+    ]
+  },
+  "Flames of The Deep": {
+    "base_id_offset": 498,
+    "region": "Devil's Spine",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Squat Lobster",
+          "Spider Crab",
+          "Ghost Shark",
+          "Pale Skate"
+        ]
+      },
+      {
+        "type": "aberrations"
+      }
+    ]
+  },
+  "Gale Cliffs - Crab Shrine(P-3)": {
+    "base_id_offset": 499,
+    "region": "Gale Cliffs",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Decorator Crab",
+          "Rock Crab"
+        ]
+      }
+    ]
+  },
+  "Devil's Spine - Shrine 1(P-13)": {
+    "base_id_offset": 500,
+    "region": "Devil's Spine",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Squat Lobster",
+          "Spider Crab"
+        ]
+      }
+    ]
+  },
+  "Devil's Spine - Shrine 2(P-14)": {
+    "base_id_offset": 501,
+    "region": "Devil's Spine",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "locations",
+        "all_of": [
+          "Ghost Shark",
+          "Pale Skate"
+        ]
+      }
+    ]
+  },
+  "The Marrows - Shore Cache 1(J-8)": {
+    "base_id_offset": 502,
+    "region": "The Marrows",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "The Marrows - Shore Cache 2(L-10)": {
+    "base_id_offset": 503,
+    "region": "The Marrows",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Open Ocean - Old Wreck(L-5)": {
+    "base_id_offset": 504,
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Open Ocean - Shore Cache 1(M-6)": {
+    "base_id_offset": 505,
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Gale Cliffs - Shore Cache 1(P-3)": {
+    "base_id_offset": 506,
+    "region": "Gale Cliffs",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Open Ocean - Shore Cache 2(P-6)": {
+    "base_id_offset": 507,
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stellar Basin - Shore Cache 1(G-4)": {
+    "base_id_offset": 508,
+    "region": "Stellar Basin",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stellar Basin - Shore Cache 2(I-4)": {
+    "base_id_offset": 509,
+    "region": "Stellar Basin",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stellar Basin - Shore Cache 3(D-3)": {
+    "base_id_offset": 510,
+    "region": "Stellar Basin",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stellar Basin - Shore Cache 4(C-3)": {
+    "base_id_offset": 511,
+    "region": "Stellar Basin",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Open Ocean - Shore Cache 3(I-5)": {
+    "base_id_offset": 512,
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Twisted Strand - Shore Cache 1(E-14)": {
+    "base_id_offset": 513,
+    "region": "Twisted Strand",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Twisted Strand - Shore Cache 2(D-12)": {
+    "base_id_offset": 514,
+    "region": "Twisted Strand",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Gale Cliffs - Old Mayor's Camp(O-2)": {
+    "base_id_offset": 515,
+    "region": "Gale Cliffs",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Open Ocean - Old Mayor's Camp(J-3)": {
+    "base_id_offset": 516,
+    "region": "Open Ocean",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stellar Basin - Old Laboratory(G-4)": {
+    "base_id_offset": 517,
+    "region": "Stellar Basin",
+    "location_group": "World",
+    "expansion": "Base",
+    "requirements": []
+  },
+  "Stone Tablets": {
+    "base_id_offset": 518,
+    "region": "Devil's Spine",
+    "location_group": "Pursuit",
+    "expansion": "Base",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Stone Tablet 1",
+          "Stone Tablet 2",
+          "Stone Tablet 3"
         ]
       }
     ]

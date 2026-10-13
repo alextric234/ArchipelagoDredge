@@ -22,6 +22,8 @@ Currently:
 - Picking up messages in bottles (option: Include Messages in Bottles)
 - Finishing the pursuits and earning the gifts that reward a research book (the book itself is shuffled)
 - Meeting the Collector (Grotesque Fish) and handing in each relic
+- Finishing pursuits whose reward used to be handed out in a grid (A Fresh Start, Castaway, Lost at Sea, Recording Rarities and others)
+- Shrine offerings, shore caches and other found-loot spots (the Old Wreck, the Old Mayor's camps, the old laboratory)
 
 Planned:
 - Random loot dredging
@@ -38,6 +40,7 @@ Currently:
 - Boat Upgrades (spaces in the hull)
 - Boat Hull Upgrades
 - The Collector's abilities: Haste, Manifest, Banish and Atrophy
+- Quest items found while dredging (Belt Buckle, Dog Tags, Mortar parts, Family Crest, Stone Tablets)
 
   
 Planned:

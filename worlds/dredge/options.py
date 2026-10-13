@@ -102,6 +102,9 @@ class ProgressiveAberrationChanceItems(Range):
     How many Progressive Aberration Chance items to add. Each raises the minimum chance of catching an aberration by
     an equal share, so having all of them makes every catch an aberration. 0 adds none.
 
+    Logic expects at least half of them (or the Guaranteed Aberrations item) before any aberration, or anything that
+    needs one, is in logic. With neither item in the pool, aberrations are left to the normal chance.
+
     The boost can be switched off in game with "ap aberrations off" or in the mod settings.
     """
     display_name = "Progressive Aberration Chance Items"
@@ -112,6 +115,7 @@ class ProgressiveAberrationChanceItems(Range):
 class GuaranteedAberrationsItem(Toggle):
     """
     Adds a Guaranteed Aberrations item that makes every catch an aberration as soon as it's received.
+    Once received, every aberration is in logic.
 
     The boost can be switched off in game with "ap aberrations off" or in the mod settings.
     """

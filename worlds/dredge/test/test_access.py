@@ -175,7 +175,9 @@ BASE_PURSUITS = {
     "Package Delivery", "Craven Courier", "Figure in Blue", "Figure in Gold", "Figure in Purple", "Figure in Red",
     "Research Assistant", "A Place to Rest", "Grotesque Fish", "The Collector - Ornate Key",
     "The Collector - Rusted Music Box", "The Collector - Jewel Encrusted Band", "The Collector - Shimmering Necklace",
-    "The Collector - Antique Pocket Watch",
+    "The Collector - Antique Pocket Watch", "A Fresh Start", "Castaway", "Caught to Order", "Lost Dog", "Lost at Sea",
+    "Recording Rarities - Oarfish", "Recording Rarities - Gulper Eel", "Recording Rarities - Goliath Tigerfish",
+    "Recording Rarities - Coelacanth", "The Bitter End - Dog Tags", "The Bitter End", "Flames of The Deep", "Stone Tablets",
 }
 
 
@@ -253,3 +255,70 @@ class TestCollectorAccess(DredgeTestBase):
         state = CollectionState(self.multiworld)
         state.collect(self.world.create_item("Atrophy"), True)
         self.assertFalse(self.multiworld.get_location("Common Crab", self.player).can_reach(state))
+
+
+class TestRewardGridPursuitAccess(DredgeTestBase):
+    run_default_tests = False
+
+    def test_quest_item_pursuits_need_their_items(self) -> None:
+        self.assertAccessDependency(["Lost at Sea"], [["Bronze Belt Buckle"]], only_check_listed=True)
+        self.assertAccessDependency(["The Bitter End - Dog Tags"], [["Dog Tags"]], only_check_listed=True)
+        self.assertAccessDependency(["The Bitter End"], [["Mortar Frame"]], only_check_listed=True)
+        self.assertAccessDependency(["The Bitter End"], [["Mortar Barrel"]], only_check_listed=True)
+
+
+
+class TestWorldLocationAccess(DredgeTestBase):
+    run_default_tests = False
+
+    def test_shrines_caches_and_loot_spots_present(self) -> None:
+        world = {location.name for location in self.multiworld.get_locations(self.player)
+                 if location.name in location_table and location_table[location.name].location_group == "World"}
+        self.assertEqual(len(world), 23)
+
+    def test_stone_tablets_need_the_tablets(self) -> None:
+        for tablet in ("Stone Tablet 1", "Stone Tablet 2", "Stone Tablet 3"):
+            with self.subTest(tablet=tablet):
+                self.assertAccessDependency(["Stone Tablets"], [[tablet]], only_check_listed=True)
+
+
+ABERRATION_DELIVERIES = ["Caught to Order", "Flames of The Deep", "Twisted Strand - Aberration Shrine(D-13)",
+                         "Devil's Spine - Shrine 3(O-14)"]
+
+
+def aberration_fish(test: DredgeTestBase) -> list[str]:
+    return [location.name for location in test.multiworld.get_locations(test.player)
+            if location.name in location_table and location_table[location.name].is_aberration
+            and location_table[location.name].location_group == "Encyclopedia"]
+
+
+class TestProgressiveAberrationGating(DredgeTestBase):
+    options = {
+        "progressive_aberration_chance_items": 4,
+    }
+    run_default_tests = False
+
+    def test_aberrations_need_chance_items(self) -> None:
+        self.assertAccessDependency(aberration_fish(self) + ABERRATION_DELIVERIES,
+                                    [["Progressive Aberration Chance"]], only_check_listed=True)
+
+    def test_half_the_items_are_enough(self) -> None:
+        state = self.multiworld.get_all_state()
+        state.remove(self.world.create_item("Progressive Aberration Chance"))
+        state.remove(self.world.create_item("Progressive Aberration Chance"))
+        self.assertTrue(self.multiworld.get_location("Twisted Strand - Aberration Shrine(D-13)", self.player)
+                        .can_reach(state))
+        state.remove(self.world.create_item("Progressive Aberration Chance"))
+        self.assertFalse(self.multiworld.get_location("Twisted Strand - Aberration Shrine(D-13)", self.player)
+                         .can_reach(state))
+
+
+class TestGuaranteedAberrationGating(DredgeTestBase):
+    options = {
+        "guaranteed_aberrations_item": True,
+    }
+    run_default_tests = False
+
+    def test_aberrations_need_guaranteed_item(self) -> None:
+        self.assertAccessDependency(aberration_fish(self) + ABERRATION_DELIVERIES,
+                                    [["Guaranteed Aberrations"]], only_check_listed=True)
