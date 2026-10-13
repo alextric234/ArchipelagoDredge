@@ -54,10 +54,17 @@ class RegionsReq:
     any_of: Sequence[str] = field(default_factory=list)
 
 @dataclass(frozen=True)
+class ItemCountReq:
+    type: Literal["item_count"] = "item_count"
+    item: str = ""
+    count: int = 1
+
+@dataclass(frozen=True)
 class AberrationsReq:
     type: Literal["aberrations"] = "aberrations"
 
-Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq, LocationsReq, RegionsReq, AberrationsReq]
+Requirement = Union[ItemsReq, ResearchReq, CatchTypeReq, IronRigPhaseReq, LocationsReq, RegionsReq, AberrationsReq,
+                    ItemCountReq]
 
 @dataclass
 class DREDGELocationData:
@@ -106,6 +113,8 @@ def parse_requirement(obj: dict) -> Requirement:
         return RegionsReq(any_of=obj["any_of"])
     if t == "aberrations":
         return AberrationsReq()
+    if t == "item_count":
+        return ItemCountReq(item=obj["item"], count=obj["count"])
     raise ValueError(f"Unknown requirement type: {t!r} ({obj})")
 
 

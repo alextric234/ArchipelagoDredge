@@ -7,7 +7,7 @@ from worlds.generic.Rules import set_rule, add_rule
 from .fitting import best_total, hulls_needed
 from .items import item_table, CATCH_TOOL_INDEX
 from .locations import (location_table, DREDGELocationData, ItemsReq, CatchTypeReq, ResearchReq, IronRigPhaseReq,
-                        LocationsReq, RegionsReq, AberrationsReq)
+                        LocationsReq, RegionsReq, AberrationsReq, ItemCountReq)
 from .options import DREDGEOptions
 
 if TYPE_CHECKING:
@@ -78,6 +78,8 @@ def set_location_rules(world: "DREDGEWorld") -> None:
                 case LocationsReq():
                     add_rule(world_location, lambda state, names=requirement.all_of:
                              all(state.can_reach_location(name, player) for name in names))
+                case ItemCountReq():
+                    add_rule(world_location, lambda state, req=requirement: state.has(req.item, player, req.count))
                 case AberrationsReq():
                     add_rule(world_location, lambda state: can_get_aberrations(world, state))
                 case RegionsReq():

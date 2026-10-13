@@ -7164,5 +7164,195 @@
         ]
       }
     ]
+  },
+  "The Pale Reach - Central Camp Log 1": {
+    "base_id_offset": 519,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Central Camp Log 2": {
+    "base_id_offset": 520,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Central Camp Log 3": {
+    "base_id_offset": 521,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Eastern Terminus Log 1": {
+    "base_id_offset": 522,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Eastern Terminus Log 2": {
+    "base_id_offset": 523,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Eastern Terminus Log 3": {
+    "base_id_offset": 524,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Western Bearing Log 1": {
+    "base_id_offset": 525,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Western Bearing Log 2": {
+    "base_id_offset": 526,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "The Pale Reach - Western Bearing Log 3": {
+    "base_id_offset": 527,
+    "region": "The Pale Reach",
+    "location_group": "Message",
+    "expansion": "PaleReach",
+    "requirements": []
+  },
+  "Under The Ice - Central Camp": {
+    "base_id_offset": 528,
+    "region": "The Pale Reach",
+    "location_group": "Pursuit",
+    "expansion": "PaleReach",
+    "requirements": [
+      {
+        "type": "item_count",
+        "item": "Ice Axe",
+        "count": 4
+      }
+    ]
+  },
+  "Under The Ice - Eastern Terminus": {
+    "base_id_offset": 529,
+    "region": "The Pale Reach",
+    "location_group": "Pursuit",
+    "expansion": "PaleReach",
+    "requirements": [
+      {
+        "type": "item_count",
+        "item": "Ice Axe",
+        "count": 4
+      }
+    ]
+  },
+  "Under The Ice - Western Bearing": {
+    "base_id_offset": 530,
+    "region": "The Pale Reach",
+    "location_group": "Pursuit",
+    "expansion": "PaleReach",
+    "requirements": [
+      {
+        "type": "item_count",
+        "item": "Ice Axe",
+        "count": 4
+      }
+    ]
+  },
+  "Under The Ice - Southern Locus": {
+    "base_id_offset": 531,
+    "region": "The Pale Reach",
+    "location_group": "Pursuit",
+    "expansion": "PaleReach",
+    "requirements": [
+      {
+        "type": "item_count",
+        "item": "Ice Axe",
+        "count": 4
+      }
+    ]
+  },
+  "The Pale Reach - Shrine(K--4)": {
+    "base_id_offset": 532,
+    "region": "The Pale Reach",
+    "location_group": "World",
+    "expansion": "PaleReach",
+    "requirements": [
+      {
+        "type": "item_count",
+        "item": "Ice Axe",
+        "count": 4
+      }
+    ]
+  },
+  "Ice Shaper": {
+    "base_id_offset": 533,
+    "region": "The Pale Reach",
+    "location_group": "Pursuit",
+    "expansion": "PaleReach",
+    "requirements": [
+      {
+        "type": "items",
+        "all_of": [
+          "Ice Shaper"
+        ]
+      }
+    ]
+  },
+  "Getting Power - Rig Built": {
+    "base_id_offset": 534,
+    "region": "The Iron Rig",
+    "location_group": "Pursuit",
+    "expansion": "IronRig",
+    "requirements": [
+      {
+        "type": "iron_rig_phase",
+        "value": 1
+      }
+    ]
+  },
+  "Getting Power - Science Lab Built": {
+    "base_id_offset": 535,
+    "region": "The Iron Rig",
+    "location_group": "Pursuit",
+    "expansion": "IronRig",
+    "requirements": [
+      {
+        "type": "iron_rig_phase",
+        "value": 1
+      }
+    ]
+  },
+  "Getting Power - Generator Fuelled": {
+    "base_id_offset": 536,
+    "region": "The Iron Rig",
+    "location_group": "Pursuit",
+    "expansion": "IronRig",
+    "requirements": [
+      {
+        "type": "iron_rig_phase",
+        "value": 1
+      }
+    ]
+  },
+  "Drilling in the Deep - Factory": {
+    "base_id_offset": 537,
+    "region": "The Iron Rig",
+    "location_group": "Pursuit",
+    "expansion": "IronRig",
+    "requirements": [
+      {
+        "type": "iron_rig_phase",
+        "value": 1
+      }
+    ]
   }
 }

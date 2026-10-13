@@ -2189,8 +2189,8 @@
   },
   "Ice Shaper": {
     "base_id_offset": 320,
-    "classification": "filler",
-    "item_group": "Miscellaneous",
+    "classification": "progression",
+    "item_group": "Quest Item",
     "expansion": "PaleReach"
   },
   "Bag of Doubloons": {
@@ -2587,5 +2587,12 @@
     "classification": "progression",
     "item_group": "Quest Item",
     "expansion": "Base"
+  },
+  "Ice Axe": {
+    "base_id_offset": 401,
+    "classification": "progression",
+    "item_group": "Quest Item",
+    "expansion": "PaleReach",
+    "max_quantity": 4
   }
 }

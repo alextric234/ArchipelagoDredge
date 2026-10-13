@@ -222,7 +222,9 @@ class TestPaleReachPursuit(DredgeTestBase):
 
     def test_figure_in_white_present_and_not_excluded(self) -> None:
         pursuits = pursuit_locations(self)
-        self.assertEqual(set(pursuits), BASE_PURSUITS | {"Figure in White"})
+        self.assertEqual(set(pursuits), BASE_PURSUITS | {
+            "Figure in White", "Ice Shaper", "Under The Ice - Central Camp", "Under The Ice - Eastern Terminus",
+            "Under The Ice - Western Bearing", "Under The Ice - Southern Locus"})
         self.assertEqual(pursuits["Figure in White"].progress_type, LocationProgressType.DEFAULT)
 
 
@@ -322,3 +324,37 @@ class TestGuaranteedAberrationGating(DredgeTestBase):
     def test_aberrations_need_guaranteed_item(self) -> None:
         self.assertAccessDependency(aberration_fish(self) + ABERRATION_DELIVERIES,
                                     [["Guaranteed Aberrations"]], only_check_listed=True)
+
+
+class TestPaleReachIceAxes(DredgeTestBase):
+    options = {
+        "include_pale_reach_dlc": True,
+    }
+    run_default_tests = False
+
+    def test_four_ice_axes_in_pool(self) -> None:
+        axes = [item for item in self.multiworld.itempool if item.player == self.player and item.name == "Ice Axe"]
+        self.assertEqual(len(axes), 4)
+
+    def test_shards_need_all_four_axes(self) -> None:
+        state = self.multiworld.get_all_state()
+        state.remove(self.world.create_item("Ice Axe"))
+        for location in ("Under The Ice - Central Camp", "The Pale Reach - Shrine(K--4)"):
+            with self.subTest(location=location):
+                self.assertFalse(self.multiworld.get_location(location, self.player).can_reach(state))
+
+    def test_captains_logs_present(self) -> None:
+        logs = [location.name for location in self.multiworld.get_locations(self.player) if "Log" in location.name]
+        self.assertEqual(len(logs), 9)
+
+
+class TestIronRigRewards(DredgeTestBase):
+    options = {
+        "include_iron_rig_dlc": True,
+    }
+    run_default_tests = False
+
+    def test_rig_rewards_need_dredge_crane(self) -> None:
+        self.assertAccessDependency(["Getting Power - Rig Built", "Getting Power - Science Lab Built",
+                                     "Getting Power - Generator Fuelled", "Drilling in the Deep - Factory"],
+                                    [["Dredge Crane"]], only_check_listed=True)

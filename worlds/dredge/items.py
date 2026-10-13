@@ -57,6 +57,7 @@ item_table = {
         lumens=entry.get("lumens", 0),
         rebuyable=entry.get("rebuyable", False),
         shape=entry.get("shape", []),
+        max_quantity=entry.get("max_quantity", 1),
     )
     for name, entry in load_data_file("items.json").items()
 }
@@ -130,7 +131,8 @@ def create_all_items(world: DREDGEWorld) -> None:
         if not world.options.add_passage_items and data.item_group == "Virtual Passage Item":
             continue
 
-        item_pool.append(world.create_item(item))
+        for _ in range(data.max_quantity):
+            item_pool.append(world.create_item(item))
 
     for _ in range(progressive_hull_count(world)):
         item_pool.append(world.create_item("Progressive Hull"))
